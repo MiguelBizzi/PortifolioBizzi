@@ -8,15 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :focus {
-        outline: 0;
-        box-shadow: 0 0 0 2px ${({ theme }) => theme.primary};
-    }
-
-    ::selection {
-        background-color: ${({ theme }) => theme.accent}; 
-        /* TODO */
-        /* color: ${({ theme }) => theme.text};  */
-        color: #E2E2F8; 
+        outline: none;
     }
 
     body {
@@ -28,10 +20,5 @@ export const GlobalStyle = createGlobalStyle`
 
     body, input, textarea, button {
         font: 400 1rem 'Montserrat', sans-serif;
-        &:focus,
-        &:active {
-            outline: none;
-            border: none;
-        }
     }
 `;

@@ -16,6 +16,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
 	color: ${({ color }) => color};
 
 	border: none;
+	outline: none;
 
 	${({ border }) =>
 		border &&
@@ -24,6 +25,5 @@ export const ButtonContainer = styled.button<ButtonProps>`
 		`}
 
 	border-radius: 0.5rem;
-	outline: none;
 	cursor: pointer;
 `;
