@@ -27,3 +27,20 @@ export const ButtonContainer = styled.button<ButtonProps>`
 	border-radius: 0.5rem;
 	cursor: pointer;
 `;
+
+export const SocialMediaContainer = styled.aside`
+	position: absolute;
+	right: 1rem;
+
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+`;
+
+export const IconsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 1rem;
+`;

@@ -12,6 +12,8 @@ import {
 } from "./styles";
 import { Button } from "../../components/Button";
 import { useTheme } from "styled-components";
+import { FaInstagram } from "react-icons/fa";
+import { IconsContainer, SocialMediaContainer } from "../../components/Button/styles";
 
 export function Home() {
 	const theme = useTheme();
@@ -53,7 +55,16 @@ export function Home() {
 							/>
 						</ButtonsContainer>
 					</InformationContainer>
-					<BannerImageContainer>{/* <h1>penis</h1> */}</BannerImageContainer>
+
+					<BannerImageContainer>
+						<SocialMediaContainer>
+							<IconsContainer>
+								<FaInstagram />
+								<FaInstagram />
+								<FaInstagram />
+							</IconsContainer>
+						</SocialMediaContainer>
+					</BannerImageContainer>
 				</BannerContainer>
 			</MainContainer>
 		</div>
