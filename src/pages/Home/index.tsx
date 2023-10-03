@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header";
 import Typewriter from "typewriter-effect";
 import {
 	BannerContainer,
@@ -8,20 +7,20 @@ import {
 	Title,
 	SelfDescription,
 	TypeWriterTitle,
-	ButtonsContainer
+	ButtonsContainer,
+	Image
 } from "./styles";
-import { Button } from "../../components/Button";
-import { useTheme } from "styled-components";
-import { FaInstagram } from "react-icons/fa";
-import { IconsContainer, SocialMediaContainer } from "../../components/Button/styles";
 
-export function Home() {
+import Button from "../../components/Button";
+import { useTheme } from "styled-components";
+import SocialMediaAside from "../../components/SocialMediaAside";
+import Imagem from "../../assets/euemomo.jpg";
+
+const Home: React.FC = () => {
 	const theme = useTheme();
 
 	return (
 		<div>
-			<Header />
-
 			<MainContainer>
 				<BannerContainer>
 					<InformationContainer>
@@ -57,16 +56,13 @@ export function Home() {
 					</InformationContainer>
 
 					<BannerImageContainer>
-						<SocialMediaContainer>
-							<IconsContainer>
-								<FaInstagram />
-								<FaInstagram />
-								<FaInstagram />
-							</IconsContainer>
-						</SocialMediaContainer>
+						<Image src={Imagem} alt="Imagem do banner" />
+						<SocialMediaAside />
 					</BannerImageContainer>
 				</BannerContainer>
 			</MainContainer>
 		</div>
 	);
-}
+};
+
+export default Home;

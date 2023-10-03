@@ -1,6 +1,7 @@
-import { HeaderContainer, HeaderContent, NavContainer, NavItem } from "./styles";
+import { FaRegMoon } from "react-icons/fa";
+import { HeaderContainer, HeaderContent, NavContainer, NavItem, ChangeThemeButton } from "./styles";
 
-export function Header() {
+const Header: React.FC = () => {
 	return (
 		<HeaderContainer>
 			<HeaderContent>
@@ -10,8 +11,14 @@ export function Header() {
 					<NavItem>Portifólio</NavItem>
 					<NavItem>Currículo</NavItem>
 					<NavItem>Me contate</NavItem>
+
+					<ChangeThemeButton>
+						<FaRegMoon />
+					</ChangeThemeButton>
 				</NavContainer>
 			</HeaderContent>
 		</HeaderContainer>
 	);
-}
+};
+
+export default Header;

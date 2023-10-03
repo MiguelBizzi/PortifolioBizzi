@@ -14,11 +14,23 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
-        padding: 2.5rem 4rem;
+        padding: 2.5rem 4rem 2.5rem 8rem;
         --webkit-font-smoothing: antialiased;
     }
 
     body, input, textarea, button {
         font: 400 1rem 'Montserrat', sans-serif;
+    }
+
+    button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `;

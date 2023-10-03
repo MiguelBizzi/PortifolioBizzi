@@ -1,9 +1,9 @@
 import { css, styled } from "styled-components";
 
 interface ButtonProps {
-	backgroundColor: string;
-	color: string;
-	border?: string;
+    backgroundColor: string;
+    color: string;
+    border?: string;
 }
 
 export const ButtonContainer = styled.button<ButtonProps>`
@@ -15,32 +15,11 @@ export const ButtonContainer = styled.button<ButtonProps>`
 	background-color: ${({ backgroundColor }) => backgroundColor};
 	color: ${({ color }) => color};
 
-	border: none;
-	outline: none;
-
 	${({ border }) =>
-		border &&
-		css`
+        border &&
+        css`
 			border: 1px solid ${border};
 		`}
 
 	border-radius: 0.5rem;
-	cursor: pointer;
-`;
-
-export const SocialMediaContainer = styled.aside`
-	position: absolute;
-	right: 1rem;
-
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
-`;
-
-export const IconsContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	gap: 1rem;
 `;

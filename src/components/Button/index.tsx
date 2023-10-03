@@ -10,11 +10,13 @@ interface Props {
 	border?: string;
 }
 
-export function Button({ title, backgroundColor, color, onClick, icon, border }: Props) {
+const Button: React.FC<Props> = ({ title, backgroundColor, color, onClick, icon, border }) => {
 	return (
 		<ButtonContainer border={border} backgroundColor={backgroundColor} color={color} onClick={onClick}>
 			{title}
 			{icon ?? <></>}
 		</ButtonContainer>
 	);
-}
+};
+
+export default Button;

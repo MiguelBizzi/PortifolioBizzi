@@ -7,7 +7,6 @@ export const HeaderContainer = styled.header`
 
 export const HeaderContent = styled.div`
 	width: 100%;
-	margin: 0 auto;
 
 	display: flex;
 	align-items: center;
@@ -28,4 +27,13 @@ export const NavItem = styled.a`
 	&:hover {
 		color: ${({ theme }) => theme.primary};
 	}
+`;
+
+export const ChangeThemeButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    color: ${({ theme }) => theme.text};
 `;
