@@ -12,7 +12,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({ title, backgroundColor, color, onClick, icon, border }) => {
 	return (
-		<ButtonContainer border={border} backgroundColor={backgroundColor} color={color} onClick={onClick}>
+		<ButtonContainer border={border} backgroundcolor={backgroundColor} color={color} onClick={onClick}>
 			{title}
 			{icon ?? <></>}
 		</ButtonContainer>

@@ -1,9 +1,9 @@
 import { css, styled } from "styled-components";
 
 interface ButtonProps {
-    backgroundColor: string;
-    color: string;
-    border?: string;
+	backgroundcolor: string;
+	color: string;
+	border?: string;
 }
 
 export const ButtonContainer = styled.button<ButtonProps>`
@@ -12,12 +12,12 @@ export const ButtonContainer = styled.button<ButtonProps>`
 	gap: 0.75rem;
 
 	padding: 0.7rem 1.5rem;
-	background-color: ${({ backgroundColor }) => backgroundColor};
+	background-color: ${({ backgroundcolor }) => backgroundcolor};
 	color: ${({ color }) => color};
 
 	${({ border }) =>
-        border &&
-        css`
+		border &&
+		css`
 			border: 1px solid ${border};
 		`}
 
