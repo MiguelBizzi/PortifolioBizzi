@@ -11,6 +11,12 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
     }
 
+    ::selection {
+        background-color: ${({ theme }) => theme.accent};
+        color: ${({ theme }) => theme.text_light};
+        outline: none;
+    }
+
     body {
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
