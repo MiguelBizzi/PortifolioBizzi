@@ -1,7 +1,11 @@
 import { FaRegMoon } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
 import { HeaderContainer, HeaderContent, NavContainer, NavItem, ChangeThemeButton } from "./styles";
+import { useThemeContext } from "../../hooks/theme";
 
 const Header: React.FC = () => {
+	const { toggleTheme, selectedTheme } = useThemeContext();
+
 	return (
 		<HeaderContainer>
 			<HeaderContent>
@@ -12,8 +16,8 @@ const Header: React.FC = () => {
 					<NavItem>Currículo</NavItem>
 					<NavItem>Me contate</NavItem>
 
-					<ChangeThemeButton>
-						<FaRegMoon />
+					<ChangeThemeButton onClick={toggleTheme}>
+						{selectedTheme === "light" ? <FaRegMoon /> : <FiSun />}
 					</ChangeThemeButton>
 				</NavContainer>
 			</HeaderContent>
