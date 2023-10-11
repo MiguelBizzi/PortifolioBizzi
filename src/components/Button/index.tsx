@@ -10,9 +10,11 @@ interface Props {
 	border?: string;
 }
 
-const Button: React.FC<Props> = ({ title, backgroundColor, color, onClick, icon, border }) => {
+type ButtonProps = JSX.IntrinsicElements["button"] & Props;
+
+const Button: React.FC<ButtonProps> = ({ title, backgroundColor, color, onClick, icon, border, ...rest }) => {
 	return (
-		<ButtonContainer border={border} backgroundcolor={backgroundColor} color={color} onClick={onClick}>
+		<ButtonContainer border={border} backgroundcolor={backgroundColor} color={color} onClick={onClick} {...rest}>
 			{title}
 			{icon ?? <></>}
 		</ButtonContainer>

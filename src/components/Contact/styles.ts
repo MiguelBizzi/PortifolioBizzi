@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Form as Unform } from "@unform/web";
 
 export const ContactContainer = styled.section`
 	margin-top: 5rem;
@@ -31,6 +32,7 @@ export const Content = styled.div`
 	width: 100%;
 	display: flex;
 
+	gap: 2rem;
 	margin-top: 5rem;
 `;
 
@@ -40,6 +42,23 @@ export const InfoContainer = styled.div`
 	gap: 1.5rem;
 `;
 
-export const FormContainer = styled.div`
+export const Form = styled(Unform)`
+	display: flex;
+	flex-direction: column;
+
+	gap: 1.2rem;
 	flex: 1;
+`;
+
+export const Row = styled.div`
+	display: flex;
+	gap: 1rem;
+`;
+
+export const ButtonRow = styled.div`
+	width: 100%;
+
+	margin-top: 1rem;
+	display: flex;
+	justify-content: flex-end;
 `;
