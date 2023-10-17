@@ -1,15 +1,33 @@
 import { keyframes, styled } from "styled-components";
+import sizes from "../../styles/devicesSizes";
 
 export const MainContainer = styled.main`
 	margin-top: 8rem;
+
+	@media (max-width: ${sizes.tablet}) {
+		margin-top: 5rem;
+	}
 `;
 
 export const BannerContainer = styled.section`
 	display: flex;
+
+	@media (max-width: ${sizes.tablet}) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 `;
 
 export const InformationContainer = styled.div`
 	width: 50%;
+
+	@media (max-width: ${sizes.tablet}) {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
 `;
 
 export const Title = styled.h1`
@@ -30,6 +48,10 @@ export const BannerImageContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: ${sizes.tablet}) {
+		display: none;
+	}
 `;
 
 const floatAnimation = keyframes`
@@ -61,4 +83,8 @@ export const ButtonsContainer = styled.div`
 	display: flex;
 	gap: 1rem;
 	margin-top: 1rem;
+
+	@media (max-width: ${sizes.tablet}) {
+		justify-content: center;
+	}
 `;

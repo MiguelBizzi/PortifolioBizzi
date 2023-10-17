@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import sizes from "./devicesSizes";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -20,8 +21,21 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
-        padding: 2.5rem 4rem 2.5rem 8rem;
+        padding: 2.5rem 8rem 0rem;
         --webkit-font-smoothing: antialiased;
+
+        @media (max-width: 1200px) {
+            padding: 2.5rem 4rem 0rem;
+        }
+
+        @media (max-width: ${sizes.laptop}) {
+            padding: 2.5rem 2rem 0rem;
+        }
+
+        @media (max-width: ${sizes.tablet}) {
+            padding: 2.5rem 2rem 0rem;
+        }
+        
     }
 
     body, input, textarea, button {

@@ -1,8 +1,17 @@
 import styled from "styled-components";
+import sizes from "../../styles/devicesSizes";
 
 export const CardContainer = styled.div`
 	display: flex;
 	align-items: center;
+
+	@media (max-width: ${sizes.tablet}) {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		flex: 1;
+	}
 `;
 
 export const IconContainer = styled.div`
@@ -30,6 +39,11 @@ export const Details = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@media (max-width: ${sizes.tablet}) {
+		text-align: center;
+		padding-left: 0rem;
+	}
 `;
 
 export const Label = styled.span`
@@ -37,4 +51,8 @@ export const Label = styled.span`
 	opacity: 0.4;
 `;
 
-export const Info = styled.span``;
+export const Info = styled.span`
+	@media (max-width: ${sizes.tablet}) {
+		flex-wrap: wrap;
+	}
+`;
