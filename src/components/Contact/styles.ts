@@ -13,7 +13,7 @@ export const Title = styled.h1`
 	font-size: 3rem;
 	font-weight: 600;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		text-align: center;
 		gap: 1.2rem;
 	}
@@ -33,7 +33,7 @@ export const Description = styled.p`
 
 	color: ${({ theme }) => theme.text};
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		width: 100%;
 	}
 `;
@@ -45,7 +45,7 @@ export const Content = styled.div`
 	gap: 2rem;
 	margin-top: 5rem;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-direction: column;
 	}
 `;
@@ -55,8 +55,12 @@ export const InfoContainer = styled.div`
 	flex-direction: column;
 	gap: 1.5rem;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-direction: row;
+	}
+
+	@media (max-width: ${sizes.cardContactBreakPoint}) {
+		flex-direction: column;
 	}
 `;
 
@@ -71,6 +75,10 @@ export const Form = styled(Unform)`
 export const Row = styled.div`
 	display: flex;
 	gap: 1rem;
+
+	@media (max-width: ${sizes.cardContactBreakPoint}) {
+		flex-direction: column;
+	}
 `;
 
 export const ButtonRow = styled.div`

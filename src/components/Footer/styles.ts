@@ -22,6 +22,7 @@ export const Content = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		gap: 1rem;
+		text-align: center;
 	}
 `;
 
@@ -38,6 +39,10 @@ export const FooterText = styled.span<FooterTextProps>`
 		css`
 			text-align: center;
 		`}
+
+	@media (max-width: ${sizes.tablet}) {
+		width: 100%;
+	}
 `;
 
 export const IconContainer = styled.div`

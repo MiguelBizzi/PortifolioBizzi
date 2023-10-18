@@ -3,6 +3,9 @@ const sizes = {
 	mobileM: "375px",
 	mobileL: "425px",
 	tablet: "768px",
+	cardContactBreakPoint: "688px",
+	contactBreakPoint: "866px",
+	mainBannerBreak: "951px",
 	laptop: "1024px",
 	laptopL: "1440px",
 	desktop: "2560px"

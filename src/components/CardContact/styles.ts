@@ -5,12 +5,18 @@ export const CardContainer = styled.div`
 	display: flex;
 	align-items: center;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		gap: 1rem;
 		flex: 1;
+	}
+
+	@media (max-width: ${sizes.cardContactBreakPoint}) {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
 	}
 `;
 
@@ -40,9 +46,13 @@ export const Details = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		text-align: center;
 		padding-left: 0rem;
+	}
+
+	@media (max-width: ${sizes.cardContactBreakPoint}) {
+		text-align: start;
 	}
 `;
 
@@ -52,7 +62,7 @@ export const Label = styled.span`
 `;
 
 export const Info = styled.span`
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-wrap: wrap;
 	}
 `;

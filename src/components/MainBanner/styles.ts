@@ -4,7 +4,7 @@ import sizes from "../../styles/devicesSizes";
 export const MainContainer = styled.main`
 	margin-top: 8rem;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.mainBannerBreak}) {
 		margin-top: 5rem;
 	}
 `;
@@ -12,7 +12,7 @@ export const MainContainer = styled.main`
 export const BannerContainer = styled.section`
 	display: flex;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.mainBannerBreak}) {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
@@ -22,7 +22,7 @@ export const BannerContainer = styled.section`
 export const InformationContainer = styled.div`
 	width: 50%;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.mainBannerBreak}) {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -49,7 +49,7 @@ export const BannerImageContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.mainBannerBreak}) {
 		display: none;
 	}
 `;
@@ -84,7 +84,7 @@ export const ButtonsContainer = styled.div`
 	gap: 1rem;
 	margin-top: 1rem;
 
-	@media (max-width: ${sizes.tablet}) {
+	@media (max-width: ${sizes.mainBannerBreak}) {
 		justify-content: center;
 	}
 `;
