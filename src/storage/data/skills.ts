@@ -1,0 +1,30 @@
+const SKILLS_DATA = [
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"TypeScript",
+	"Svelte",
+	"React JS",
+	"React Native",
+	"Redux",
+	"Expo",
+	"APNS",
+	"Firebase",
+	"OneSignal",
+	"Push Notifications",
+	"Deep linking",
+	"Git",
+	"Axios",
+	"NodeJS",
+	"API",
+	"Sql",
+	"NoSql",
+	"RealmDB",
+	"SQLServer",
+	"PHP",
+	"Kotlin",
+	"Swift",
+	"Metodologia Ágil"
+];
+
+export default SKILLS_DATA;
