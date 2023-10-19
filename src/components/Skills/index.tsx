@@ -5,7 +5,7 @@ import SKILLS_DATA from "../../storage/data/skills";
 
 const Skills: React.FC = () => {
 	return (
-		<Container>
+		<Container id="/skills">
 			<Title>Habilidades</Title>
 
 			<SkillsContainer>

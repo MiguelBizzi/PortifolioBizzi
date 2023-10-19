@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
 	background: ${({ theme }) => theme.background};
@@ -18,7 +19,7 @@ export const NavContainer = styled.nav`
 	gap: 2rem;
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled(Link)`
 	cursor: pointer;
 	text-align: center;
 
@@ -30,10 +31,10 @@ export const NavItem = styled.a`
 `;
 
 export const ChangeThemeButton = styled.button`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    background-color: transparent;
-    color: ${({ theme }) => theme.text};
+	background-color: transparent;
+	color: ${({ theme }) => theme.text};
 `;

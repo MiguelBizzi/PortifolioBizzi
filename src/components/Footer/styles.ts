@@ -38,11 +38,16 @@ export const FooterText = styled.span<FooterTextProps>`
 		isCenter &&
 		css`
 			text-align: center;
+			cursor: pointer;
 		`}
 
 	@media (max-width: ${sizes.tablet}) {
 		width: 100%;
 	}
+`;
+
+export const FooterTextColored = styled.span`
+	color: ${({ theme }) => theme.primary};
 `;
 
 export const IconContainer = styled.div`

@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Container, Content, IconContainer, Line, FooterText } from "./styles";
+import { Container, Content, IconContainer, Line, FooterText, FooterTextColored } from "./styles";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { animateScroll } from "react-scroll";
 
 const Footer: React.FC = () => {
 	return (
@@ -11,7 +12,9 @@ const Footer: React.FC = () => {
 			<Content>
 				<FooterText>Todos direitos reservados</FooterText>
 
-				<FooterText isCenter>Miguel Bizzi</FooterText>
+				<FooterText onClick={() => animateScroll.scrollToTop({ duration: 500, smooth: true })} isCenter>
+					Miguel <FooterTextColored>Bizzi</FooterTextColored>
+				</FooterText>
 
 				<IconContainer style={{ width: "33%" }}>
 					<a href="https://linkedin.com/in/miguelbizzi" target="_blank">

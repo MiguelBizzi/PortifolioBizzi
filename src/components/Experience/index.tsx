@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
 	const { selectedTheme, theme } = useThemeContext();
 
 	return (
-		<Container>
+		<Container id="/experience">
 			<Title>Experiencias</Title>
 			<VerticalTimeline>
 				{EXPERIENCES_DATA.map((exp, index) => (

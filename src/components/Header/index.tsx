@@ -4,17 +4,46 @@ import { HeaderContainer, HeaderContent, NavContainer, NavItem, ChangeThemeButto
 import { useThemeContext } from "../../hooks/theme";
 
 const Header: React.FC = () => {
-	const { toggleTheme, selectedTheme } = useThemeContext();
+	const { toggleTheme, selectedTheme, theme } = useThemeContext();
 
 	return (
 		<HeaderContainer>
 			<HeaderContent>
 				<NavContainer>
-					<NavItem>Sobre</NavItem>
-					<NavItem>Habilidades</NavItem>
-					<NavItem>Portifólio</NavItem>
-					<NavItem>Currículo</NavItem>
-					<NavItem>Me contate</NavItem>
+					<NavItem
+						to="/portifolio"
+						activeStyle={{ color: theme.primary }}
+						spy
+						smooth
+						offset={50}
+						duration={500}
+					>
+						Portifólio
+					</NavItem>
+					<NavItem
+						to="/experience"
+						activeStyle={{ color: theme.primary }}
+						spy
+						smooth
+						offset={-50}
+						duration={500}
+					>
+						Experiência
+					</NavItem>
+					<NavItem to="/skills" activeStyle={{ color: theme.primary }} spy smooth offset={-50} duration={500}>
+						Habilidades
+					</NavItem>
+
+					<NavItem
+						to="/contact"
+						activeStyle={{ color: theme.primary }}
+						spy
+						smooth
+						offset={-50}
+						duration={500}
+					>
+						Me contate
+					</NavItem>
 
 					<ChangeThemeButton onClick={toggleTheme}>
 						{selectedTheme === "light" ? <FaRegMoon /> : <FiSun />}

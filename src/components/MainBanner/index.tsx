@@ -20,7 +20,7 @@ const MainBanner: React.FC = () => {
 	const theme = useTheme();
 
 	return (
-		<MainContainer>
+		<MainContainer id="/about">
 			<BannerContainer>
 				<InformationContainer>
 					<Title>

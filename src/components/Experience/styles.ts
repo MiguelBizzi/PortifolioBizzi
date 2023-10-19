@@ -11,6 +11,7 @@ export const Container = styled.section`
 export const Title = styled.h1`
 	font-size: 3rem;
 	font-weight: 600;
+	margin-bottom: 3rem;
 
 	@media (max-width: ${sizes.contactBreakPoint}) {
 		text-align: center;

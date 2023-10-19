@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
 	};
 
 	return (
-		<ContactContainer>
+		<ContactContainer id="/contact">
 			<Title>
 				Entre em <TitlePrimary>contato</TitlePrimary> comigo
 			</Title>
