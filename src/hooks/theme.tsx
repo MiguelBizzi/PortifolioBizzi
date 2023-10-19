@@ -12,6 +12,7 @@ interface ThemeStateProps {
 interface ThemeContextData {
 	toggleTheme: () => void;
 	selectedTheme: string;
+	theme: typeof defaultTheme | typeof darkTheme;
 }
 
 type Props = {
@@ -49,7 +50,7 @@ const ThemeProvider: React.FC<Props> = ({ children }) => {
 	}, []);
 
 	return (
-		<ThemeContext.Provider value={{ toggleTheme, selectedTheme: theme.title }}>
+		<ThemeContext.Provider value={{ toggleTheme, selectedTheme: theme.title, theme: theme.theme }}>
 			<ThemeProviderStyled theme={theme.theme}>{children}</ThemeProviderStyled>
 		</ThemeContext.Provider>
 	);

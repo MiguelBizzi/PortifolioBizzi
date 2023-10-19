@@ -26,6 +26,7 @@ const SKILLS_DATA = [
 	"PHP",
 	"Kotlin",
 	"Swift",
+	"Figma",
 	"Metodologia Ágil"
 ];
 
