@@ -15,10 +15,17 @@ import Button from "../../components/Button";
 import { useTheme } from "styled-components";
 import SocialMediaAside from "../../components/SocialMediaAside";
 import Imagem from "../../assets/euemomo.jpg";
+import { scroller } from "react-scroll";
 
 const MainBanner: React.FC = () => {
 	const theme = useTheme();
 
+	const handleGoToContact = () => {
+		scroller.scrollTo("/contact", {
+			duration: 1000,
+			smooth: "easeInOutQuint"
+		});
+	};
 	return (
 		<MainContainer id="/about">
 			<BannerContainer>
@@ -43,7 +50,12 @@ const MainBanner: React.FC = () => {
 						pariatur? Cum facere odio totam!
 					</SelfDescription>
 					<ButtonsContainer>
-						<Button title="Me contate" backgroundColor={theme.primary} color={theme.text_light} />
+						<Button
+							onClick={handleGoToContact}
+							title="Me contate"
+							backgroundColor={theme.primary}
+							color={theme.text_light}
+						/>
 						<Button
 							title="Ver Portifólio"
 							backgroundColor={theme.background}
