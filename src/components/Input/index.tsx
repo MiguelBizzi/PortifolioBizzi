@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useField } from "@unform/core";
 import { StyledInput } from "./styles";
+import { useThemeContext } from "../../hooks/theme";
 
 interface Props {
 	name: string;
@@ -12,6 +13,7 @@ type InputProps = JSX.IntrinsicElements["input"] & Props;
 
 export default function Input({ name, label, placeholder, ...rest }: InputProps) {
 	const inputRef = useRef<HTMLInputElement>(null);
+	const { selectedTheme } = useThemeContext();
 
 	const { fieldName, defaultValue, registerField, error } = useField(name);
 
@@ -36,6 +38,7 @@ export default function Input({ name, label, placeholder, ...rest }: InputProps)
 			{label && <label htmlFor={fieldName}>{label}</label>}
 
 			<StyledInput
+				isThemeDark={selectedTheme === "dark"}
 				id={fieldName}
 				ref={inputRef}
 				defaultValue={defaultValue}

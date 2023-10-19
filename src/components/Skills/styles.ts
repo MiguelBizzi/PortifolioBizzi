@@ -28,10 +28,14 @@ export const SkillsContainer = styled.div`
 	flex-wrap: wrap;
 `;
 
-export const SkillCard = styled.div`
+interface SkillCardProps {
+	isThemeDark: boolean;
+}
+
+export const SkillCard = styled.div<SkillCardProps>`
 	padding: 0.8rem;
 	border-radius: 0.5rem;
-	border: 1px solid ${({ theme }) => theme.secondary};
+	border: 1px solid ${({ theme, isThemeDark }) => (isThemeDark ? theme.text : theme.secondary)};
 `;
 
 export const SkillCardText = styled.span`

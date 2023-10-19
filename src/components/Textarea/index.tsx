@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useField } from "@unform/core";
 import { StyledTextArea } from "./styles";
+import { useThemeContext } from "../../hooks/theme";
 
 interface Props {
 	name: string;
@@ -12,6 +13,7 @@ type TextareaProps = JSX.IntrinsicElements["textarea"] & Props;
 
 export default function Textarea({ name, label, placeholder, ...rest }: TextareaProps) {
 	const textareaInput = useRef<HTMLTextAreaElement>(null);
+	const { selectedTheme } = useThemeContext();
 
 	const { fieldName, defaultValue, registerField, error } = useField(name);
 
@@ -36,6 +38,7 @@ export default function Textarea({ name, label, placeholder, ...rest }: Textarea
 			{label && <label htmlFor={fieldName}>{label}</label>}
 
 			<StyledTextArea
+				isThemeDark={selectedTheme === "dark"}
 				id={fieldName}
 				ref={textareaInput}
 				defaultValue={defaultValue}
