@@ -11,7 +11,7 @@ const Experience: React.FC = () => {
 
 	return (
 		<Container id="/experience">
-			<Title>Experiencias</Title>
+			<Title>Experiências</Title>
 			<VerticalTimeline>
 				{EXPERIENCES_DATA.map((exp, index) => (
 					<VerticalTimelineElement

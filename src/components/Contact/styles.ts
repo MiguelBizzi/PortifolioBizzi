@@ -38,16 +38,27 @@ export const Description = styled.p`
 	}
 `;
 
-export const Content = styled.div`
+export const Form = styled(Unform)`
+	margin-top: 5rem;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+`;
 
+export const Content = styled.div`
+	display: flex;
 	gap: 2rem;
-	margin-top: 5rem;
 
 	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-direction: column;
 	}
+`;
+
+export const InputsContainer = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
 `;
 
 export const InfoContainer = styled.div`
@@ -62,14 +73,6 @@ export const InfoContainer = styled.div`
 	@media (max-width: ${sizes.cardContactBreakPoint}) {
 		flex-direction: column;
 	}
-`;
-
-export const Form = styled(Unform)`
-	display: flex;
-	flex-direction: column;
-
-	gap: 1.2rem;
-	flex: 1;
 `;
 
 export const Row = styled.div`

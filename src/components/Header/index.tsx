@@ -28,7 +28,7 @@ const Header: React.FC = () => {
 						offset={-50}
 						duration={500}
 					>
-						Experiência
+						Experiências
 					</NavItem>
 					<NavItem to="/skills" activeStyle={{ color: theme.primary }} spy smooth offset={-50} duration={500}>
 						Habilidades

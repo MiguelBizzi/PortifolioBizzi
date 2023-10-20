@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import {
 	ContactContainer,
@@ -9,7 +9,8 @@ import {
 	InfoContainer,
 	Form,
 	Row,
-	ButtonRow
+	ButtonRow,
+	InputsContainer
 } from "./styles";
 import CardContact from "../CardContact";
 import { FaPhoneAlt, FaLocationArrow } from "react-icons/fa";
@@ -19,6 +20,7 @@ import Input from "../Input";
 import Button from "../Button";
 import { useTheme } from "styled-components";
 import Textarea from "../Textarea";
+import emailJs from "@emailjs/browser";
 
 const CARD_DATA = [
 	{
@@ -41,14 +43,39 @@ const CARD_DATA = [
 interface FormData {
 	name: string;
 	email: string;
+	message: string;
 }
 
 const Contact: React.FC = () => {
+	const [isSendingForm, setIsSendingForm] = useState<boolean>(false);
+
 	const formRef = useRef<FormHandles>(null);
 	const theme = useTheme();
 
 	const handleSubmit: SubmitHandler<FormData> = (data) => {
-		alert(JSON.stringify(data));
+		const templateParams = {
+			from_name: data.name,
+			email: data.email,
+			message: data.message
+		};
+
+		setIsSendingForm(true);
+
+		emailJs
+			.send("service_rkcu2oc", "template_wmbwl96", templateParams, "Q6nURcDaXGQbNuH-K")
+			.then((response) => {
+				if (response.status === 200) {
+					formRef.current?.reset();
+				} else {
+					throw new Error();
+				}
+			})
+			.catch((err) => {
+				console.log(err);
+			})
+			.finally(() => {
+				setIsSendingForm(false);
+			});
 	};
 
 	return (
@@ -61,34 +88,46 @@ const Contact: React.FC = () => {
 				sit saepe magnam doloribus dolorum suscipit totam quam. Modi, ipsum voluptate? Enim id quaerat eligendi,
 				laudantium totam numquam.
 			</Description>
-			<Content>
-				<InfoContainer>
-					{CARD_DATA.map((item) => (
-						<CardContact key={item.label} label={item.label} info={item.info} icon={item.icon} />
-					))}
-				</InfoContainer>
-				<Form ref={formRef} onSubmit={handleSubmit}>
-					<Row>
-						<Input key={1} name="subject" placeholder="Assunto" style={{ flex: 1 }} />
-						<Input key={2} name="email" placeholder="Email" style={{ flex: 1 }} />
-					</Row>
-					<Textarea
-						name="message"
-						placeholder="Mensagem"
-						style={{
-							flex: 1
-						}}
+			<Form ref={formRef} onSubmit={handleSubmit}>
+				<Content>
+					<InfoContainer>
+						{CARD_DATA.map((item) => (
+							<CardContact key={item.label} label={item.label} info={item.info} icon={item.icon} />
+						))}
+					</InfoContainer>
+					<InputsContainer>
+						<Row>
+							<Input key={1} required name="name" placeholder="Nome:" style={{ flex: 1 }} />
+							<Input
+								key={2}
+								required
+								name="email"
+								type="email"
+								placeholder="Email:"
+								style={{ flex: 1 }}
+							/>
+						</Row>
+						<Textarea
+							required
+							name="message"
+							placeholder="Mensagem:"
+							style={{
+								flex: 1
+							}}
+						/>
+					</InputsContainer>
+				</Content>
+				<ButtonRow>
+					<Button
+						backgroundColor={theme.primary}
+						color={theme.text_light}
+						title="Enviar mensagem"
+						disabled={isSendingForm}
+						loading={isSendingForm}
+						type="submit"
 					/>
-				</Form>
-			</Content>
-			<ButtonRow>
-				<Button
-					backgroundColor={theme.primary}
-					color={theme.text_light}
-					title="Enviar mensagem"
-					onClick={() => formRef.current?.submitForm()}
-				/>
-			</ButtonRow>
+				</ButtonRow>
+			</Form>
 		</ContactContainer>
 	);
 };

@@ -1,10 +1,12 @@
 import { ReactNode } from "react";
 import { ButtonContainer } from "./styles";
+import LoadingSpinner from "../LoadingSpinner";
 
 interface Props {
 	title: string;
 	backgroundColor: string;
 	color: string;
+	loading?: boolean;
 	icon?: ReactNode;
 	onClick?: () => void;
 	border?: string;
@@ -12,11 +14,11 @@ interface Props {
 
 type ButtonProps = JSX.IntrinsicElements["button"] & Props;
 
-const Button: React.FC<ButtonProps> = ({ title, backgroundColor, color, onClick, icon, border, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({ title, backgroundColor, color, loading, onClick, icon, border, ...rest }) => {
 	return (
 		<ButtonContainer border={border} backgroundcolor={backgroundColor} color={color} onClick={onClick} {...rest}>
-			{title}
-			{icon ?? <></>}
+			{loading ? <LoadingSpinner /> : title}
+			{loading ? icon ?? <></> : <></>}
 		</ButtonContainer>
 	);
 };

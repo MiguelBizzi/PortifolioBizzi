@@ -36,7 +36,7 @@ const MainBanner: React.FC = () => {
 							Desenvolvedor
 							<Typewriter
 								options={{
-									strings: ["Mobile", "Front-end", "Back-end"],
+									strings: ["Mobile", "Freelancer", "Front-end", "Back-end"],
 									autoStart: true,
 									loop: true,
 									cursorClassName: "teste"
