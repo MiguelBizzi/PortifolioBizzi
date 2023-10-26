@@ -54,15 +54,35 @@ export const Details = styled.div`
 	@media (max-width: ${sizes.cardContactBreakPoint}) {
 		text-align: start;
 	}
+
+	@media (max-width: ${sizes.mobileM}) {
+		gap: 0.4rem;
+	}
 `;
 
 export const Label = styled.span`
 	color: ${({ theme }) => theme.text};
 	opacity: 0.4;
+
+	@media (max-width: ${sizes.mobileM}) {
+		font-size: 0.9rem;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 0.85rem;
+	}
 `;
 
 export const Info = styled.span`
 	@media (max-width: ${sizes.contactBreakPoint}) {
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: ${sizes.mobileM}) {
+		font-size: 0.9rem;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 0.85rem;
 	}
 `;

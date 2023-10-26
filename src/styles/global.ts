@@ -35,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: ${sizes.tablet}) {
             padding: 2.5rem 2rem 0rem;
         }
+
+        @media (max-width: ${sizes.mobileS}) {
+            padding: 2rem 1rem 0rem;
+        }
         
     }
 

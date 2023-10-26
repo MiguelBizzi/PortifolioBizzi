@@ -30,14 +30,22 @@ export const InformationContainer = styled.div`
 	}
 `;
 
-export const Title = styled.h1`
+const BaseTitle = styled.h1`
 	font-size: 3rem;
 	font-weight: 600;
+
+	@media (max-width: ${sizes.mobileL}) {
+		font-size: 2.5rem;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 2rem;
+	}
 `;
 
-export const TypeWriterTitle = styled.h1`
-	font-size: 3rem;
-	font-weight: 600;
+export const Title = styled(BaseTitle)``;
+
+export const TypeWriterTitle = styled(BaseTitle)`
 	color: ${({ theme }) => theme.primary};
 `;
 
@@ -86,5 +94,9 @@ export const ButtonsContainer = styled.div`
 
 	@media (max-width: ${sizes.mainBannerBreak}) {
 		justify-content: center;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		gap: 0.3rem;
 	}
 `;

@@ -9,20 +9,28 @@ export const ContactContainer = styled.section`
 	align-items: center;
 `;
 
-export const Title = styled.h1`
+const BaseTitle = styled.h1`
 	font-size: 3rem;
 	font-weight: 600;
 
+	@media (max-width: ${sizes.mobileL}) {
+		font-size: 2.5rem;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 2rem;
+	}
+`;
+
+export const Title = styled(BaseTitle)`
 	@media (max-width: ${sizes.contactBreakPoint}) {
 		text-align: center;
 		gap: 1.2rem;
 	}
 `;
 
-export const TitlePrimary = styled.h1`
+export const TitlePrimary = styled(BaseTitle)`
 	display: inline;
-	font-size: 3rem;
-	font-weight: 600;
 	color: ${({ theme }) => theme.primary};
 `;
 

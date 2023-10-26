@@ -1,4 +1,5 @@
 import { css, styled } from "styled-components";
+import sizes from "../../styles/devicesSizes";
 
 interface ButtonProps {
 	backgroundcolor: string;
@@ -22,4 +23,8 @@ export const ButtonContainer = styled.button<ButtonProps>`
 		`}
 
 	border-radius: 0.5rem;
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 0.9rem;
+	}
 `;

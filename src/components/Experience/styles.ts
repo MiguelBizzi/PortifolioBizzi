@@ -17,4 +17,12 @@ export const Title = styled.h1`
 		text-align: center;
 		gap: 1.2rem;
 	}
+
+	@media (max-width: ${sizes.mobileL}) {
+		font-size: 2.5rem;
+	}
+
+	@media (max-width: ${sizes.mobileS}) {
+		font-size: 2rem;
+	}
 `;
