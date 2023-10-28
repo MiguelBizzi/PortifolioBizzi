@@ -9,9 +9,10 @@ interface Props extends MotionProps {
 	width?: "fit-content" | "100%";
 	delay?: number;
 	hasSlide?: boolean;
+	isFromTop?: boolean;
 }
 
-const Reveal: React.FC<Props> = ({ children, width = "fit-content", delay = 0.25, hasSlide, ...rest }) => {
+const Reveal: React.FC<Props> = ({ children, width = "fit-content", delay = 0.25, hasSlide, isFromTop, ...rest }) => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
@@ -29,7 +30,7 @@ const Reveal: React.FC<Props> = ({ children, width = "fit-content", delay = 0.25
 		<div ref={ref} style={{ position: "relative", width }}>
 			<motion.div
 				variants={{
-					hidden: { opacity: 0, y: 75 },
+					hidden: { opacity: 0, y: isFromTop ? -20 : 75 },
 					visible: { opacity: 1, y: 1 }
 				}}
 				initial="hidden"
