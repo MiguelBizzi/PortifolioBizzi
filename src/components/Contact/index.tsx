@@ -21,6 +21,7 @@ import Button from "../Button";
 import { useTheme } from "styled-components";
 import Textarea from "../Textarea";
 import emailJs from "@emailjs/browser";
+import Reveal from "../../utils/Reveal";
 
 const CARD_DATA = [
 	{
@@ -80,13 +81,19 @@ const Contact: React.FC = () => {
 
 	return (
 		<ContactContainer id="/contact">
-			<Title>
-				Entre em <TitlePrimary>contato</TitlePrimary> comigo
-			</Title>
+			<Reveal hasSlide>
+				<Title>
+					Entre em <TitlePrimary>contato</TitlePrimary> comigo
+				</Title>
+			</Reveal>
 			<Description>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente exercitationem laboriosam
-				sit saepe magnam doloribus dolorum suscipit totam quam. Modi, ipsum voluptate? Enim id quaerat eligendi,
-				laudantium totam numquam.
+				<Reveal delay={0.4}>
+					<>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente exercitationem
+						laboriosam sit saepe magnam doloribus dolorum suscipit totam quam. Modi, ipsum voluptate? Enim
+						id quaerat eligendi, laudantium totam numquam.
+					</>
+				</Reveal>
 			</Description>
 			<Form ref={formRef} onSubmit={handleSubmit}>
 				<Content>

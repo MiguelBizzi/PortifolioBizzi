@@ -4,6 +4,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { Container, Title } from "./styles";
 import EXPERIENCES_DATA from "../../storage/data/experiences";
 import { useThemeContext } from "../../hooks/theme";
+import Reveal from "../../utils/Reveal";
 // import { Container } from './styles';
 
 const Experience: React.FC = () => {
@@ -11,7 +12,9 @@ const Experience: React.FC = () => {
 
 	return (
 		<Container id="/experience">
-			<Title>Experiências</Title>
+			<Reveal delay={0.85}>
+				<Title>Experiências</Title>
+			</Reveal>
 			<VerticalTimeline>
 				{EXPERIENCES_DATA.map((exp, index) => (
 					<VerticalTimelineElement

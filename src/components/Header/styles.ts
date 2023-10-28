@@ -52,6 +52,8 @@ export const NavContainer = styled.nav<NavContainerProps>`
 		box-shadow: -3px 10px 15px -12px ${({ isDarkMode }) => (isDarkMode ? "rgba(255, 255, 255, 0.45)" : "rgba(0, 0, 0, 0.75)")};
 		-webkit-box-shadow: -3px 10px 15px -12px ${({ isDarkMode }) => (isDarkMode ? "rgba(255, 255, 255, 0.45)" : "rgba(0, 0, 0, 0.75)")};
 		-moz-box-shadow: -3px 10px 15px -12px ${({ isDarkMode }) => (isDarkMode ? "rgba(255, 255, 255, 0.45)" : "rgba(0, 0, 0, 0.75)")};
+
+		z-index: 9999;
 	}
 `;
 
