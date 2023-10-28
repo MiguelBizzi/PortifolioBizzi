@@ -7,6 +7,10 @@ export const MainContainer = styled.main`
 	@media (max-width: ${sizes.mainBannerBreak}) {
 		margin-top: 5rem;
 	}
+
+	@media (max-width: ${sizes.headerBreakPoint}) {
+		margin-top: 3rem;
+	}
 `;
 
 export const BannerContainer = styled.section`

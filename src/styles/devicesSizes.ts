@@ -2,6 +2,7 @@ const sizes = {
 	mobileS: "320px",
 	mobileM: "375px",
 	mobileL: "425px",
+	headerBreakPoint: "602px",
 	tablet: "768px",
 	cardContactBreakPoint: "688px",
 	contactBreakPoint: "866px",
