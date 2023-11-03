@@ -89,9 +89,9 @@ const Contact: React.FC = () => {
 			<Description>
 				<Reveal delay={0.4}>
 					<>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente exercitationem
-						laboriosam sit saepe magnam doloribus dolorum suscipit totam quam. Modi, ipsum voluptate? Enim
-						id quaerat eligendi, laudantium totam numquam.
+						Estou à disposição para discutir oportunidades de colaboração, responder a consultas e explorar
+						projetos inovadores. Preencha o formulário abaixo, e entrarei em contato rapidamente para
+						discutir como posso contribuir para o sucesso do seu projeto.
 					</>
 				</Reveal>
 			</Description>
