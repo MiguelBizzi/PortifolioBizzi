@@ -83,7 +83,7 @@ export const Image = styled.img`
 	width: 22rem;
 	height: 22rem;
 	border: 5px solid ${({ theme }) => theme.primary};
-	animation: ${floatAnimation} 5s infinite ease-in;
+	/* animation: ${floatAnimation} 5s infinite ease-in; */
 `;
 
 export const SelfDescription = styled.p`

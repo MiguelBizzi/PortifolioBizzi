@@ -17,6 +17,7 @@ import SocialMediaAside from "../../components/SocialMediaAside";
 import Imagem from "../../assets/euemomo.jpg";
 import { scroller } from "react-scroll";
 import Reveal from "../../utils/Reveal";
+import { motion } from "framer-motion";
 
 const MainBanner: React.FC = () => {
 	const theme = useTheme();
@@ -26,6 +27,10 @@ const MainBanner: React.FC = () => {
 			duration: 500,
 			smooth: true
 		});
+	};
+
+	const handleSeeCurriculum = () => {
+		window.open("../src/assets/Curriculo.pdf", "_blank");
 	};
 
 	return (
@@ -68,19 +73,22 @@ const MainBanner: React.FC = () => {
 						</Reveal>
 						<Reveal delay={0.75}>
 							<Button
-								title="Ver Portifólio"
+								title="Ver Currículo"
 								backgroundColor={theme.background}
 								color={theme.primary}
 								border={theme.primary}
-								// icon={<a>aa</a>}
+								onClick={handleSeeCurriculum}
 							/>
 						</Reveal>
 					</ButtonsContainer>
 				</InformationContainer>
 				<BannerImageContainer>
-					{/* <Reveal delay={0.45}> */}
-					<Image src={Imagem} alt="Imagem do banner" />
-					{/* </Reveal> */}
+					<motion.div
+						animate={{ y: [0, 10, 0] }} // Define a animação de flutuação no eixo Y
+						transition={{ duration: 3, repeat: Infinity, ease: "linear" }} // Configura a duração e repetição infinita
+					>
+						<Image src={Imagem} alt="Imagem do banner" />
+					</motion.div>
 
 					<SocialMediaAside />
 				</BannerImageContainer>
