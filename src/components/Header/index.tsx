@@ -26,7 +26,11 @@ const Header: React.FC = () => {
 					{isHeaderOpen ? <CloseIcon /> : <HamburguerIcon />}
 				</HamburguerButton>
 				<NavContainer isDarkMode={selectedTheme === "dark"} isShown={isHeaderOpen}>
-					<Reveal isFromTop>
+					<Reveal
+						width={!isHeaderOpen ? "fit-content" : "100%"}
+						isFromTop
+						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
+					>
 						<NavItem
 							to="/portifolio"
 							activeStyle={{ color: theme.primary }}
@@ -39,7 +43,12 @@ const Header: React.FC = () => {
 							Portifólio
 						</NavItem>
 					</Reveal>
-					<Reveal delay={0.35} isFromTop>
+					<Reveal
+						width={!isHeaderOpen ? "fit-content" : "100%"}
+						delay={0.35}
+						isFromTop
+						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
+					>
 						<NavItem
 							to="/experience"
 							activeStyle={{ color: theme.primary }}
@@ -52,7 +61,12 @@ const Header: React.FC = () => {
 							Experiências
 						</NavItem>
 					</Reveal>
-					<Reveal delay={0.45} isFromTop>
+					<Reveal
+						width={!isHeaderOpen ? "fit-content" : "100%"}
+						delay={0.45}
+						isFromTop
+						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
+					>
 						<NavItem
 							to="/skills"
 							activeStyle={{ color: theme.primary }}
@@ -65,7 +79,12 @@ const Header: React.FC = () => {
 							Habilidades
 						</NavItem>
 					</Reveal>
-					<Reveal delay={0.55} isFromTop>
+					<Reveal
+						width={!isHeaderOpen ? "fit-content" : "100%"}
+						delay={0.55}
+						isFromTop
+						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
+					>
 						<NavItem
 							to="/contact"
 							activeStyle={{ color: theme.primary }}
@@ -78,7 +97,22 @@ const Header: React.FC = () => {
 							Me contate
 						</NavItem>
 					</Reveal>
-					<Reveal delay={0.65} isFromTop>
+					<Reveal
+						width={!isHeaderOpen ? "fit-content" : "100%"}
+						delay={0.65}
+						isFromTop
+						style={
+							!isHeaderOpen
+								? {}
+								: {
+										width: "100%",
+										textAlign: "center",
+										display: "flex",
+										alignItems: "center",
+										justifyContent: "center"
+								  }
+						}
+					>
 						<ChangeThemeButton onClick={toggleTheme}>
 							{selectedTheme === "light" ? <FaRegMoon /> : <FiSun />}
 						</ChangeThemeButton>

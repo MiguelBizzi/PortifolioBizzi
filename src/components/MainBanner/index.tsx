@@ -23,15 +23,16 @@ const MainBanner: React.FC = () => {
 
 	const handleGoToContact = () => {
 		scroller.scrollTo("/contact", {
-			duration: 1000,
-			smooth: "easeInOutQuint"
+			duration: 500,
+			smooth: true
 		});
 	};
+
 	return (
 		<MainContainer id="/about">
 			<BannerContainer>
 				<InformationContainer>
-					<Reveal>
+					<Reveal width="100%">
 						<Title>
 							Olá, eu sou <br />
 							<TypeWriterTitle>

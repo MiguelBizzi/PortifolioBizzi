@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
 							boxShadow: "none",
 							textAlign: "left",
 							padding: "1.3rem 2rem",
-							background: selectedTheme === "light" ? "#fff" : "#161018"
+							background: selectedTheme === "light" ? "#fff" : "#0C0E13"
 						}}
 						contentArrowStyle={{
 							borderRight: `0.4rem solid ${theme.secondary}`
@@ -32,7 +32,7 @@ const Experience: React.FC = () => {
 						date={exp.date}
 						icon={exp.icon}
 						iconStyle={{
-							background: selectedTheme === "light" ? "#fff" : "#161018",
+							background: selectedTheme === "light" ? "#fff" : "#0C0E13",
 							fontSize: "1.5rem"
 						}}
 					>
