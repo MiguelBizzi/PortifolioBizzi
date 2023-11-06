@@ -14,7 +14,7 @@ import {
 import Button from "../../components/Button";
 import { useTheme } from "styled-components";
 import SocialMediaAside from "../../components/SocialMediaAside";
-import Imagem from "../../assets/euemomo.jpg";
+import Imagem from "../../assets/eu.jpg";
 import { scroller } from "react-scroll";
 import Reveal from "../../utils/Reveal";
 import { motion } from "framer-motion";
@@ -37,9 +37,13 @@ const MainBanner: React.FC = () => {
 		<MainContainer id="/about">
 			<BannerContainer>
 				<InformationContainer>
-					<Reveal width="100%">
-						<Title>
-							Olá, eu sou <br />
+					<Title>
+						<Reveal width="100%">
+							<>
+								Olá, eu sou <br />
+							</>
+						</Reveal>
+						<Reveal width="100%" delay={0.4}>
 							<TypeWriterTitle>
 								Desenvolvedor
 								<Typewriter
@@ -51,14 +55,15 @@ const MainBanner: React.FC = () => {
 									}}
 								/>
 							</TypeWriterTitle>
-						</Title>
-					</Reveal>
+						</Reveal>
+					</Title>
 
 					<Reveal delay={0.55}>
 						<SelfDescription>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit officiis. Reprehenderit
-							accusantium modi obcaecati. Dolores eveniet officia numquam saepe repellat quas sunt fugiat
-							modi pariatur? Cum facere odio totam!
+							Me chamo Miguel Bizzi, tenho trabalhado com desenvolvimento desde de 2022 em diversas
+							aplicações de grande escala para clientes, utilizando metodologias ágeis. Sempre preocupado
+							com a experiência do usuário, atender e realizar todas as expectativas e tarefas dadas da
+							melhor maneira possível.
 						</SelfDescription>
 					</Reveal>
 

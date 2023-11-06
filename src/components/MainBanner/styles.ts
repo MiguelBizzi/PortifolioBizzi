@@ -89,6 +89,8 @@ export const Image = styled.img`
 export const SelfDescription = styled.p`
 	margin-top: 1rem;
 	color: ${({ theme }) => theme.text};
+
+	line-height: 1.5rem;
 `;
 
 export const ButtonsContainer = styled.div`
