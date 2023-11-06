@@ -13,8 +13,6 @@ import {
 	InputsContainer
 } from "./styles";
 import CardContact from "../CardContact";
-import { FaPhoneAlt, FaLocationArrow } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { SubmitHandler, FormHandles } from "@unform/core";
 import Input from "../Input";
 import Button from "../Button";
@@ -22,24 +20,7 @@ import { useTheme } from "styled-components";
 import Textarea from "../Textarea";
 import emailJs from "@emailjs/browser";
 import Reveal from "../../utils/Reveal";
-
-const CARD_DATA = [
-	{
-		label: "Me ligue",
-		info: "(31) 99572-1022",
-		icon: <FaPhoneAlt />
-	},
-	{
-		label: "E-mail",
-		info: "migueloliveirabizzi@gmail.com",
-		icon: <HiOutlineMail />
-	},
-	{
-		label: "Endereço",
-		info: "Belo Horizonte - MG",
-		icon: <FaLocationArrow />
-	}
-];
+import CARD_DATA from "../../storage/data/contactCards";
 
 interface FormData {
 	name: string;
