@@ -18,6 +18,7 @@ import Imagem from "../../assets/eu.jpg";
 import { scroller } from "react-scroll";
 import Reveal from "../../utils/Reveal";
 import { motion } from "framer-motion";
+import ExampleDoc from "../../assets/Curriculo.pdf";
 
 const MainBanner: React.FC = () => {
 	const theme = useTheme();
@@ -27,10 +28,6 @@ const MainBanner: React.FC = () => {
 			duration: 500,
 			smooth: true
 		});
-	};
-
-	const handleSeeCurriculum = () => {
-		window.open("../src/assets/Curriculo.pdf", "_blank");
 	};
 
 	return (
@@ -77,13 +74,14 @@ const MainBanner: React.FC = () => {
 							/>
 						</Reveal>
 						<Reveal delay={0.75}>
-							<Button
-								title="Ver Currículo"
-								backgroundColor={theme.background}
-								color={theme.primary}
-								border={theme.primary}
-								onClick={handleSeeCurriculum}
-							/>
+							<a href={ExampleDoc} download="Curriculo Miguel" target="_blank">
+								<Button
+									title="Ver Currículo"
+									backgroundColor={theme.background}
+									color={theme.primary}
+									border={theme.primary}
+								/>
+							</a>
 						</Reveal>
 					</ButtonsContainer>
 				</InformationContainer>
