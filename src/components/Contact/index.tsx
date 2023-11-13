@@ -21,6 +21,8 @@ import Textarea from "../Textarea";
 import emailJs from "@emailjs/browser";
 import Reveal from "../../utils/Reveal";
 import CARD_DATA from "../../storage/data/contactCards";
+import { toast } from "react-toastify";
+import { useThemeContext } from "../../hooks/theme";
 
 interface FormData {
 	name: string;
@@ -32,6 +34,7 @@ const Contact: React.FC = () => {
 	const [isSendingForm, setIsSendingForm] = useState<boolean>(false);
 
 	const formRef = useRef<FormHandles>(null);
+	const { selectedTheme } = useThemeContext();
 	const theme = useTheme();
 
 	const handleSubmit: SubmitHandler<FormData> = (data) => {
@@ -48,11 +51,15 @@ const Contact: React.FC = () => {
 			.then((response) => {
 				if (response.status === 200) {
 					formRef.current?.reset();
+					toast.success("Email enviado com sucesso!", {
+						theme: selectedTheme as "light" | "dark"
+					});
 				} else {
 					throw new Error();
 				}
 			})
 			.catch((err) => {
+				toast.success("Ocorreu um error ao enviar o email! Tente novamente mais tarde!");
 				console.log(err);
 			})
 			.finally(() => {
