@@ -7,12 +7,13 @@ import {
 	NavItem,
 	ChangeThemeButton,
 	HamburguerButton,
-	HamburguerIcon,
-	CloseIcon
+	HamburguerIcon
 } from "./styles";
 import { useThemeContext } from "../../hooks/theme";
 import { useState } from "react";
 import Reveal from "../../utils/Reveal";
+import Sidebar from "../Sidebar";
+import { AnimatePresence } from "framer-motion";
 
 const Header: React.FC = () => {
 	const [isHeaderOpen, setIsHeaderOpen] = useState<boolean>(false);
@@ -23,14 +24,10 @@ const Header: React.FC = () => {
 		<HeaderContainer>
 			<HeaderContent>
 				<HamburguerButton onClick={() => setIsHeaderOpen((prev) => !prev)}>
-					{isHeaderOpen ? <CloseIcon /> : <HamburguerIcon />}
+					<HamburguerIcon />
 				</HamburguerButton>
-				<NavContainer isDarkMode={selectedTheme === "dark"} isShown={isHeaderOpen}>
-					<Reveal
-						width={!isHeaderOpen ? "fit-content" : "100%"}
-						isFromTop
-						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
-					>
+				<NavContainer isDarkMode={selectedTheme === "dark"}>
+					<Reveal isFromTop>
 						<NavItem
 							to="/portifolio"
 							activeStyle={{ color: theme.primary }}
@@ -38,17 +35,11 @@ const Header: React.FC = () => {
 							smooth
 							offset={50}
 							duration={500}
-							onClick={() => setIsHeaderOpen(false)}
 						>
 							Portifólio
 						</NavItem>
 					</Reveal>
-					<Reveal
-						width={!isHeaderOpen ? "fit-content" : "100%"}
-						delay={0.35}
-						isFromTop
-						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
-					>
+					<Reveal delay={0.35} isFromTop>
 						<NavItem
 							to="/experience"
 							activeStyle={{ color: theme.primary }}
@@ -56,17 +47,11 @@ const Header: React.FC = () => {
 							smooth
 							offset={-50}
 							duration={500}
-							onClick={() => setIsHeaderOpen(false)}
 						>
 							Experiências
 						</NavItem>
 					</Reveal>
-					<Reveal
-						width={!isHeaderOpen ? "fit-content" : "100%"}
-						delay={0.45}
-						isFromTop
-						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
-					>
+					<Reveal delay={0.45} isFromTop>
 						<NavItem
 							to="/skills"
 							activeStyle={{ color: theme.primary }}
@@ -74,17 +59,11 @@ const Header: React.FC = () => {
 							smooth
 							offset={-50}
 							duration={500}
-							onClick={() => setIsHeaderOpen(false)}
 						>
 							Habilidades
 						</NavItem>
 					</Reveal>
-					<Reveal
-						width={!isHeaderOpen ? "fit-content" : "100%"}
-						delay={0.55}
-						isFromTop
-						style={{ textAlign: !isHeaderOpen ? "start" : "center" }}
-					>
+					<Reveal delay={0.55} isFromTop>
 						<NavItem
 							to="/contact"
 							activeStyle={{ color: theme.primary }}
@@ -92,33 +71,20 @@ const Header: React.FC = () => {
 							smooth
 							offset={-50}
 							duration={500}
-							onClick={() => setIsHeaderOpen(false)}
 						>
 							Me contate
 						</NavItem>
 					</Reveal>
-					<Reveal
-						width={!isHeaderOpen ? "fit-content" : "100%"}
-						delay={0.65}
-						isFromTop
-						style={
-							!isHeaderOpen
-								? {}
-								: {
-										width: "100%",
-										textAlign: "center",
-										display: "flex",
-										alignItems: "center",
-										justifyContent: "center"
-								  }
-						}
-					>
+					<Reveal delay={0.65} isFromTop>
 						<ChangeThemeButton onClick={toggleTheme}>
 							{selectedTheme === "light" ? <FaRegMoon /> : <FiSun />}
 						</ChangeThemeButton>
 					</Reveal>
 				</NavContainer>
 			</HeaderContent>
+			<AnimatePresence initial={false}>
+				{isHeaderOpen && <Sidebar handleClose={() => setIsHeaderOpen((prev) => !prev)} />}
+			</AnimatePresence>
 		</HeaderContainer>
 	);
 };
