@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container, Title, ProjectsContainer, Description } from "./styles";
 import Reveal from "../../utils/Reveal";
 import PortifolioCard from "../PortifolioCard";
-import { Variants, motion, useAnimation, useInView } from "framer-motion";
+import { Variants, delay, motion, useAnimation, useInView } from "framer-motion";
 import PROJECTS_DATA from "../../storage/data/projects";
 import { FilterOptions, IProject } from "../../dtos/IProject";
 import Filter from "./Filter";
@@ -14,8 +14,12 @@ const Portifolio: React.FC = () => {
 	// const [selectedId, setSelectedId] = useState<string | null>(null);
 	const [selectedFilterOptions, setSelectedFilterOptions] = useState<FilterOptions>("all");
 
+	const isMobile = window.innerWidth <= 425;
+	const delayForMobile = isMobile ? 1500 : 0;
+
 	const ref = useRef(null);
-	const isInView = useInView(ref, { once: false, margin: "200px 0px" });
+	const inViewParams = isMobile ? { once: false } : { once: false, margin: "200px 0px" };
+	const isInView = useInView(ref, inViewParams);
 	const mainControls = useAnimation();
 
 	const itemVariants: Variants = {
@@ -42,10 +46,14 @@ const Portifolio: React.FC = () => {
 	};
 
 	useEffect(() => {
-		if (isInView) {
-			mainControls.start("visible");
-		}
-	}, [isInView]);
+		const timeoutId = setTimeout(() => {
+			if (isInView || isMobile) {
+				mainControls.start("visible");
+			}
+		}, delayForMobile);
+
+		return () => clearTimeout(timeoutId);
+	}, [isInView, isMobile]);
 
 	return (
 		<Container id="/portifolio">
