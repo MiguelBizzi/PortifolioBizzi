@@ -52,9 +52,9 @@ const Portifolio: React.FC = () => {
 			<Reveal width="100%" delay={0.8}>
 				<Title>Portifólio</Title>
 			</Reveal>
-			<Reveal width="100%" delay={0.9} style={{ textAlign: "center" }}>
+			{/* <Reveal width="100%" delay={0.9} style={{ textAlign: "center" }}>
 				<Description>Toque no cartão para abrir os detalhes do projeto!</Description>
-			</Reveal>
+			</Reveal> */}
 
 			<Filter handleFilter={handleFilterProjects} selectedFilterOption={selectedFilterOptions} />
 
