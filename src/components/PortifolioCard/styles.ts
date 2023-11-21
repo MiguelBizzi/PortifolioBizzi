@@ -3,7 +3,7 @@ import { VscPreview } from "react-icons/vsc";
 import { FaGithub } from "react-icons/fa";
 
 interface ContainerProps {
-	isDeveloping: boolean;
+    isDeveloping: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -14,14 +14,14 @@ export const Container = styled.div<ContainerProps>`
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 
 	${({ isDeveloping }) =>
-		isDeveloping
-			? css`
+        isDeveloping
+            ? css`
 					.hover-content {
 						display: flex;
 						transition: 0.5s;
 					}
 			  `
-			: css`
+            : css`
 					&:hover .hover-content,
 					&:hover .border-link {
 						display: flex;
@@ -34,12 +34,28 @@ export const ImageContainer = styled.div`
 	position: relative;
 	width: 100%;
 	height: 15rem;
+
+    @media (min-width: 1654px) {
+        height: 23rem;
+    }
+
+    @media (min-width: 2496px) {
+        height: 30rem;
+    }
 `;
 
 export const Image = styled.img`
 	object-fit: cover;
 	width: 100%;
 	height: 15rem;
+
+    @media (min-width: 1654px) {
+        height: 23rem;
+    }
+
+    @media (min-width: 2496px) {
+        height: 30rem;
+    }
 
 	border-top-right-radius: 0.5rem;
 	border-top-left-radius: 0.5rem;
@@ -57,6 +73,14 @@ export const HoverContent = styled.div`
 
 	width: 100%;
 	height: 15rem;
+
+    @media (min-width: 1654px) {
+        height: 23rem;
+    }
+
+    @media (min-width: 2496px) {
+        height: 30rem;
+    }
 
 	border-top-right-radius: 0.5rem;
 	border-top-left-radius: 0.5rem;
