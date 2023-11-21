@@ -15,11 +15,19 @@ const EXPERIENCES_DATA = [
 	},
 	{
 		title: "Desenvolvedor Mobile Junior",
-		location: "Contagem, MG",
+		location: "Aglets Soluções - Contagem, MG",
 		description:
-			"Trabalhei no desenvolvimento em um aplicativo de força de vendas B2B complexo e um aplicativo de e-commerce B2B inteligente com recursos exclusivos para distribuidora, indústria e atacado, utilizando React-Native, Styled Components, Expo, Redux, TypeScript e outras técnologias. Além de também trabalhar no desenvolvimento de um portal ERP WEB",
+			"Trabalhei no desenvolvimento em um aplicativo de força de vendas B2B complexo e um aplicativo de e-commerce B2B inteligente com recursos exclusivos para distribuidora, indústria e atacado. Além de também trabalhar no desenvolvimento de um portal ERP WEB e na manutenção e implementação de features em uma API e em um E-commerce B2B Web",
 		icon: React.createElement(CgWorkAlt),
-		date: "2022 - Presente"
+		date: "2022 - 2023"
+	},
+	{
+		title: "Desenvolvedor Front End Pleno",
+		location: "Faculdade Realiza - Remoto",
+		description:
+			"Trabalhando no desenvolvimento e manutenção da landing page, painel administrativo e portal do aluno. Utilizando SvelteKit, TailwindCSS e GoLang como tecnologias ",
+		icon: React.createElement(CgWorkAlt),
+		date: "2023 - presente"
 	},
 	{
 		title: "Curso RocketSeat",
