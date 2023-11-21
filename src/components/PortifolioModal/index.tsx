@@ -1,7 +1,5 @@
 import React from "react";
-import { BackdropBackground, ModalButton } from "./styles";
-
-// import { Container } from './styles';
+import { ModalButton } from "./styles";
 
 interface Props {
 	layoutId: string;
