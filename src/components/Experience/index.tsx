@@ -12,7 +12,7 @@ const Experience: React.FC = () => {
 
 	return (
 		<Container id="/experience">
-			<Reveal delay={0.85}>
+			<Reveal delay={0.25} hasSlide>
 				<Title>Experiências</Title>
 			</Reveal>
 			<VerticalTimeline>
