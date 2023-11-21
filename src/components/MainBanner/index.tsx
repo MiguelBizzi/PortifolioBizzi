@@ -45,7 +45,7 @@ const MainBanner: React.FC = () => {
 								Desenvolvedor
 								<Typewriter
 									options={{
-										strings: ["Mobile", "Freelancer", "Front-end", "Back-end"],
+										strings: ["Mobile", "Front-end", "Back-end"],
 										autoStart: true,
 										loop: true,
 										cursorClassName: "teste"
@@ -87,8 +87,8 @@ const MainBanner: React.FC = () => {
 				</InformationContainer>
 				<BannerImageContainer>
 					<motion.div
-						animate={{ y: [0, 10, 0] }} // Define a animação de flutuação no eixo Y
-						transition={{ duration: 3, repeat: Infinity, ease: "linear" }} // Configura a duração e repetição infinita
+						animate={{ y: [0, 10, 0] }}
+						transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
 					>
 						<Image src={Imagem} alt="Imagem do banner" />
 					</motion.div>
