@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { Container, Title, ProjectsContainer, Description } from "./styles";
+import { Container, Title, ProjectsContainer } from "./styles";
 import Reveal from "../../utils/Reveal";
 import PortifolioCard from "../PortifolioCard";
-import { Variants, delay, motion, useAnimation, useInView } from "framer-motion";
+import { Variants, motion, useAnimation, useInView } from "framer-motion";
 import PROJECTS_DATA from "../../storage/data/projects";
 import { FilterOptions, IProject } from "../../dtos/IProject";
 import Filter from "./Filter";
