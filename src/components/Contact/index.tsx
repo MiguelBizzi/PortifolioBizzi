@@ -46,25 +46,25 @@ const Contact: React.FC = () => {
 
 		setIsSendingForm(true);
 
-		// emailJs
-		// 	.send("service_rkcu2oc", "template_wmbwl96", templateParams, "Q6nURcDaXGQbNuH-K")
-		// 	.then((response) => {
-		// 		if (response.status === 200) {
-		// 			formRef.current?.reset();
-		// 			toast.success("Email enviado com sucesso!", {
-		// 				theme: selectedTheme as "light" | "dark"
-		// 			});
-		// 		} else {
-		// 			throw new Error();
-		// 		}
-		// 	})
-		// 	.catch((err) => {
-		// 		toast.success("Ocorreu um error ao enviar o email! Tente novamente mais tarde!");
-		// 		console.log(err);
-		// 	})
-		// 	.finally(() => {
-		// 		setIsSendingForm(false);
-		// 	});
+		emailJs
+			.send("service_rkcu2oc", "template_wmbwl96", templateParams, "Q6nURcDaXGQbNuH-K")
+			.then((response) => {
+				if (response.status === 200) {
+					formRef.current?.reset();
+					toast.success("Email enviado com sucesso!", {
+						theme: selectedTheme as "light" | "dark"
+					});
+				} else {
+					throw new Error();
+				}
+			})
+			.catch((err) => {
+				toast.success("Ocorreu um error ao enviar o email! Tente novamente mais tarde!");
+				console.log(err);
+			})
+			.finally(() => {
+				setIsSendingForm(false);
+			});
 	};
 
 	return (
