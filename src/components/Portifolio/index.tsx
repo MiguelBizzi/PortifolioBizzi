@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { Container, Title, ProjectsContainer } from "./styles";
+import { Container, Title, ProjectsContainer, Description } from "./styles";
 import Reveal from "../../utils/Reveal";
 import PortifolioCard from "../PortifolioCard";
 import { Variants, motion, useAnimation, useInView } from "framer-motion";
@@ -60,9 +60,11 @@ const Portifolio: React.FC = () => {
 			<Reveal width="100%" delay={0.8}>
 				<Title>Portifólio</Title>
 			</Reveal>
-			{/* <Reveal width="100%" delay={0.9} style={{ textAlign: "center" }}>
-				<Description>Toque no cartão para abrir os detalhes do projeto!</Description>
-			</Reveal> */}
+			<Reveal width="100%" delay={0.9} style={{ textAlign: "center" }}>
+				<Description>
+					Passe o mouse pelo card e veja o site do projeto hospedado ou repositório no github!
+				</Description>
+			</Reveal>
 
 			<Filter handleFilter={handleFilterProjects} selectedFilterOption={selectedFilterOptions} />
 
