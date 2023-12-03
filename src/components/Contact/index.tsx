@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
 		setIsSendingForm(true);
 
 		emailJs
-			.send("service_rkcu2oc", "template_wmbwl96", templateParams, "Q6nURcDaXGQbNuH-K")
+			.send("service_q956f2i", "template_wmbwl96", templateParams, "Q6nURcDaXGQbNuH-K")
 			.then((response) => {
 				if (response.status === 200) {
 					formRef.current?.reset();
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
 				}
 			})
 			.catch((err) => {
-				toast.success("Ocorreu um error ao enviar o email! Tente novamente mais tarde!");
+				toast.error("Ocorreu um error ao enviar o email! Tente novamente mais tarde!");
 				console.log(err);
 			})
 			.finally(() => {
