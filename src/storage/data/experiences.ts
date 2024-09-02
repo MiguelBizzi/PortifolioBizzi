@@ -22,7 +22,7 @@ const EXPERIENCES_DATA = [
 		date: "2022 - 2023"
 	},
 	{
-		title: "Desenvolvedor Front End Pleno",
+		title: "Engenheiro de Software Front End Pleno",
 		location: "Faculdade Realiza - Remoto",
 		description:
 			"Trabalhando no desenvolvimento e manutenção da landing page, painel administrativo e portal do aluno. Utilizando SvelteKit, TailwindCSS e GoLang como tecnologias ",

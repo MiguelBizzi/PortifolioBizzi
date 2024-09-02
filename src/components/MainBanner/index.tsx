@@ -42,10 +42,10 @@ const MainBanner: React.FC = () => {
 						</Reveal>
 						<Reveal width="100%" delay={0.4}>
 							<TypeWriterTitle>
-								Desenvolvedor
+								Engenheiro de software
 								<Typewriter
 									options={{
-										strings: ["Mobile", "Front-end", "Back-end"],
+										strings: ["Mobile", "Front-end"],
 										autoStart: true,
 										loop: true,
 										cursorClassName: "teste"
