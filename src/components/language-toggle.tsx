@@ -23,10 +23,28 @@ export function LanguageToggle() {
           <Globe className="h-[1.2rem] w-[1.2rem]" />
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="z-50">
-        <DropdownMenuItem onClick={() => handleToggleLanguage('pt')}>🇧🇷 Português</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleToggleLanguage('en')}>🇺🇸 English</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleToggleLanguage('ge')}>🇩🇪 Deutsch</DropdownMenuItem>
+      <DropdownMenuContent
+        align="end"
+        className="z-50 bg-white bg-opacity-80 backdrop-blur-sm dark:bg-white/20"
+      >
+        <DropdownMenuItem
+          className="dark:hover:bg-white/20"
+          onClick={() => handleToggleLanguage('pt')}
+        >
+          🇧🇷 Português
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          className="dark:hover:bg-white/20"
+          onClick={() => handleToggleLanguage('en')}
+        >
+          🇺🇸 English
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          className="dark:hover:bg-white/20"
+          onClick={() => handleToggleLanguage('ge')}
+        >
+          🇩🇪 Deutsch
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
