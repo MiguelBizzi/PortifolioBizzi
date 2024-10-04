@@ -7,8 +7,7 @@ import { useEffect } from 'react'
 
 export default function ProjectsSection() {
   const { ref, inView } = useInView({
-    initialInView: false,
-    threshold: 0.75,
+    threshold: 0.5,
   })
   const { setActiveSection, timeOfLastClick } = useActiveSection()
 
