@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import Header from '@/components/header'
+import ScrollToTopButton from '@/components/scroll-to-top-button'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -24,6 +25,8 @@ export default function RootLayout({
           <Header />
 
           {children}
+
+          <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>
