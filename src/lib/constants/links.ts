@@ -8,6 +8,10 @@ export const links = [
     slug: '#projects',
   },
   {
+    name: 'Testimonials',
+    slug: '#testimonials',
+  },
+  {
     name: 'Skills',
     slug: '#skills',
   },
