@@ -6,7 +6,7 @@ import HeroOrbitList from './hero-orbit-list'
 
 export default function HeroSection() {
   return (
-    <div className="relative z-0 h-screen py-32 md:py-48 lg:py-60">
+    <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60">
       <div className="hero-ring size-[620px]"></div>
       <div className="hero-ring size-[820px]"></div>
       <div className="hero-ring size-[1020px]"></div>

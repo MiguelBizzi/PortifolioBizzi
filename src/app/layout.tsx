@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={cn('antialiased', montserrat.className)}>
+      <body className={cn('max-w-screen overflow-x-hidden antialiased', montserrat.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
 
