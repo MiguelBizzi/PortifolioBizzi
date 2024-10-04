@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 
 export default function ProjectCard() {
   return (
-    <div className="relative flex flex-col-reverse overflow-hidden rounded-lg border p-6 shadow-lg transition-transform sm:flex-row sm:p-8">
+    <div className="group relative flex flex-col-reverse overflow-hidden rounded-lg border p-6 shadow-lg transition-transform hover:bg-gray-50 hover:dark:bg-white/5 lg:flex-row lg:p-8 lg:even:flex-row-reverse">
       <div className="flex-1">
         <h1 className="text-xl font-bold">Nome do proj</h1>
         <p className="mt-1 dark:text-white/60">
@@ -23,18 +23,20 @@ export default function ProjectCard() {
           <Badge>Prisma</Badge>
         </div>
 
-        <Button className="mt-4" size="sm" variant="outline">
-          View Project <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+        <div className="flex justify-end lg:justify-start">
+          <Button className="mt-4" size="sm" variant="outline">
+            View Project <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
       </div>
 
-      <div className="mb-4 flex-1 sm:mb-0">
+      <div className="mb-4 flex-1 lg:mb-0">
         <Image
           src={projectImage}
           alt="Project"
           width={500}
           height={400}
-          className="-right-36 top-12 rounded-lg transition-transform sm:absolute sm:hover:rotate-6 sm:hover:scale-105 lg:-right-14"
+          className="top-12 rounded-lg transition-all group-odd:-right-36 group-even:-left-36 max-lg:w-full lg:absolute lg:group-odd:-right-24 group-even:lg:-left-28 lg:group-hover:scale-105 lg:group-odd:group-hover:-rotate-3 lg:group-even:group-hover:rotate-3"
         />
       </div>
     </div>
