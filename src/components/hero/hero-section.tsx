@@ -1,18 +1,24 @@
+'use client'
+
 import memojiImage from '@/assets/memoji.png'
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { ArrowDown } from 'lucide-react'
-import HeroOrbitList from './hero-orbit-list'
+import { BackgroundBeams } from '../ui/background-beams'
+import { useSectionInView } from '@/hooks/section-in-view'
 
 export default function HeroSection() {
+  const { ref } = useSectionInView('Home', true)
+
   return (
-    <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60">
-      <div className="hero-ring size-[620px]"></div>
+    <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60" ref={ref}>
+      {/* <div className="hero-ring size-[620px]"></div>
       <div className="hero-ring size-[820px]"></div>
       <div className="hero-ring size-[1020px]"></div>
-      <div className="hero-ring size-[1220px]"></div>
+      <div className="hero-ring size-[1220px]"></div> */}
 
-      <HeroOrbitList />
+      {/* <HeroOrbitList /> */}
+      <BackgroundBeams className="-z-10" />
 
       <div className="flex flex-col items-center">
         <Image src={memojiImage} alt="Memoji" className="-mb-2 size-[100px]" />
@@ -24,7 +30,7 @@ export default function HeroSection() {
 
         <div className="mx-auto max-w-lg">
           <h1 className="mt-8 text-center text-3xl font-bold tracking-wide md:text-4xl">
-            Hello, I'm Miguel Bizzi
+            Hello, I&apos;m Miguel Bizzi
           </h1>
           <p className="mt-4 text-center text-gray-600 dark:text-white/60 md:text-lg">
             A fullstack software engineer based in Brazil. I specialize in building high-quality
