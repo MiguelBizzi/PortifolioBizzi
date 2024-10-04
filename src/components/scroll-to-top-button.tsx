@@ -24,7 +24,7 @@ export default function ScrollToTopButton() {
     })
   }
 
-  window.addEventListener('scroll', toggleVisible)
+  if (typeof window !== 'undefined') window.addEventListener('scroll', toggleVisible)
 
   if (!visible) return
 

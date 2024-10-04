@@ -6,9 +6,17 @@ import { Button } from '../ui/button'
 import { ArrowDown } from 'lucide-react'
 import { BackgroundBeams } from '../ui/background-beams'
 import { useSectionInView } from '@/hooks/section-in-view'
+import { useActiveSection } from '@/hooks/active-section-provider'
+import ScrollToNextSectionButton from './scroll-to-next-section-button'
 
 export default function HeroSection() {
   const { ref } = useSectionInView('Home', true)
+  const { setActiveSection, setTimeOfLastClick } = useActiveSection()
+
+  function handleGoToProjects() {
+    setActiveSection('Projects')
+    setTimeOfLastClick(Date.now())
+  }
 
   return (
     <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60" ref={ref}>
@@ -39,14 +47,18 @@ export default function HeroSection() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <Button variant="outline">
-            Veja meu trabalho <ArrowDown className="ml-2 h-4 w-4" />
-          </Button>
+          <a href="#projects">
+            <Button variant="outline" onClick={handleGoToProjects}>
+              Veja meu trabalho <ArrowDown className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
           <Button>
             <span className="mr-2">👋</span> Entre em contato
           </Button>
         </div>
       </div>
+
+      <ScrollToNextSectionButton onClick={handleGoToProjects} />
     </div>
   )
 }

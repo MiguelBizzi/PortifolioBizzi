@@ -3,7 +3,6 @@
 import { links } from '@/lib/constants/links'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 import { LanguageToggle } from './language-toggle'
 import { cn } from '@/lib/utils'
