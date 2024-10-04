@@ -7,9 +7,10 @@ import { useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 import { LanguageToggle } from './language-toggle'
 import { cn } from '@/lib/utils'
+import { useActiveSection } from '@/hooks/active-section-provider'
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState<string>('Home')
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSection()
 
   return (
     <header className="relative z-40">
@@ -29,7 +30,10 @@ export default function Header() {
                     'text-gray-950 dark:hover:text-gray-950': activeSection === link.name,
                   }
                 )}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name)
+                  setTimeOfLastClick(Date.now())
+                }}
               >
                 <Link href={link.slug}>{link.name}</Link>
                 {activeSection === link.name && (

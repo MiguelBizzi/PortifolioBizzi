@@ -5,6 +5,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import Header from '@/components/header'
 import ScrollToTopButton from '@/components/scroll-to-top-button'
+import { ActiveSectionContextProvider } from '@/hooks/active-section-provider'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -22,9 +23,11 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={cn('max-w-screen overflow-x-hidden antialiased', montserrat.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Header />
+          <ActiveSectionContextProvider>
+            <Header />
 
-          {children}
+            {children}
+          </ActiveSectionContextProvider>
 
           <ScrollToTopButton />
         </ThemeProvider>

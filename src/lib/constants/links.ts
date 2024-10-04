@@ -4,10 +4,6 @@ export const links = [
     slug: '#home',
   },
   {
-    name: 'About',
-    slug: '#about',
-  },
-  {
     name: 'Projects',
     slug: '#projects',
   },
@@ -19,4 +15,4 @@ export const links = [
     name: 'Contact',
     slug: '#contact',
   },
-]
+] as const
