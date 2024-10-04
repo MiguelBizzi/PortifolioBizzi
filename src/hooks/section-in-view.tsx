@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 export function useSectionInView(
   section: SectionName,
   initialInView: boolean = false,
-  threshold: number = 0.75
+  threshold: number = 0.5
 ) {
   const { ref, inView } = useInView({
     initialInView,
@@ -17,7 +17,7 @@ export function useSectionInView(
 
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('Home')
+      setActiveSection(section)
     }
   }, [inView, setActiveSection, timeOfLastClick, section, initialInView])
 

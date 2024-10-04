@@ -21,7 +21,7 @@ export default function TestimonialsSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-16 max-w-screen-xl space-y-8 sm:mt-20">
+      <div className="mx-auto mt-16 max-w-screen-2xl space-y-8 sm:mt-20">
         <div className="[mask-image:linear-gradient(to_right, transparent, black_10%)] -my-4 flex overflow-x-clip py-4">
           <div className="animate-infinite-slider group flex flex-none gap-8 [animation-duration:30s] hover:[animation-play-state:paused]">
             {[
