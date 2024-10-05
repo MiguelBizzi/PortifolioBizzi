@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ArrowDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Button } from '../ui/button'
