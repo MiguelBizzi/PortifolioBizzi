@@ -21,7 +21,7 @@ export default function SkillsSection() {
   const { ref } = useSectionInView('Skills')
 
   return (
-    <div id="skills" className="mb-32 px-4" ref={ref}>
+    <div id="skills" className="my-32 px-4" ref={ref}>
       <div className="mx-auto max-w-xl text-center">
         <div className="flex justify-center">
           <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">

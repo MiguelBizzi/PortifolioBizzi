@@ -8,6 +8,8 @@ import { BackgroundBeams } from '../ui/background-beams'
 import { useSectionInView } from '@/hooks/section-in-view'
 import { useActiveSection } from '@/hooks/active-section-provider'
 import ScrollToNextSectionButton from './scroll-to-next-section-button'
+import { annotate, annotationGroup } from 'rough-notation'
+import { useEffect } from 'react'
 
 export default function HeroSection() {
   const { ref } = useSectionInView('Home', true)
@@ -16,7 +18,26 @@ export default function HeroSection() {
   function handleGoToProjects() {
     setActiveSection('Projects')
     setTimeOfLastClick(Date.now())
+
+    const element = document.getElementById('projects')
+    element?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    const a2 = annotate(document.querySelector('.e2') as HTMLElement, {
+      type: 'underline',
+      color: '#2563eb',
+      strokeWidth: 1,
+    })
+    const a3 = annotate(document.querySelector('.e3') as HTMLElement, {
+      type: 'underline',
+      color: '#2563eb',
+      strokeWidth: 1,
+    })
+
+    const ag = annotationGroup([a2, a3])
+    ag.show()
+  }, [])
 
   return (
     <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60" ref={ref}>
@@ -41,17 +62,16 @@ export default function HeroSection() {
             Hello, I&apos;m Miguel Bizzi
           </h1>
           <p className="mt-4 text-center text-gray-600 dark:text-white/60 md:text-lg">
-            A fullstack software engineer based in Brazil. I specialize in building high-quality
-            mobile applications and websites.
+            A fullstack software engineer based in Brazil. I specialize in building high-quality{' '}
+            <span className="e2">mobile</span> applications and <span className="e3">websites</span>
+            .
           </p>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <a href="#projects">
-            <Button variant="outline" onClick={handleGoToProjects}>
-              Veja meu trabalho <ArrowDown className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+          <Button variant="outline" onClick={handleGoToProjects}>
+            Veja meu trabalho <ArrowDown className="ml-2 h-4 w-4" />
+          </Button>
           <Button>
             <span className="mr-2">👋</span> Entre em contato
           </Button>

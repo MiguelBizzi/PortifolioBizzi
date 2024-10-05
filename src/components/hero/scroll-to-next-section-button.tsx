@@ -27,16 +27,15 @@ export default function ScrollToNextSectionButton({ onClick }: Props) {
   if (!visible) return
 
   return (
-    <motion.a
-      href="#projects"
+    <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: 'spring', stiffness: 300 }}
-      className="absolute inset-0 z-50 mb-16 flex items-end justify-center"
+      className="absolute inset-0 z-50 mb-4 flex items-end justify-center"
     >
       <Button onClick={onClick} className="h-auto rounded-full p-4" variant="outline">
         <ArrowDown className="h-4 w-4" />
       </Button>
-    </motion.a>
+    </motion.div>
   )
 }
