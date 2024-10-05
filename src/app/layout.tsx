@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import Header from '@/components/header'
 import ScrollToTopButton from '@/components/scroll-to-top-button'
 import { ActiveSectionContextProvider } from '@/hooks/active-section-provider'
+import Footer from '@/components/footer'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -27,6 +28,8 @@ export default function RootLayout({
             <Header />
 
             {children}
+
+            <Footer />
           </ActiveSectionContextProvider>
 
           <ScrollToTopButton />
