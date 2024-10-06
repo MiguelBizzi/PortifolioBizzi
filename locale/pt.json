@@ -12,5 +12,25 @@
     "description": "Um engenheiro de software fullstack baseado no Brasil. Eu me especializo em construir aplicativos móveis e sites de alta qualidade.",
     "see_work": "Veja meu trabalho",
     "contact": "Contate-me"
+  },
+  "Projects": {
+    "real_world": "Resultados do mundo real",
+    "title": "Projetos em destaque",
+    "description": "Aqui estão alguns projetos que eu trabalhei recentemente. Ajudando meus clientes a alcançar seus objetivos.",
+    "see_project_button": "Ver projeto"
+  },
+  "ProjectsItems": {
+    "project_1": {
+      "title": "Projeto 1",
+      "description": "Descrição do projeto 1"
+    },
+    "project_2": {
+      "title": "Projeto 2",
+      "description": "Descrição do projeto 2"
+    },
+    "project_3": {
+      "title": "Projeto 3",
+      "description": "Descrição do projeto 3"
+    }
   }
 }

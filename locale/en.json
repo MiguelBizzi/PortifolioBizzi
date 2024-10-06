@@ -12,5 +12,25 @@
     "description": "A fullstack software engineer based in Brazil. I specialize in building high-quality mobile apps and websites.",
     "see_work": "See my work",
     "contact": "Contact me"
+  },
+  "Projects": {
+    "real_world": "Real World Results",
+    "title": "Featured Projects",
+    "description": "Here are some projects I've worked on recently. Helping my clients achieve their goals.",
+    "see_project_button": "See project"
+  },
+  "ProjectsItems": {
+    "project_1": {
+      "title": "Project 1",
+      "description": "Project 1 description"
+    },
+    "project_2": {
+      "title": "Project 2",
+      "description": "Project 2 description"
+    },
+    "project_3": {
+      "title": "Project 3",
+      "description": "Project 3 description"
+    }
   }
 }

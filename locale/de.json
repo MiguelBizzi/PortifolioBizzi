@@ -12,5 +12,25 @@
     "description": "Ein Fullstack-Software-Ingenieur mit Sitz in Brasilien. Ich habe mich auf die Entwicklung hochwertiger mobiler Anwendungen und Websites spezialisiert.",
     "see_work": "Sehen Sie meine Arbeit",
     "contact": "Kontaktieren Sie mich"
+  },
+  "Projects": {
+    "real_world": "Ergebnisse aus der realen Welt",
+    "title": "Ausgewählte Projekte",
+    "description": "Hier sind einige Projekte, an denen ich kürzlich gearbeitet habe. Ich helfe meinen Kunden, ihre Ziele zu erreichen.",
+    "see_project_button": "Projekt ansehen"
+  },
+  "ProjectsItems": {
+    "project_1": {
+      "title": "Projekt 1",
+      "description": "Projekt 1 Beschreibung"
+    },
+    "project_2": {
+      "title": "Projekt 2",
+      "description": "Projekt 2 Beschreibung"
+    },
+    "project_3": {
+      "title": "Projekt 3",
+      "description": "Projekt 3 Beschreibung"
+    }
   }
 }
