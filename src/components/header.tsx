@@ -1,23 +1,21 @@
 'use client'
 
-import { links } from '@/lib/constants/links'
+// import { links } from '@/lib/constants/links'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ThemeToggle } from './theme-toggle'
 import { LanguageToggle } from './language-toggle'
 import { cn } from '@/lib/utils'
 import { useActiveSection } from '@/hooks/active-section-provider'
+import { useLinks } from '@/hooks/use-links'
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSection()
+  const links = useLinks()
 
   return (
     <header className="relative z-40">
-      <motion.div
-        className="fixed left-1/2 top-0 w-full -translate-x-1/2 rounded-none border border-black/5 bg-white bg-opacity-80 shadow-lg backdrop-blur-sm dark:bg-white/20 sm:top-6 sm:w-auto sm:rounded-full sm:p-2"
-        // initial={{ y: -100, x: '-50%', opacity: 0 }}
-        // animate={{ y: 0, x: '-50%', opacity: 1 }}
-      >
+      <motion.div className="fixed left-1/2 top-0 w-full -translate-x-1/2 rounded-none border border-black/5 bg-white bg-opacity-80 shadow-lg backdrop-blur-sm dark:bg-white/20 sm:top-6 sm:w-auto sm:rounded-full sm:p-2">
         <nav className="py-2 sm:py-0">
           <ul className="flex flex-1 flex-wrap items-center justify-center gap-y-1 text-sm font-medium text-gray-500 dark:text-gray-200 sm:flex-nowrap sm:gap-5">
             {links.map((link, index) => (

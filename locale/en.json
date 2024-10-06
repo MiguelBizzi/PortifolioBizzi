@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "home": "Home",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Home": {
+    "available": "Available for new projects",
+    "hello": "Hello, I'm Miguel Bizzi",
+    "description": "A fullstack software engineer based in Brazil. I specialize in building high-quality mobile apps and websites.",
+    "see_work": "See my work",
+    "contact": "Contact me"
+  }
+}

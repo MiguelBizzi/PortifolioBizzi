@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "home": "Home",
+    "projects": "Projekte",
+    "testimonials": "Referenzen",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "available": "Verfügbar für neue Projekte",
+    "hello": "Hallo, ich bin Miguel Bizzi",
+    "description": "Ein Fullstack-Software-Ingenieur mit Sitz in Brasilien. Ich habe mich auf die Entwicklung hochwertiger mobiler Anwendungen und Websites spezialisiert.",
+    "see_work": "Sehen Sie meine Arbeit",
+    "contact": "Kontaktieren Sie mich"
+  }
+}
