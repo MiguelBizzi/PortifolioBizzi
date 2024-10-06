@@ -16,23 +16,80 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '../ui/textarea'
-import { ArrowRight } from 'lucide-react'
-
-const formSchema = z.object({
-  name: z.string(),
-  email: z.string().email(),
-  message: z.string(),
-})
+import { ArrowRight, LoaderCircle } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import type { SectionName } from '@/hooks/active-section-provider'
+import emailJs from '@emailjs/browser'
+import { Fragment, useState } from 'react'
+import { env } from '@/env'
+import { toast } from 'sonner'
 
 export default function ContactSection() {
-  const { ref } = useSectionInView('Contact')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const tHeader = useTranslations('Header')
+  const t = useTranslations('Contact')
+
+  const { ref } = useSectionInView(tHeader('contact') as SectionName)
+
+  const formSchema = z.object({
+    name: z.string({
+      required_error: t('form.name_required'),
+    }),
+    email: z
+      .string({
+        required_error: t('form.email_required'),
+      })
+      .email(t('form.email_invalid')),
+    message: z.string({
+      required_error: t('form.message_required'),
+    }),
+  })
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    const templateParams = {
+      from_name: values.name,
+      email: values.email,
+      message: values.message,
+    }
+
+    setIsSubmitting(true)
+
+    emailJs
+      .send(
+        env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+        env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+        templateParams,
+        env.NEXT_PUBLIC_EMAIL_KEY
+      )
+      .then((response) => {
+        console.log(response)
+
+        if (response.status !== 200) throw new Error()
+
+        form.reset({
+          name: '',
+          email: '',
+          message: '',
+        })
+        toast.success(t('form.success_message'), {
+          description: t('form.success_description'),
+        })
+      })
+      .catch((err) => {
+        toast.error(t('form.error_message'), {
+          description: t('form.error_description'),
+        })
+
+        console.log(err)
+      })
+      .finally(() => {
+        setIsSubmitting(false)
+      })
   }
 
   return (
@@ -40,14 +97,11 @@ export default function ContactSection() {
       <div className="mx-auto max-w-xl text-center">
         <div className="flex justify-center">
           <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">
-            Let&apos;s work together
+            {t('work_together')}
           </p>
         </div>
-        <h2 className="mt-4 text-3xl font-bold">Contact</h2>
-        <p className="mt-2 dark:text-white/60">
-          I&apos;m currently available for work. If you have a project in mind, I&apos;d love to
-          hear from you. Email: <span className="underline">migueloliveirabizzi@gmail.com</span>
-        </p>
+        <h2 className="mt-4 text-3xl font-bold">{t('title')}</h2>
+        <p className="mt-2 dark:text-white/60">{t('description')}</p>
       </div>
 
       <div className="mx-auto mt-14 max-w-2xl space-y-8">
@@ -59,7 +113,7 @@ export default function ContactSection() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>{t('form.name')}</FormLabel>
                     <FormControl>
                       <Input placeholder="John doe" {...field} />
                     </FormControl>
@@ -72,9 +126,9 @@ export default function ContactSection() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel>{t('form.email')}</FormLabel>
                     <FormControl>
-                      <Input placeholder="m@example.com" {...field} />
+                      <Input placeholder={t('form.email_placeholder')} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -87,10 +141,10 @@ export default function ContactSection() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel>{t('form.message')}</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Write your message here..."
+                      placeholder={t('form.message_placeholder')}
                       className="min-h-[80px] resize-none"
                       {...field}
                     />
@@ -101,8 +155,14 @@ export default function ContactSection() {
             />
 
             <div className="flex justify-end">
-              <Button>
-                Submit <ArrowRight className="ml-2 h-4 w-4" />
+              <Button disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <LoaderCircle className="h-4 w-4 animate-spin" />
+                ) : (
+                  <Fragment>
+                    {t('form.send_button')} <ArrowRight className="ml-2 h-4 w-4" />
+                  </Fragment>
+                )}
               </Button>
             </div>
           </form>

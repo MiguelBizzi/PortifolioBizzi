@@ -32,5 +32,53 @@
       "title": "Project 3",
       "description": "Project 3 description"
     }
+  },
+  "Testimonials": {
+    "what_clients_say": "What clients say",
+    "title": "Testimonials",
+    "description": "Here's what my clients have to say about working with me."
+  },
+  "TestimonialsItems": {
+    "testimonial_1": {
+      "name": "Client 1",
+      "field": "Developer",
+      "text": "Testimonial 1"
+    },
+    "testimonial_2": {
+      "name": "Client 2",
+      "field": "Developer",
+      "text": "Testimonial 2"
+    },
+    "testimonial_3": {
+      "name": "Client 3",
+      "field": "Developer",
+      "text": "Testimonial 3"
+    }
+  },
+  "Skills": {
+    "stack": "Technology Stack",
+    "title": "Skills",
+    "description": "Here are some of the technologies I work with."
+  },
+  "Contact": {
+    "work_together": "Let's work together",
+    "title": "Contact",
+    "description": "I'm currently available for work. If you have a project in mind, I'd love to hear from you. Email: migueloliveirabizzi@gmail.com",
+    "form": {
+      "name": "Name",
+      "name_required": "Name is required",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "email_placeholder": "m@example.com",
+      "message": "Message",
+      "message_required": "Message is required",
+      "message_placeholder": "Write your message here...",
+      "send_button": "Submit",
+      "success_message": "Your message has been sent successfully!",
+      "success_description": "I'll get back to you as soon as possible.",
+      "error_message": "An error occurred while sending your message. Please try again.",
+      "error_description": "If the problem persists, please contact me directly at migueloliveirabizzi@gmail.com"
+    }
   }
 }

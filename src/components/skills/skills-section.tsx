@@ -1,8 +1,10 @@
 'use client'
 
+import type { SectionName } from '@/hooks/active-section-provider'
 import { useSectionInView } from '@/hooks/section-in-view'
 import { skills } from '@/lib/constants/skills'
 import { motion, type Variants } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const fadeInAnimationVariants: Variants = {
   initial: {
@@ -18,18 +20,21 @@ const fadeInAnimationVariants: Variants = {
   }),
 }
 export default function SkillsSection() {
-  const { ref } = useSectionInView('Skills')
+  const tHeader = useTranslations('Header')
+  const t = useTranslations('Skills')
+
+  const { ref } = useSectionInView(tHeader('skills') as SectionName)
 
   return (
     <div id="skills" className="my-32 px-4" ref={ref}>
       <div className="mx-auto max-w-xl text-center">
         <div className="flex justify-center">
           <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">
-            Technology Stack
+            {t('stack')}
           </p>
         </div>
-        <h2 className="mt-4 text-3xl font-bold">Skills</h2>
-        <p className="mt-2 dark:text-white/60">Here are some of the technologies I work with.</p>
+        <h2 className="mt-4 text-3xl font-bold">{t('title')}</h2>
+        <p className="mt-2 dark:text-white/60">{t('description')}</p>
       </div>
 
       <div className="mx-auto mt-14 max-w-4xl space-y-8">

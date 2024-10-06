@@ -32,5 +32,53 @@
       "title": "Projekt 3",
       "description": "Projekt 3 Beschreibung"
     }
+  },
+  "Testimonials": {
+    "what_clients_say": "Was Kunden sagen",
+    "title": "Referenzen",
+    "description": "Hier ist, was meine Kunden über die Zusammenarbeit mit mir zu sagen haben."
+  },
+  "TestimonialsItems": {
+    "testimonial_1": {
+      "name": "Kunde 1",
+      "field": "Entwickler",
+      "text": "Referenz 1"
+    },
+    "testimonial_2": {
+      "name": "Kunde 2",
+      "field": "Entwickler",
+      "text": "Referenz 2"
+    },
+    "testimonial_3": {
+      "name": "Kunde 3",
+      "field": "Entwickler",
+      "text": "Referenz 3"
+    }
+  },
+  "Skills": {
+    "stack": "Technologie-Stack",
+    "title": "Fähigkeiten",
+    "description": "Hier sind einige der Technologien, mit denen ich arbeite."
+  },
+  "Contact": {
+    "work_together": "Lassen Sie uns zusammenarbeiten",
+    "title": "Kontakt",
+    "description": "Ich stehe derzeit für Projekte zur Verfügung. Wenn Sie ein Projekt im Sinn haben, würde ich mich freuen, von Ihnen zu hören. E-Mail: migueloliveirabizzi@gmail.com",
+    "form": {
+      "name": "Name",
+      "name_required": "Name ist erforderlich",
+      "email": "E-Mail",
+      "email_required": "E-Mail ist erforderlich",
+      "email_invalid": "Ungültige E-Mail-Adresse",
+      "email_placeholder": "m@beispiel.com",
+      "message": "Nachricht",
+      "message_required": "Nachricht ist erforderlich",
+      "message_placeholder": "Schreiben Sie hier Ihre Nachricht...",
+      "send_button": "Absenden",
+      "success_message": "Ihre Nachricht wurde erfolgreich gesendet!",
+      "success_description": "Ich werde mich so schnell wie möglich bei Ihnen melden.",
+      "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "error_description": "Wenn das Problem weiterhin besteht, wenden Sie sich bitte direkt an mich unter migueloliveirabizzi@gmail.com"
+    }
   }
 }

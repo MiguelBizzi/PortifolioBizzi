@@ -10,6 +10,7 @@ import Footer from '@/components/footer'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import type { Languages } from '@/lib/types/languages'
+import { Toaster } from '@/components/ui/sonner'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -44,6 +45,8 @@ export default async function RootLayout({
 
               <Footer />
             </ActiveSectionContextProvider>
+
+            <Toaster />
 
             <ScrollToTopButton />
           </ThemeProvider>
