@@ -6,47 +6,35 @@ import { Button } from '../ui/button'
 import { ArrowDown } from 'lucide-react'
 import { BackgroundBeams } from '../ui/background-beams'
 import { useSectionInView } from '@/hooks/section-in-view'
-import { useActiveSection } from '@/hooks/active-section-provider'
+import { useActiveSection, type SectionName } from '@/hooks/active-section-provider'
 import ScrollToNextSectionButton from './scroll-to-next-section-button'
-import { annotate, annotationGroup } from 'rough-notation'
-import { useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 
 export default function HeroSection() {
-  const { ref } = useSectionInView('Home', true)
+  const t = useTranslations('Home')
+  const tHeader = useTranslations('Header')
+
+  const { ref } = useSectionInView(tHeader('home') as SectionName, true)
   const { setActiveSection, setTimeOfLastClick } = useActiveSection()
 
   function handleGoToProjects() {
-    setActiveSection('Projects')
+    setActiveSection(tHeader('projects') as SectionName)
     setTimeOfLastClick(Date.now())
 
     const element = document.getElementById('projects')
     element?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  useEffect(() => {
-    const a2 = annotate(document.querySelector('.e2') as HTMLElement, {
-      type: 'underline',
-      color: '#2563eb',
-      strokeWidth: 1,
-    })
-    const a3 = annotate(document.querySelector('.e3') as HTMLElement, {
-      type: 'underline',
-      color: '#2563eb',
-      strokeWidth: 1,
-    })
+  function handleGoToContact() {
+    setActiveSection(tHeader('contact') as SectionName)
+    setTimeOfLastClick(Date.now())
 
-    const ag = annotationGroup([a2, a3])
-    ag.show()
-  }, [])
+    const element = document.getElementById('contact')
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60" ref={ref}>
-      {/* <div className="hero-ring size-[620px]"></div>
-      <div className="hero-ring size-[820px]"></div>
-      <div className="hero-ring size-[1020px]"></div>
-      <div className="hero-ring size-[1220px]"></div> */}
-
-      {/* <HeroOrbitList /> */}
       <BackgroundBeams className="-z-10" />
 
       <div className="flex flex-col items-center">
@@ -54,26 +42,24 @@ export default function HeroSection() {
 
         <div className="inline-flex items-center gap-4 rounded-lg border bg-secondary px-4 py-1.5 dark:border-gray-800 dark:bg-gray-950">
           <div className="size-2.5 rounded-full bg-green-500" />
-          <div className="text-sm font-medium">Available for new projects</div>
+          <div className="text-sm font-medium">{t('available')}</div>
         </div>
 
         <div className="mx-auto max-w-lg">
           <h1 className="mt-8 text-center text-3xl font-bold tracking-wide md:text-4xl">
-            Hello, I&apos;m Miguel Bizzi
+            {t('hello')}
           </h1>
           <p className="mt-4 text-center text-gray-600 dark:text-white/60 md:text-lg">
-            A fullstack software engineer based in Brazil. I specialize in building high-quality{' '}
-            <span className="e2">mobile</span> applications and <span className="e3">websites</span>
-            .
+            {t('description')}
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
+        <div className="z-[999] mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
           <Button variant="outline" onClick={handleGoToProjects}>
-            Veja meu trabalho <ArrowDown className="ml-2 h-4 w-4" />
+            {t('see_work')} <ArrowDown className="ml-2 h-4 w-4" />
           </Button>
-          <Button>
-            <span className="mr-2">👋</span> Entre em contato
+          <Button onClick={handleGoToContact}>
+            <span className="mr-2">👋</span> {t('contact')}
           </Button>
         </div>
       </div>
