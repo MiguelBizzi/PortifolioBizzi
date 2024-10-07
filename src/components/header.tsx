@@ -19,7 +19,8 @@ export default function Header() {
         <nav className="py-2 sm:py-0">
           <ul className="flex flex-1 flex-wrap items-center justify-center gap-y-1 text-sm font-medium text-gray-500 dark:text-gray-200 sm:flex-nowrap sm:gap-5">
             {links.map((link, index) => (
-              <motion.li
+              <motion.a
+                href={link.slug}
                 key={index}
                 className={cn(
                   'relative z-20 inline-block rounded-full px-4 py-2 transition-colors hover:text-gray-950 dark:hover:text-gray-50',
@@ -32,7 +33,7 @@ export default function Header() {
                   setTimeOfLastClick(Date.now())
                 }}
               >
-                <Link href={link.slug}>{link.name}</Link>
+                <span>{link.name}</span>
                 {activeSection === link.name && (
                   <motion.span
                     layoutId="activeSection"
@@ -44,7 +45,7 @@ export default function Header() {
                     }}
                   />
                 )}
-              </motion.li>
+              </motion.a>
             ))}
 
             <ThemeToggle />
