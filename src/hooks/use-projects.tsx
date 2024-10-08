@@ -33,7 +33,7 @@ export const useProjects = () => {
       title: t('project_2.title'),
       description: t('project_2.description'),
       image: project2Image,
-      stack: [],
+      stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     },
   ] as Project[]
 }
