@@ -34,9 +34,9 @@
     }
   },
   "Testimonials": {
-    "what_clients_say": "O que os clientes dizem",
+    "what_clients_say": "O que dizem",
     "title": "Depoimentos",
-    "description": "Aqui está o que meus clientes têm a dizer sobre trabalhar comigo."
+    "description": "Aqui está o que meus clientes e colegas têm a dizer sobre trabalhar comigo."
   },
   "TestimonialsItems": {
     "testimonial_1": {

@@ -9,7 +9,7 @@
   "Home": {
     "available": "Available for new projects",
     "hello": "Hello, I'm Miguel Bizzi",
-    "description": "A fullstack software engineer based in Brazil. I specialize in building high-quality mobile apps and websites.",
+    "description": "A fullstack software engineer based in Brazil. With expertise in building high-quality mobile apps and websites.",
     "see_work": "See my work",
     "contact": "Contact me"
   },
@@ -34,9 +34,9 @@
     }
   },
   "Testimonials": {
-    "what_clients_say": "What clients say",
+    "what_clients_say": "What they say",
     "title": "Testimonials",
-    "description": "Here's what my clients have to say about working with me."
+    "description": "Here's what my clients and co-workers have to say about working with me."
   },
   "TestimonialsItems": {
     "testimonial_1": {

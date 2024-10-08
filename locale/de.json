@@ -9,7 +9,7 @@
   "Home": {
     "available": "Verfügbar für neue Projekte",
     "hello": "Hallo, ich bin Miguel Bizzi",
-    "description": "Ein Fullstack-Software-Ingenieur mit Sitz in Brasilien. Ich habe mich auf die Entwicklung hochwertiger mobiler Anwendungen und Websites spezialisiert.",
+    "description": "Ein Fullstack-Software-Ingenieur mit Sitz in Brasilien. Mit Fachkenntnissen im Bau von hochwertigen mobilen Apps und Websites.",
     "see_work": "Sehen Sie meine Arbeit",
     "contact": "Kontaktieren Sie mich"
   },
@@ -34,9 +34,9 @@
     }
   },
   "Testimonials": {
-    "what_clients_say": "Was Kunden sagen",
+    "what_clients_say": "Was sie sagen",
     "title": "Referenzen",
-    "description": "Hier ist, was meine Kunden über die Zusammenarbeit mit mir zu sagen haben."
+    "description": "Hier ist, was meine Kunden und Kollegen über die Zusammenarbeit mit mir zu sagen haben."
   },
   "TestimonialsItems": {
     "testimonial_1": {
