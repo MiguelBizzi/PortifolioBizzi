@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
       <div className="mx-auto mt-16 max-w-4xl space-y-8 sm:mt-20">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </div>

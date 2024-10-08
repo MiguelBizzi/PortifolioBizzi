@@ -21,16 +21,16 @@
   },
   "ProjectsItems": {
     "project_1": {
-      "title": "Projekt 1",
-      "description": "Projekt 1 Beschreibung"
+      "title": "Web-Dashboard SL Treinos",
+      "description": "Vollständiges Dashboard, das die Registrierung und Verwaltung von Übungen, Muskelgruppen und personalisierten Workouts für jeden Schüler ermöglicht. Die Anwendung erleichtert die Organisation von Trainingstagen, Übungen, Lasten, Intervallen, Serien und Wiederholungen und verfügt über ein intelligentes System zur Berechnung des Volumens und zur automatischen Lastanpassung."
     },
     "project_2": {
-      "title": "Projekt 2",
-      "description": "Projekt 2 Beschreibung"
+      "title": "Admin Dashboard",
+      "description": "Dies ist ein Team- und Projektmanagement-Dashboard mit einer modernen und intuitiven Benutzeroberfläche, das es Ihnen ermöglicht, persönliche Informationen wie Name, Foto und Funktion anzupassen. Darüber hinaus bietet es Kontrolle über die Nutzung des Speicherplatzes und Integration mit verschiedenen Funktionen wie Plänen und Benachrichtigungen. Das klare Design erleichtert die Navigation und optimiert das Benutzererlebnis."
     },
     "project_3": {
-      "title": "Projekt 3",
-      "description": "Projekt 3 Beschreibung"
+      "title": "App SL Treinos",
+      "description": "Entwickelt, um die Erfahrung der Schüler auf ein neues Niveau zu heben. Jetzt haben die von den Trainern erstellten Workouts direkten Zugriff auf die Schüler über eine intuitive und benutzerfreundliche App. Dies stellt sicher, dass jeder Schüler seinen Trainingsplan immer griffbereit hat, mit all der Anleitung, die er benötigt, um seine Aktivitäten effizient auszuführen."
     }
   },
   "Testimonials": {

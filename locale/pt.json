@@ -21,16 +21,16 @@
   },
   "ProjectsItems": {
     "project_1": {
-      "title": "Projeto 1",
-      "description": "Descrição do projeto 1"
+      "title": "Web dashboard SL Treinos",
+      "description": "Dashboard completo, que permite o cadastro e gestão de exercícios, grupos musculares e treinos personalizados para cada aluno. A aplicação facilita a organização dos dias de treino, exercícios, cargas, intervalos, séries e repetições, além de contar com um sistema inteligente de cálculo de volume e ajuste automático de carga."
     },
     "project_2": {
-      "title": "Projeto 2",
-      "description": "Descrição do projeto 2"
+      "title": "Admin Dashboard",
+      "description": "Este é um dashboard de gerenciamento de equipes e projetos, com uma interface moderna e intuitiva, que permite personalizar informações pessoais, como nome, foto e função. Além disso, oferece controle sobre o uso de espaço de armazenamento e integração com diversas funcionalidades, como planos e notificações. O design limpo facilita a navegação e otimiza a experiência do usuário."
     },
     "project_3": {
-      "title": "Projeto 3",
-      "description": "Descrição do projeto 3"
+      "title": "App SL Treinos",
+      "description": "Projetado para levar a experiência dos alunos a um novo nível. Agora, os treinos criados pelos treinadores são acessados diretamente pelos alunos através de um app intuitivo e fácil de usar. Isso garante que cada aluno tenha seu plano de treino sempre à mão, com toda a orientação que precisa para executar suas atividades de forma eficiente."
     }
   },
   "Testimonials": {
