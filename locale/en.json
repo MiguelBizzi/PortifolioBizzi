@@ -40,19 +40,19 @@
   },
   "TestimonialsItems": {
     "testimonial_1": {
-      "name": "Client 1",
-      "field": "Developer",
-      "text": "Testimonial 1"
+      "name": "Rodrigo Mota",
+      "field": "Software Engineer - Faculdade Realiza",
+      "text": "Miguel Bizzi is a developer committed to code excellence and project quality. Always focused on best practices and details, our partnership is productive and friendly, making working with him a great experience."
     },
     "testimonial_2": {
-      "name": "Client 2",
-      "field": "Developer",
-      "text": "Testimonial 2"
+      "name": "Lucas Rezende",
+      "field": "Quality Analyst - Aglets Soluções",
+      "text": "I had the opportunity to work as a QA on Miguel Bizzi's team and I can say that he is an exceptional programmer! His technical skills are remarkable, but what really sets him apart is his excellent communication. Miguel knows how to explain complex concepts in an accessible way, which facilitates team collaboration."
     },
     "testimonial_3": {
-      "name": "Client 3",
-      "field": "Developer",
-      "text": "Testimonial 3"
+      "name": "Daniel Rabelo",
+      "field": "Tech Lead - Aglets Soluções",
+      "text": "Miguel is a dedicated professional focused on delivering high-quality results. He has an excellent ability to manage time and prioritize the most important tasks, ensuring that projects are always on schedule. In addition, his ability to solve complex problems with creative solutions makes all the difference."
     }
   },
   "Skills": {

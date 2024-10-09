@@ -7,10 +7,10 @@ export const links = [
     name: 'Projects',
     slug: '#projects',
   },
-  // {
-  //   name: 'Testimonials',
-  //   slug: '#testimonials',
-  // },
+  {
+    name: 'Testimonials',
+    slug: '#testimonials',
+  },
   {
     name: 'Skills',
     slug: '#skills',

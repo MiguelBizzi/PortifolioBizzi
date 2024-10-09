@@ -13,10 +13,10 @@ export const useLinks = () => {
       name: t('projects') as SectionName,
       slug: '#projects',
     },
-    // {
-    //   name: t('testimonials') as SectionName,
-    //   slug: '#testimonials',
-    // },
+    {
+      name: t('testimonials') as SectionName,
+      slug: '#testimonials',
+    },
     {
       name: t('skills') as SectionName,
       slug: '#skills',
