@@ -34,7 +34,7 @@ export default function HeroSection() {
   }
 
   return (
-    <div id="home" className="relative z-0 h-screen py-32 md:py-48 lg:py-60" ref={ref}>
+    <div id="home" className="relative z-0 h-screen px-4 py-32 sm:px-0 md:py-48 lg:py-60" ref={ref}>
       <BackgroundBeams className="-z-10" />
 
       <div className="flex flex-col items-center">
