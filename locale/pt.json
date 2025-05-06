@@ -25,8 +25,8 @@
       "description": "Dashboard completo, que permite o cadastro e gestão de exercícios, grupos musculares e treinos personalizados para cada aluno. A aplicação facilita a organização dos dias de treino, exercícios, cargas, intervalos, séries e repetições, além de contar com um sistema inteligente de cálculo de volume e ajuste automático de carga."
     },
     "project_2": {
-      "title": "Admin Dashboard",
-      "description": "Este é um dashboard de gerenciamento de equipes e projetos, com uma interface moderna e intuitiva, que permite personalizar informações pessoais, como nome, foto e função. Além disso, oferece controle sobre o uso de espaço de armazenamento e integração com diversas funcionalidades, como planos e notificações. O design limpo facilita a navegação e otimiza a experiência do usuário."
+      "title": "Sistema de Gestão RH - Wb Serviços",
+      "description": "Desenvolvido para otimizar os processos internos da Wb Serviços, este sistema centraliza a gestão de parceiros, o controle de folhas de pagamento e a assinatura digital de documentos. Com uma interface eficiente e segura, permite o cadastro completo de colaboradores e parceiros, geração automatizada de contracheques e contratos, além de integração com serviços de assinatura eletrônica. O sistema garante mais agilidade, conformidade legal e organização para as rotinas administrativas da empresa."
     },
     "project_3": {
       "title": "App SL Treinos",

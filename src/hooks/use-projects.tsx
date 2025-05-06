@@ -1,7 +1,7 @@
 import type { Project } from '@/lib/types/project'
 import { useTranslations } from 'next-intl'
 import project1Image from '@/assets/sltreinosweb.png'
-import project2Image from '@/assets/bizzidashboard.png'
+import project2Image from '@/assets/printwb.png'
 import project3Image from '@/assets/sltreinosapp.png'
 
 export const useProjects = () => {
@@ -33,7 +33,7 @@ export const useProjects = () => {
       title: t('project_2.title'),
       description: t('project_2.description'),
       image: project2Image,
-      stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      stack: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'Shadcn/ui', 'GoLang'],
     },
   ] as Project[]
 }
