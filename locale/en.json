@@ -31,6 +31,10 @@
     "project_3": {
       "title": "App SL Treinos",
       "description": "Designed to take the students' experience to a new level. Now, the workouts created by the coaches are accessed directly by the students through an intuitive and easy-to-use app. This ensures that each student has their training plan always at hand, with all the guidance they need to perform their activities efficiently."
+    },
+    "project_4": {
+      "title": "Marketplace Sales Manager",
+      "description": "SaaS platform for marketplace sales management, with native integrations for Amazon and Mercado Livre. Multi-tenant system with oAuth2 authentication, automatic product and sales synchronization, dashboard with advanced metrics and automatic token refresh for continuous operation."
     }
   },
   "Testimonials": {

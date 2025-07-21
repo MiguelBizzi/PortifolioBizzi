@@ -31,6 +31,10 @@
     "project_3": {
       "title": "App SL Treinos",
       "description": "Entwickelt, um die Erfahrung der Schüler auf ein neues Niveau zu heben. Jetzt haben die von den Trainern erstellten Workouts direkten Zugriff auf die Schüler über eine intuitive und benutzerfreundliche App. Dies stellt sicher, dass jeder Schüler seinen Trainingsplan immer griffbereit hat, mit all der Anleitung, die er benötigt, um seine Aktivitäten effizient auszuführen."
+    },
+    "project_4": {
+      "title": "Marktplatz-Verkaufsmanager",
+      "description": "SaaS-Plattform für Verkaufsmanagement auf Marktplätzen, mit nativen Integrationen für Amazon und Mercado Livre. Multi-Tenant-System mit oAuth2-Authentifizierung, automatische Produkt- und Verkaufssynchronisation, Dashboard mit erweiterten Metriken und automatische Token-Erneuerung für kontinuierlichen Betrieb."
     }
   },
   "Testimonials": {

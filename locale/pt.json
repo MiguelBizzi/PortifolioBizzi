@@ -31,6 +31,10 @@
     "project_3": {
       "title": "App SL Treinos",
       "description": "Projetado para levar a experiência dos alunos a um novo nível. Agora, os treinos criados pelos treinadores são acessados diretamente pelos alunos através de um app intuitivo e fácil de usar. Isso garante que cada aluno tenha seu plano de treino sempre à mão, com toda a orientação que precisa para executar suas atividades de forma eficiente."
+    },
+    "project_4": {
+      "title": "Gestor de Vendas - Marketplaces",
+      "description": "Plataforma SaaS para gestão de vendas em marketplaces, com integrações nativas para Amazon e Mercado Livre. Sistema multi-tenant com autenticação oAuth2, sincronização automática de produtos e vendas, dashboard com métricas avançadas e refresh automático de tokens para operação contínua."
     }
   },
   "Testimonials": {
