@@ -1,0 +1,88 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "testimonials": "Testimonios",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "Home": {
+    "available": "Disponible para nuevos proyectos",
+    "hello": "Hola, soy Miguel Bizzi",
+    "description": "Un ingeniero de software fullstack radicado en Brasil. Con experiencia en la construcción de aplicaciones móviles y sitios web de alta calidad.",
+    "see_work": "Ver mi trabajo",
+    "contact": "Contáctame"
+  },
+  "Projects": {
+    "real_world": "Resultados del Mundo Real",
+    "title": "Proyectos Destacados",
+    "description": "Aquí hay algunos proyectos en los que he trabajado recientemente. Ayudando a mis clientes a alcanzar sus objetivos.",
+    "see_project_button": "Ver proyecto"
+  },
+  "ProjectsItems": {
+    "project_1": {
+      "title": "Dashboard web SL Treinos",
+      "description": "Dashboard completo que permite el registro y gestión de ejercicios, grupos musculares y entrenamientos personalizados para cada estudiante. La aplicación facilita la organización de días de entrenamiento, ejercicios, cargas, intervalos, series y repeticiones, además de tener un sistema inteligente para calcular el volumen y ajuste automático de carga."
+    },
+    "project_2": {
+      "title": "Sistema de Gestión de RRHH – Wb Serviços",
+      "description": "Construido para agilizar las operaciones internas en Wb Serviços, este sistema centraliza la gestión de socios, control de nómina y firma digital de documentos. Con una interfaz eficiente y segura, permite el registro completo de empleados y socios, generación automatizada de recibos de pago y contratos, e integración con servicios de firma electrónica. El sistema aporta mayor agilidad, cumplimiento legal y organización a las rutinas administrativas de la empresa."
+    },
+    "project_3": {
+      "title": "App SL Treinos",
+      "description": "Diseñada para llevar la experiencia de los estudiantes a un nuevo nivel. Ahora, los entrenamientos creados por los entrenadores son accedidos directamente por los estudiantes a través de una aplicación intuitiva y fácil de usar. Esto asegura que cada estudiante tenga su plan de entrenamiento siempre a mano, con toda la orientación que necesitan para realizar sus actividades de manera eficiente."
+    },
+    "project_4": {
+      "title": "Gestor de Ventas de Marketplace",
+      "description": "Plataforma SaaS para la gestión de ventas en marketplace, con integraciones nativas para Amazon y Mercado Livre. Sistema multi-tenant con autenticación oAuth2, sincronización automática de productos y ventas, dashboard con métricas avanzadas y renovación automática de tokens para operación continua."
+    }
+  },
+  "Testimonials": {
+    "what_clients_say": "Lo que dicen",
+    "title": "Testimonios",
+    "description": "Aquí está lo que mis clientes y compañeros de trabajo dicen sobre trabajar conmigo."
+  },
+  "TestimonialsItems": {
+    "testimonial_1": {
+      "name": "Rodrigo Mota",
+      "field": "Ingeniero de Software - Faculdade Realiza",
+      "text": "Miguel Bizzi es un desarrollador comprometido con la excelencia del código y la calidad del proyecto. Siempre enfocado en las mejores prácticas y detalles, nuestra asociación es productiva y amigable, haciendo que trabajar con él sea una gran experiencia."
+    },
+    "testimonial_2": {
+      "name": "Lucas Rezende",
+      "field": "Analista de Calidad - Aglets Soluções",
+      "text": "Tuve la oportunidad de trabajar como QA en el equipo de Miguel Bizzi y puedo decir que ¡es un programador excepcional! Sus habilidades técnicas son notables, pero lo que realmente lo distingue es su excelente comunicación. Miguel sabe explicar conceptos complejos de manera accesible, lo que facilita la colaboración del equipo."
+    },
+    "testimonial_3": {
+      "name": "Daniel Rabelo",
+      "field": "Tech Lead - Aglets Soluções",
+      "text": "Miguel es un profesional dedicado enfocado en entregar resultados de alta calidad. Tiene una excelente capacidad para gestionar el tiempo y priorizar las tareas más importantes, asegurando que los proyectos siempre estén en el cronograma. Además, su capacidad para resolver problemas complejos con soluciones creativas marca toda la diferencia."
+    }
+  },
+  "Skills": {
+    "stack": "Stack Tecnológico",
+    "title": "Habilidades",
+    "description": "Aquí están algunas de las tecnologías con las que trabajo."
+  },
+  "Contact": {
+    "work_together": "Trabajemos juntos",
+    "title": "Contacto",
+    "description": "Actualmente estoy disponible para trabajar. Si tienes un proyecto en mente, me encantaría saber de ti. Email: migueloliveirabizzi@gmail.com",
+    "form": {
+      "name": "Nombre",
+      "name_required": "El nombre es requerido",
+      "email": "Email",
+      "email_required": "El email es requerido",
+      "email_invalid": "Dirección de email inválida",
+      "email_placeholder": "m@example.com",
+      "message": "Mensaje",
+      "message_required": "El mensaje es requerido",
+      "message_placeholder": "Escribe tu mensaje aquí...",
+      "send_button": "Enviar",
+      "success_message": "¡Tu mensaje ha sido enviado exitosamente!",
+      "success_description": "Te responderé lo antes posible.",
+      "error_message": "Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
+      "error_description": "Si el problema persiste, por favor contáctame directamente en migueloliveirabizzi@gmail.com"
+    }
+  }
+}
