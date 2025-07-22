@@ -15,19 +15,26 @@ import type { Languages } from '@/lib/types/languages'
 export function LanguageToggle() {
   const params: { locale: Languages } = useParams()
 
+  function getFlagEmoji(locale: Languages): string {
+    switch (locale) {
+      case 'pt':
+        return '🇧🇷'
+      case 'en':
+        return '🇺🇸'
+      case 'de':
+        return '🇩🇪'
+      case 'es':
+        return '🇪🇸'
+      default:
+        return '🇧🇷'
+    }
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button className="mr-4 flex items-center">
-          <span className="text-lg">
-            {params.locale === 'pt'
-              ? '🇧🇷'
-              : params.locale === 'en'
-                ? '🇺🇸'
-                : params.locale === 'de'
-                  ? '🇩🇪'
-                  : '🇪🇸'}
-          </span>
+          <span className="text-lg">{getFlagEmoji(params.locale)}</span>
           <ChevronDown className="ml-1 h-4 w-4" />
         </button>
       </DropdownMenuTrigger>
