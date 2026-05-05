@@ -20,13 +20,17 @@
     "see_project_button": "See project"
   },
   "ProjectsItems": {
+    "project_wiggle": {
+      "title": "Veterinary clinic platform – Wiggle",
+      "description": "Multi-tenant SaaS for veterinary groups: each clinic keeps its own sandbox while shipping on a shared product roadmap—POS, structured treatment journeys, invoicing with recurring schedules, CRM, and everyday handoffs between reception, care, and finance. It removes the brittle patchwork that slows rollouts across locations, trims admin busywork, strengthens collections when billing rides alongside clinical workflows, speeds intake where AI trims repetitive paperwork, and gives pet guardians self-serve checkout options alongside in-person payment so desks stay sane during busy clinics."
+    },
+    "project_phew": {
+      "title": "AI content intelligence – Phew.ai",
+      "description": "SaaS for teams whose marketing rhythm begins with curated reading: personalized feeds become channel-ready drafts that still mirror the brand voice, available on desktop web and a companion mobile app. It sustains dependable presence without rewriting every hook by hand—even when feeds spike—with emphasis on repeatable cadence, calm recovery after rough patches, and cost discipline when partnering with external language services."
+    },
     "project_1": {
       "title": "Web dashboard SL Treinos",
       "description": "Complete dashboard, which allows the registration and management of exercises, muscle groups and personalized workouts for each student. The application facilitates the organization of training days, exercises, loads, intervals, series and repetitions, in addition to having an intelligent system for calculating volume and automatic load adjustment."
-    },
-    "project_2": {
-      "title": "HR Management System – Wb Serviços",
-      "description": "Built to streamline internal operations at Wb Serviços, this system centralizes partner management, payroll control, and digital document signing. With an efficient and secure interface, it allows for complete registration of employees and partners, automated generation of pay slips and contracts, and integration with electronic signature services. The system brings greater agility, legal compliance, and organization to the company’s administrative routines."
     },
     "project_3": {
       "title": "App SL Treinos",

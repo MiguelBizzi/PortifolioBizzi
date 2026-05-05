@@ -20,13 +20,17 @@
     "see_project_button": "Ver proyecto"
   },
   "ProjectsItems": {
+    "project_wiggle": {
+      "title": "Plataforma de gestión veterinaria – Wiggle",
+      "description": "SaaS multitenant pensado para redes veterinarias: cada centro mantiene su propio espacio dentro del mismo producto y roadmap compartidos—TPV, itinerarios clínicos, facturación con cobros recurrentes, CRM y la coordinación cotidiana entre recepción, clínica y finanzas. El valor práctico es menos hojas y parches tecnológicos, nuevas sedes con despliegue más previsible, una tesorería alineada con el momento clínico, IA solo donde flexibiliza los planes y autopago para tutores cuando el mostrador llega saturado."
+    },
+    "project_phew": {
+      "title": "Inteligencia de contenido con IA – Phew.ai",
+      "description": "SaaS de inteligencia de contenidos para equipos que parten de una lectura curada antes de publicar en redes: los feeds se convierten en borradores alineados con la voz de marca en canales profesionales, con experiencia en web y una app móvil complementaria. Eso sostiene cadencia y presencia sin reescribir cada pieza a mano, incluso con picos de volumen, priorizando recuperación estable cuando algo falla y costes acotados cuando entran proveedores externos de lenguaje."
+    },
     "project_1": {
       "title": "Dashboard web SL Treinos",
       "description": "Dashboard completo que permite el registro y gestión de ejercicios, grupos musculares y entrenamientos personalizados para cada estudiante. La aplicación facilita la organización de días de entrenamiento, ejercicios, cargas, intervalos, series y repeticiones, además de tener un sistema inteligente para calcular el volumen y ajuste automático de carga."
-    },
-    "project_2": {
-      "title": "Sistema de Gestión de RRHH – Wb Serviços",
-      "description": "Construido para agilizar las operaciones internas en Wb Serviços, este sistema centraliza la gestión de socios, control de nómina y firma digital de documentos. Con una interfaz eficiente y segura, permite el registro completo de empleados y socios, generación automatizada de recibos de pago y contratos, e integración con servicios de firma electrónica. El sistema aporta mayor agilidad, cumplimiento legal y organización a las rutinas administrativas de la empresa."
     },
     "project_3": {
       "title": "App SL Treinos",

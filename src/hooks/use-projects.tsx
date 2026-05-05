@@ -1,7 +1,8 @@
 import type { Project } from '@/lib/types/project'
 import { useTranslations } from 'next-intl'
+import projectPhewImage from '@/assets/printphew.png'
+import projectWiggleImage from '@/assets/printwiggle.png'
 import project1Image from '@/assets/sltreinosweb.png'
-import project2Image from '@/assets/printwb.png'
 import project3Image from '@/assets/sltreinosapp.png'
 import project4Image from '@/assets/saas-marketplace.png'
 
@@ -9,6 +10,27 @@ export const useProjects = () => {
   const t = useTranslations('ProjectsItems')
 
   return [
+    {
+      title: t('project_wiggle.title'),
+      description: t('project_wiggle.description'),
+      image: projectWiggleImage,
+      stack: [
+        'React JS',
+        'NestJS',
+        'Jest',
+        'TurboRepo',
+        'AWS RDS',
+        'AWS EC2',
+        'AWS ElasticBeanstalk',
+        'AWS CloudFront',
+      ],
+    },
+    {
+      title: t('project_phew.title'),
+      description: t('project_phew.description'),
+      image: projectPhewImage,
+      stack: ['NextJS', 'NestJS', 'N8N', 'AI', 'AWS', 'Jest'],
+    },
     {
       title: t('project_4.title'),
       description: t('project_4.description'),
@@ -35,12 +57,6 @@ export const useProjects = () => {
         'Prisma',
         'PostgreSQL',
       ],
-    },
-    {
-      title: t('project_2.title'),
-      description: t('project_2.description'),
-      image: project2Image,
-      stack: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'Shadcn/ui', 'GoLang'],
     },
   ] as Project[]
 }

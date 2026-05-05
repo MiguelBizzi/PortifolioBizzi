@@ -1,6 +1,7 @@
 export const skills = [
   'React',
   'Next.JS',
+  'Nest JS',
   'Svelte Kit',
   'Node.js',
   'GoLang',
@@ -34,4 +35,5 @@ export const skills = [
   'Vercel',
   'Docker',
   'Lead',
+  'N8n',
 ]

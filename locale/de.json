@@ -20,13 +20,17 @@
     "see_project_button": "Projekt ansehen"
   },
   "ProjectsItems": {
+    "project_wiggle": {
+      "title": "Veterinärpraxis-Plattform – Wiggle",
+      "description": "Multi-Tenant-SaaS für Veterinärgruppen: jede Filiale arbeitet in klar getrenntem Mandantenraum und teilt sich denselben Produktfortschritt—POS, strukturierte Therapieverläufe, wiederkehrende Gebührenpfade, CRM sowie die Verzahnung zwischen Empfang, Behandlung und Finanzen. Operativer Gewinn: weniger Insellösungen, schnelleres Ausrollen zusätzlicher Standorte, liquidere Kasse weil Fakturierung beim Patientenkontakt bleibt, KI nur dort wo echte Aktenarbeit verschwindet sowie Self-Service-Zahlungen für Tierbesitzer, wenn der Empfang im Stoß steht."
+    },
+    "project_phew": {
+      "title": "KI-gestützte Content Intelligence – Phew.ai",
+      "description": "SaaS-Produkt für Teams, die Kuratierungsfeeds nutzen, bevor Posts live gehen—personalisierte Artikelströme werden zu markenkonformen Vorlagen für berufliche Sozialkanäle, bedient über Web und ergänzende Mobile-App. So bleiben Präsenz und Takt erzielbar ohne obsessives Umschreiben, selbst bei Hochlast: das System setzt auf Robustheit, entspanntes Wiederanlaufen nach Fehlern und wirtschaftlichen Umgang mit externen Sprachdiensten."
+    },
     "project_1": {
       "title": "Web-Dashboard SL Treinos",
       "description": "Vollständiges Dashboard, das die Registrierung und Verwaltung von Übungen, Muskelgruppen und personalisierten Workouts für jeden Schüler ermöglicht. Die Anwendung erleichtert die Organisation von Trainingstagen, Übungen, Lasten, Intervallen, Serien und Wiederholungen und verfügt über ein intelligentes System zur Berechnung des Volumens und zur automatischen Lastanpassung."
-    },
-    "project_2": {
-      "title": "HR-Verwaltungssystem – Wb Serviços",
-      "description": "Dieses System wurde entwickelt, um die internen Abläufe bei Wb Serviços zu optimieren. Es zentralisiert die Verwaltung von Partnern, die Lohn- und Gehaltsabrechnung sowie die digitale Unterzeichnung von Dokumenten. Mit einer effizienten und sicheren Benutzeroberfläche ermöglicht es die vollständige Erfassung von Mitarbeitenden und Partnern, die automatische Erstellung von Gehaltsabrechnungen und Verträgen sowie die Integration mit digitalen Signaturdiensten. Das System sorgt für mehr Agilität, rechtliche Konformität und Struktur im administrativen Alltag des Unternehmens."
     },
     "project_3": {
       "title": "App SL Treinos",

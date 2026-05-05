@@ -20,13 +20,17 @@
     "see_project_button": "Ver projeto"
   },
   "ProjectsItems": {
+    "project_wiggle": {
+      "title": "Plataforma para clínica veterinária – Wiggle",
+      "description": "SaaS multitenant para redes de clínica veterinária: cada unidade opera isolada dentro do mesmo produto e da mesma evolução comercial, PDV, jornadas de tratamento, faturamento com recorrências, CRM e o que liga recepção, clínica e financeiro. O valor é reduzir retrabalho e planilhas, acelerar abertura de novas sedes, aproximar cobrança do atendimento para um caixa mais previsível, usar IA onde ela desburocratiza planos e aliviar a recepção com autopagamento pelos tutores nos horários de pico."
+    },
+    "project_phew": {
+      "title": "Inteligência de conteúdo com IA – Phew.ai",
+      "description": "SaaS de inteligência de conteúdo para times que já partem da leitura curada antes de ir às redes: os feeds viram rascunhos fiéis à voz da marca para canais profissionais, disponíveis na web e num app complementar. Isso sustenta cadência e consistência sem reescrever tudo manualmente; mesmo com picos de volume, o produto prioriza confiabilidade, recuperação estável quando algo falha e disciplina de custo ao depender de serviços externos de linguagem."
+    },
     "project_1": {
       "title": "Web dashboard SL Treinos",
       "description": "Dashboard completo, que permite o cadastro e gestão de exercícios, grupos musculares e treinos personalizados para cada aluno. A aplicação facilita a organização dos dias de treino, exercícios, cargas, intervalos, séries e repetições, além de contar com um sistema inteligente de cálculo de volume e ajuste automático de carga."
-    },
-    "project_2": {
-      "title": "Sistema de Gestão RH - Wb Serviços",
-      "description": "Desenvolvido para otimizar os processos internos da Wb Serviços, este sistema centraliza a gestão de parceiros, o controle de folhas de pagamento e a assinatura digital de documentos. Com uma interface eficiente e segura, permite o cadastro completo de colaboradores e parceiros, geração automatizada de contracheques e contratos, além de integração com serviços de assinatura eletrônica. O sistema garante mais agilidade, conformidade legal e organização para as rotinas administrativas da empresa."
     },
     "project_3": {
       "title": "App SL Treinos",
