@@ -19,31 +19,45 @@
     "contact": "Contact me"
   },
   "Projects": {
-    "real_world": "Real World Results",
-    "title": "Featured Projects",
-    "description": "Here are some projects I've worked on recently. Helping my clients achieve their goals.",
-    "see_project_button": "See project"
+    "eyebrow": "Principal projects",
+    "title_lead": "Products I've",
+    "title_accent": "shipped",
+    "subtitle": "The four projects I'm proudest of, and what each one achieved.",
+    "achieved_label": "What I achieved",
+    "github_link": "View on GitHub"
   },
   "ProjectsItems": {
-    "project_wiggle": {
-      "title": "Veterinary clinic platform – Wiggle",
-      "description": "Multi-tenant SaaS for veterinary groups: each clinic keeps its own sandbox while shipping on a shared product roadmap—POS, structured treatment journeys, invoicing with recurring schedules, CRM, and everyday handoffs between reception, care, and finance. It removes the brittle patchwork that slows rollouts across locations, trims admin busywork, strengthens collections when billing rides alongside clinical workflows, speeds intake where AI trims repetitive paperwork, and gives pet guardians self-serve checkout options alongside in-person payment so desks stay sane during busy clinics."
+    "wiggle": {
+      "category": "Fintech · Healthcare",
+      "title": "Wiggle",
+      "description": "Multi-tenant SaaS for veterinary groups: POS, treatment plans, invoicing, CRM and payments in one platform, delivered as a web app, a browser extension and online bill pay.",
+      "achievement_1": "**$2M+ processed every month** across 15+ clinics and 5,000+ transactions.",
+      "achievement_2": "The only developer, working with the CTO, CEO and a QA, from the first commit.",
+      "achievement_3": "A self-service portal reduced admin tickets, and AI-assisted plan ingestion sped up onboarding."
     },
-    "project_phew": {
-      "title": "AI content intelligence – Phew.ai",
-      "description": "SaaS for teams whose marketing rhythm begins with curated reading: personalized feeds become channel-ready drafts that still mirror the brand voice, available on desktop web and a companion mobile app. It sustains dependable presence without rewriting every hook by hand—even when feeds spike—with emphasis on repeatable cadence, calm recovery after rough patches, and cost discipline when partnering with external language services."
+    "phew": {
+      "category": "AI · SaaS",
+      "title": "Phew.ai",
+      "description": "AI content intelligence: personalized article feeds become ready-to-publish social posts in the brand's own voice.",
+      "achievement_1": "**500+ articles an hour** through the pipeline, with batching, retries and automatic fallback.",
+      "achievement_2": "Led development and set the technical standards for a global team.",
+      "achievement_3": "Mentored contributors while balancing performance, cost and maintainability."
     },
-    "project_1": {
-      "title": "Web dashboard SL Treinos",
-      "description": "Complete dashboard, which allows the registration and management of exercises, muscle groups and personalized workouts for each student. The application facilitates the organization of training days, exercises, loads, intervals, series and repetitions, in addition to having an intelligent system for calculating volume and automatic load adjustment."
+    "bizzidb": {
+      "category": "Open source · Desktop",
+      "title": "Bizzi DB",
+      "description": "A private desktop workspace for PostgreSQL and MySQL: browse data, design schemas and run SQL, all on your machine.",
+      "achievement_1": "Created and maintain it as **open source (MIT)** for macOS, Windows and Linux.",
+      "achievement_2": "Local-only by design: no account, no cloud, passwords can live in the system keychain.",
+      "achievement_3": "Reviewed changes, schema diagrams and a SQL editor with query plans in one workspace."
     },
-    "project_3": {
-      "title": "App SL Treinos",
-      "description": "Designed to take the students' experience to a new level. Now, the workouts created by the coaches are accessed directly by the students through an intuitive and easy-to-use app. This ensures that each student has their training plan always at hand, with all the guidance they need to perform their activities efficiently."
-    },
-    "project_4": {
-      "title": "Marketplace Sales Manager",
-      "description": "SaaS platform for marketplace sales management, with native integrations for Amazon and Mercado Livre. Multi-tenant system with oAuth2 authentication, automatic product and sales synchronization, dashboard with advanced metrics and automatic token refresh for continuous operation."
+    "sltreinos": {
+      "category": "Web · Mobile",
+      "title": "SL Treinos",
+      "description": "A coach dashboard and a student app on one backend, so trainers spend their time coaching instead of calculating.",
+      "achievement_1": "**About 70% less manual work** for the consultancy.",
+      "achievement_2": "Automatic volume calculation and load adjustment for every student.",
+      "achievement_3": "Students log every set in the app, so coaches plan from real history."
     }
   },
   "Testimonials": {

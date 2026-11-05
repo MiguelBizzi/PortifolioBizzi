@@ -5,6 +5,7 @@ import ProjectCard from './project-card'
 import { useSectionInView } from '@/hooks/section-in-view'
 import type { SectionName } from '@/hooks/active-section-provider'
 import { useProjects } from '@/hooks/use-projects'
+import { GradientText } from '@/components/ui/gradient-text'
 
 export default function ProjectsSection() {
   const t = useTranslations('Projects')
@@ -14,22 +15,24 @@ export default function ProjectsSection() {
   const projects = useProjects()
 
   return (
-    <div id="projects" className="scroll-mt-32 px-4 md:scroll-mt-48 lg:scroll-mt-60" ref={ref}>
-      <div className="mx-auto max-w-lg text-center">
-        <div className="flex justify-center">
-          <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">
-            {t('real_world')}
-          </p>
-        </div>
-        <h2 className="mt-4 text-3xl font-bold">{t('title')}</h2>
-        <p className="mt-2 dark:text-white/60">{t('description')}</p>
-      </div>
+    <section
+      id="projects"
+      className="mx-auto mt-24 w-full max-w-[1120px] scroll-mt-28 px-6 sm:px-8 md:mt-28"
+      ref={ref}
+    >
+      <p className="eyebrow">{t('eyebrow')}</p>
+      <h2 className="mt-3.5 font-display text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl">
+        {t('title_lead')} <GradientText>{t('title_accent')}</GradientText>
+      </h2>
+      <p className="mt-4 max-w-[560px] text-[17px] leading-relaxed text-muted-foreground">
+        {t('subtitle')}
+      </p>
 
-      <div className="mx-auto mt-16 max-w-4xl space-y-8 sm:mt-20">
+      <div className="mt-12 flex flex-col gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={project.key} project={project} index={index} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

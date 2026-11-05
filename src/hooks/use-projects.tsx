@@ -1,62 +1,28 @@
-import type { Project } from '@/lib/types/project'
 import { useTranslations } from 'next-intl'
-import projectPhewImage from '@/assets/printphew.png'
-import projectWiggleImage from '@/assets/printwiggle.png'
-import project1Image from '@/assets/sltreinosweb.png'
-import project3Image from '@/assets/sltreinosapp.png'
-import project4Image from '@/assets/saas-marketplace.png'
+import type { Project, ProjectKey } from '@/lib/types/project'
 
-export const useProjects = () => {
+const stacks: Record<ProjectKey, string[]> = {
+  wiggle: ['NestJS', 'React', 'Prisma', 'PostgreSQL', 'AWS'],
+  phew: ['Next.js', 'Supabase', 'n8n', 'Vercel', 'LLM'],
+  bizzidb: ['Tauri', 'Rust', 'React', 'PostgreSQL', 'MySQL'],
+  sltreinos: ['Next.js', 'React Native', 'Fastify', 'Prisma', 'PostgreSQL'],
+}
+
+const keys: ProjectKey[] = ['wiggle', 'phew', 'bizzidb', 'sltreinos']
+
+export const useProjects = (): Project[] => {
   const t = useTranslations('ProjectsItems')
+  const tProjects = useTranslations('Projects')
 
-  return [
-    {
-      title: t('project_wiggle.title'),
-      description: t('project_wiggle.description'),
-      image: projectWiggleImage,
-      stack: [
-        'React JS',
-        'NestJS',
-        'Jest',
-        'TurboRepo',
-        'AWS RDS',
-        'AWS EC2',
-        'AWS ElasticBeanstalk',
-        'AWS CloudFront',
-      ],
-    },
-    {
-      title: t('project_phew.title'),
-      description: t('project_phew.description'),
-      image: projectPhewImage,
-      stack: ['NextJS', 'NestJS', 'N8N', 'AI', 'AWS', 'Jest'],
-    },
-    {
-      title: t('project_4.title'),
-      description: t('project_4.description'),
-      image: project4Image,
-      stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'oAuth', 'REST API', 'Multi-tenant'],
-    },
-    {
-      title: t('project_3.title'),
-      description: t('project_3.description'),
-      image: project3Image,
-      stack: ['React Native', 'Expo', 'TypeScript', 'Restyle', 'Redux Toolkit'],
-    },
-    {
-      title: t('project_1.title'),
-      description: t('project_1.description'),
-      image: project1Image,
-      stack: [
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'Redux Toolkit',
-        'Node.JS',
-        'Fastify',
-        'Prisma',
-        'PostgreSQL',
-      ],
-    },
-  ] as Project[]
+  return keys.map((key) => ({
+    key,
+    category: t(`${key}.category`),
+    title: t(`${key}.title`),
+    description: t(`${key}.description`),
+    achievements: [t(`${key}.achievement_1`), t(`${key}.achievement_2`), t(`${key}.achievement_3`)],
+    stack: stacks[key],
+    ...(key === 'bizzidb' && {
+      link: { href: 'https://github.com/MiguelBizzi/bizzi-db', label: tProjects('github_link') },
+    }),
+  }))
 }

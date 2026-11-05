@@ -1,8 +1,11 @@
-import type { StaticImageData } from 'next/image'
+export type ProjectKey = 'wiggle' | 'phew' | 'bizzidb' | 'sltreinos'
 
 export interface Project {
+  key: ProjectKey
+  category: string
   title: string
   description: string
+  achievements: [string, string, string]
   stack: string[]
-  image: StaticImageData
+  link?: { href: string; label: string }
 }

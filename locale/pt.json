@@ -19,31 +19,45 @@
     "contact": "Contate-me"
   },
   "Projects": {
-    "real_world": "Resultados do mundo real",
-    "title": "Projetos em destaque",
-    "description": "Aqui estão alguns projetos que eu trabalhei recentemente. Ajudando meus clientes a alcançar seus objetivos.",
-    "see_project_button": "Ver projeto"
+    "eyebrow": "Principais projetos",
+    "title_lead": "Produtos que",
+    "title_accent": "entreguei",
+    "subtitle": "Os quatro projetos dos quais mais me orgulho e o que cada um alcançou.",
+    "achieved_label": "O que eu conquistei",
+    "github_link": "Ver no GitHub"
   },
   "ProjectsItems": {
-    "project_wiggle": {
-      "title": "Plataforma para clínica veterinária – Wiggle",
-      "description": "SaaS multitenant para redes de clínica veterinária: cada unidade opera isolada dentro do mesmo produto e da mesma evolução comercial, PDV, jornadas de tratamento, faturamento com recorrências, CRM e o que liga recepção, clínica e financeiro. O valor é reduzir retrabalho e planilhas, acelerar abertura de novas sedes, aproximar cobrança do atendimento para um caixa mais previsível, usar IA onde ela desburocratiza planos e aliviar a recepção com autopagamento pelos tutores nos horários de pico."
+    "wiggle": {
+      "category": "Fintech · Saúde",
+      "title": "Wiggle",
+      "description": "SaaS multi-tenant para grupos veterinários: PDV, planos de tratamento, faturamento, CRM e pagamentos em uma única plataforma, entregue como aplicação web, extensão de navegador e pagamento de contas online.",
+      "achievement_1": "**US$ 2 milhões+ processados por mês** em mais de 15 clínicas e mais de 5.000 transações.",
+      "achievement_2": "Único desenvolvedor, trabalhando com o CTO, o CEO e um QA, desde o primeiro commit.",
+      "achievement_3": "Um portal de autoatendimento reduziu chamados administrativos, e a ingestão de planos com IA acelerou o onboarding."
     },
-    "project_phew": {
-      "title": "Inteligência de conteúdo com IA – Phew.ai",
-      "description": "SaaS de inteligência de conteúdo para times que já partem da leitura curada antes de ir às redes: os feeds viram rascunhos fiéis à voz da marca para canais profissionais, disponíveis na web e num app complementar. Isso sustenta cadência e consistência sem reescrever tudo manualmente; mesmo com picos de volume, o produto prioriza confiabilidade, recuperação estável quando algo falha e disciplina de custo ao depender de serviços externos de linguagem."
+    "phew": {
+      "category": "IA · SaaS",
+      "title": "Phew.ai",
+      "description": "Inteligência de conteúdo com IA: feeds personalizados de artigos viram posts prontos para publicar, na voz da própria marca.",
+      "achievement_1": "**Mais de 500 artigos por hora** no pipeline, com lotes, novas tentativas e fallback automático.",
+      "achievement_2": "Liderei o desenvolvimento e defini os padrões técnicos de uma equipe global.",
+      "achievement_3": "Orientei colaboradores equilibrando desempenho, custo e manutenibilidade."
     },
-    "project_1": {
-      "title": "Web dashboard SL Treinos",
-      "description": "Dashboard completo, que permite o cadastro e gestão de exercícios, grupos musculares e treinos personalizados para cada aluno. A aplicação facilita a organização dos dias de treino, exercícios, cargas, intervalos, séries e repetições, além de contar com um sistema inteligente de cálculo de volume e ajuste automático de carga."
+    "bizzidb": {
+      "category": "Código aberto · Desktop",
+      "title": "Bizzi DB",
+      "description": "Um workspace desktop privado para PostgreSQL e MySQL: explore dados, desenhe esquemas e execute SQL, tudo na sua máquina.",
+      "achievement_1": "Criei e mantenho como **código aberto (MIT)** para macOS, Windows e Linux.",
+      "achievement_2": "Local por design: sem conta, sem nuvem, e as senhas podem ficar no chaveiro do sistema.",
+      "achievement_3": "Alterações revisadas, diagramas de esquema e um editor SQL com planos de consulta em um só workspace."
     },
-    "project_3": {
-      "title": "App SL Treinos",
-      "description": "Projetado para levar a experiência dos alunos a um novo nível. Agora, os treinos criados pelos treinadores são acessados diretamente pelos alunos através de um app intuitivo e fácil de usar. Isso garante que cada aluno tenha seu plano de treino sempre à mão, com toda a orientação que precisa para executar suas atividades de forma eficiente."
-    },
-    "project_4": {
-      "title": "Gestor de Vendas - Marketplaces",
-      "description": "Plataforma SaaS para gestão de vendas em marketplaces, com integrações nativas para Amazon e Mercado Livre. Sistema multi-tenant com autenticação oAuth2, sincronização automática de produtos e vendas, dashboard com métricas avançadas e refresh automático de tokens para operação contínua."
+    "sltreinos": {
+      "category": "Web · Mobile",
+      "title": "SL Treinos",
+      "description": "Um dashboard para treinadores e um app para alunos em um único backend, para que os treinadores gastem tempo treinando em vez de calculando.",
+      "achievement_1": "**Cerca de 70% menos trabalho manual** para a consultoria.",
+      "achievement_2": "Cálculo automático de volume e ajuste de carga para cada aluno.",
+      "achievement_3": "Os alunos registram cada série no app, e os treinadores planejam com base no histórico real."
     }
   },
   "Testimonials": {
