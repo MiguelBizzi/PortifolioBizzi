@@ -36,7 +36,7 @@ export default function HeroSection() {
   return (
     <div
       id="home"
-      className="relative z-0 flex min-h-[760px] items-center justify-center overflow-hidden px-6 py-28 sm:min-h-screen"
+      className="relative z-0 flex min-h-[760px] items-center justify-center overflow-hidden px-6 pb-28 pt-44 sm:min-h-screen sm:py-28"
       ref={ref}
     >
       <FlowLines />

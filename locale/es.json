@@ -109,9 +109,10 @@
     }
   },
   "Contact": {
-    "work_together": "Trabajemos juntos",
-    "title": "Contacto",
-    "description": "Actualmente estoy disponible para trabajar. Si tienes un proyecto en mente, me encantaría saber de ti. Email: migueloliveirabizzi@gmail.com",
+    "eyebrow": "Trabajemos juntos",
+    "title_lead": "¿Tienes un producto que merece",
+    "title_accent": "construirse bien?",
+    "description": "Actualmente estoy disponible para trabajar. Si tienes un proyecto en mente, me encantaría saber de ti.",
     "form": {
       "name": "Nombre",
       "name_required": "El nombre es requerido",
@@ -126,8 +127,10 @@
       "success_message": "¡Tu mensaje ha sido enviado exitosamente!",
       "success_description": "Te responderé lo antes posible.",
       "error_message": "Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
-      "error_description": "Si el problema persiste, por favor contáctame directamente en migueloliveirabizzi@gmail.com"
-    }
+      "error_description": "Si el problema persiste, por favor contáctame directamente en migueloliveirabizzi@gmail.com",
+      "name_placeholder": "Tu nombre"
+    },
+    "linkedin": "linkedin.com/in/miguelbizzi"
   },
   "Proof": {
     "years_value": "5+ años",
@@ -164,5 +167,8 @@
     "download_pt": "Baixar CV · Português",
     "file_note": "PDF · EN / PT",
     "preview_role": "Ingeniero de Software Full Stack Sénior"
+  },
+  "Footer": {
+    "back_to_top": "Volver arriba"
   }
 }

@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 
-import { Button } from '@/components/ui/button'
 import {
   Form,
   FormControl,
@@ -16,13 +15,14 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '../ui/textarea'
-import { ArrowRight, LoaderCircle } from 'lucide-react'
+import { LoaderCircle, Send } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import type { SectionName } from '@/hooks/active-section-provider'
 import emailJs from '@emailjs/browser'
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { env } from '@/env'
 import { toast } from 'sonner'
+import { GradientText } from '@/components/ui/gradient-text'
 
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -33,17 +33,21 @@ export default function ContactSection() {
   const { ref } = useSectionInView(tHeader('contact') as SectionName)
 
   const formSchema = z.object({
-    name: z.string({
-      required_error: t('form.name_required'),
-    }),
+    name: z
+      .string({
+        required_error: t('form.name_required'),
+      })
+      .min(1, t('form.name_required')),
     email: z
       .string({
         required_error: t('form.email_required'),
       })
       .email(t('form.email_invalid')),
-    message: z.string({
-      required_error: t('form.message_required'),
-    }),
+    message: z
+      .string({
+        required_error: t('form.message_required'),
+      })
+      .min(1, t('form.message_required')),
   })
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -92,60 +96,85 @@ export default function ContactSection() {
       })
   }
 
+  const inputClass = 'h-11 rounded-[10px] border-input bg-background px-3.5 text-[15px] shadow-none'
+
   return (
-    <div id="contact" className="mb-16 px-4" ref={ref}>
-      <div className="mx-auto max-w-xl text-center">
-        <div className="flex justify-center">
-          <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">
-            {t('work_together')}
-          </p>
+    <section
+      id="contact"
+      ref={ref}
+      className="mx-auto mt-24 w-full max-w-[1120px] scroll-mt-28 px-6 sm:px-8 md:mt-28"
+    >
+      <div className="grid gap-10 rounded-3xl border border-border bg-card p-6 sm:p-10 min-[900px]:grid-cols-2 min-[900px]:gap-14 min-[900px]:p-14">
+        <div className="flex flex-col justify-between gap-10">
+          <div>
+            <p className="eyebrow">{t('eyebrow')}</p>
+            <h2 className="mt-3 font-display text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-[44px]">
+              {t('title_lead')} <GradientText>{t('title_accent')}</GradientText>
+            </h2>
+            <p className="mt-5 text-[17px] leading-relaxed text-muted-foreground">
+              {t('description')}
+            </p>
+          </div>
+          <div className="text-[15px] leading-[1.9]">
+            <a
+              href="mailto:migueloliveirabizzi@gmail.com"
+              className="break-all border-b border-foreground font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              migueloliveirabizzi@gmail.com
+            </a>
+            <p className="text-muted-foreground">{t('linkedin')}</p>
+          </div>
         </div>
-        <h2 className="mt-4 text-3xl font-bold">{t('title')}</h2>
-        <p className="mt-2 dark:text-white/60">{t('description')}</p>
-      </div>
 
-      <div className="mx-auto mt-14 max-w-2xl space-y-8">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>{t('form.name')}</FormLabel>
-                    <FormControl>
-                      <Input placeholder="John doe" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>{t('form.email')}</FormLabel>
-                    <FormControl>
-                      <Input placeholder={t('form.email_placeholder')} {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-[18px]">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-sm font-medium">{t('form.name')}</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder={t('form.name_placeholder')}
+                      autoComplete="name"
+                      className={inputClass}
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-sm font-medium">{t('form.email')}</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="email"
+                      placeholder={t('form.email_placeholder')}
+                      autoComplete="email"
+                      className={inputClass}
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
             <FormField
               control={form.control}
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{t('form.message')}</FormLabel>
+                  <FormLabel className="text-sm font-medium">{t('form.message')}</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder={t('form.message_placeholder')}
-                      className="min-h-[80px] resize-none"
+                      className="h-[120px] resize-none rounded-[10px] border-input bg-background px-3.5 py-3 text-[15px] shadow-none"
                       {...field}
                     />
                   </FormControl>
@@ -154,20 +183,21 @@ export default function ContactSection() {
               )}
             />
 
-            <div className="flex justify-end">
-              <Button disabled={isSubmitting}>
-                {isSubmitting ? (
-                  <LoaderCircle className="h-4 w-4 animate-spin" />
-                ) : (
-                  <Fragment>
-                    {t('form.send_button')} <ArrowRight className="ml-2 h-4 w-4" />
-                  </Fragment>
-                )}
-              </Button>
-            </div>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-foreground text-[15px] font-medium text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-60"
+            >
+              {isSubmitting ? (
+                <LoaderCircle aria-hidden="true" className="h-4 w-4 animate-spin" />
+              ) : (
+                <Send aria-hidden="true" className="h-4 w-4" />
+              )}
+              {t('form.send_button')}
+            </button>
           </form>
         </Form>
       </div>
-    </div>
+    </section>
   )
 }
