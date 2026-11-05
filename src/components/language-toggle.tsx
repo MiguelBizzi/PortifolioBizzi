@@ -21,8 +21,6 @@ export function LanguageToggle() {
         return '🇧🇷'
       case 'en':
         return '🇺🇸'
-      case 'de':
-        return '🇩🇪'
       case 'es':
         return '🇪🇸'
       default:
@@ -47,9 +45,6 @@ export function LanguageToggle() {
         </Link>
         <Link href="/" locale="en" className="hover:cursor-pointer">
           <DropdownMenuItem className="dark:hover:bg-white/20">🇺🇸 English</DropdownMenuItem>
-        </Link>
-        <Link href="/" locale="de" className="hover:cursor-pointer">
-          <DropdownMenuItem className="dark:hover:bg-white/20">🇩🇪 Deutsch</DropdownMenuItem>
         </Link>
         <Link href="/" locale="es" className="hover:cursor-pointer">
           <DropdownMenuItem className="dark:hover:bg-white/20">🇪🇸 Español</DropdownMenuItem>
