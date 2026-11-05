@@ -4,6 +4,8 @@ import TestimonialsSection from '@/components/testimonials/testimonials-section'
 import SkillsSection from '@/components/skills/skills-section'
 import ContactSection from '@/components/contact/contact-section'
 import { ProofStrip } from '@/components/proof/proof-strip'
+import AboutSection from '@/components/about/about-section'
+import ResumeSection from '@/components/resume/resume-section'
 import { Fragment } from 'react'
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <HeroSection />
       <ProofStrip />
       <ProjectsSection />
+      <AboutSection />
+      <ResumeSection />
       <TestimonialsSection />
       <SkillsSection />
       <ContactSection />

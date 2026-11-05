@@ -117,5 +117,31 @@
     "volume_label": "de volumen mensual de pagos en una plataforma que construí desde cero",
     "articles_label": "artículos por hora con un pipeline de IA que escalé",
     "users_label": "usuarios activos en una migración de plataforma legada que lideré"
+  },
+  "About": {
+    "eyebrow": "Sobre mí",
+    "title_lead": "Construido desde",
+    "title_accent": "cero",
+    "title_tail": ", funcionando en producción.",
+    "paragraph_1": "Ingeniero de software full stack sénior con más de 5 años de experiencia creando productos escalables desde cero. He liderado trabajo técnico en equipos globales, entregando plataformas críticas para salud, educación, CRM, SaaS y e-commerce, y eliminando cuellos de botella operativos con soluciones de alto rendimiento.",
+    "paragraph_2": "Las personas con las que trabajo suelen mencionar las mismas tres cosas: comunicación clara cuando la complejidad es alta, gestión del tiempo que protege las fechas de entrega y resolución creativa de problemas cuando las especificaciones son difusas.",
+    "education_label": "Formación",
+    "education_value": "Licenciatura en Sistemas de Información",
+    "education_detail": "PUC Minas · 2022 – 2026",
+    "languages_label": "Idiomas",
+    "languages_value": "Portugués, nativo|Inglés, fluido",
+    "languages_detail": "Español, intermedio · Alemán, básico",
+    "industries_label": "Sectores",
+    "industries_value": "Salud, educación, CRM, SaaS, e-commerce"
+  },
+  "Resume": {
+    "eyebrow": "CV",
+    "title_lead": "La historia completa,",
+    "title_accent": "en una página.",
+    "description": "Cada puesto, proyecto y resultado en un PDF limpio que puedes reenviar a tu equipo. Actualmente Ingeniero de Software Full Stack Sénior en Wiggle.",
+    "download_en": "Download CV · English",
+    "download_pt": "Baixar CV · Português",
+    "file_note": "PDF · EN / PT",
+    "preview_role": "Ingeniero de Software Full Stack Sénior"
   }
 }

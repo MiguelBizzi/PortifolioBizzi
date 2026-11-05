@@ -117,5 +117,31 @@
     "volume_label": "monthly payment volume on a platform I built from the ground up",
     "articles_label": "articles per hour through an AI pipeline I scaled",
     "users_label": "active users on a legacy platform migration I led"
+  },
+  "About": {
+    "eyebrow": "About",
+    "title_lead": "Built from",
+    "title_accent": "scratch",
+    "title_tail": ", run in production.",
+    "paragraph_1": "Senior full stack software engineer with 5+ years of experience building scalable products from scratch. I've led technical work in global teams, delivering critical platforms for healthcare, education, CRM, SaaS and e-commerce, and removing operational bottlenecks with high-performance solutions.",
+    "paragraph_2": "People I work with usually mention the same three things: clear communication when complexity is high, time management that protects delivery dates, and creative problem-solving when specs are fuzzy.",
+    "education_label": "Education",
+    "education_value": "B.Sc. Information Systems",
+    "education_detail": "PUC Minas · 2022 – 2026",
+    "languages_label": "Languages",
+    "languages_value": "Portuguese, native|English, fluent",
+    "languages_detail": "Spanish, intermediate · German, basic",
+    "industries_label": "Industries",
+    "industries_value": "Healthcare, education, CRM, SaaS, e-commerce"
+  },
+  "Resume": {
+    "eyebrow": "Resume",
+    "title_lead": "The full story,",
+    "title_accent": "on one page.",
+    "description": "Every role, project and result in a clean PDF you can forward to your team. Currently Senior Full Stack Software Engineer at Wiggle.",
+    "download_en": "Download CV · English",
+    "download_pt": "Baixar CV · Português",
+    "file_note": "PDF · EN / PT",
+    "preview_role": "Senior Full Stack Software Engineer"
   }
 }
