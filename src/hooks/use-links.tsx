@@ -5,25 +5,12 @@ export const useLinks = () => {
   const t = useTranslations('Header')
 
   return [
-    {
-      name: t('home') as SectionName,
-      slug: '#home',
-    },
-    {
-      name: t('projects') as SectionName,
-      slug: '#projects',
-    },
-    {
-      name: t('testimonials') as SectionName,
-      slug: '#testimonials',
-    },
-    {
-      name: t('skills') as SectionName,
-      slug: '#skills',
-    },
-    {
-      name: t('contact') as SectionName,
-      slug: '#contact',
-    },
+    { name: t('home') as SectionName, slug: '#home' },
+    { name: t('projects') as SectionName, slug: '#projects' },
+    { name: t('about') as SectionName, slug: '#about' },
+    { name: t('resume') as SectionName, slug: '#resume' },
+    { name: t('skills') as SectionName, slug: '#skills' },
+    { name: t('testimonials') as SectionName, slug: '#testimonials' },
+    { name: t('contact') as SectionName, slug: '#contact' },
   ] as const
 }

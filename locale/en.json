@@ -4,7 +4,11 @@
     "projects": "Projects",
     "testimonials": "Testimonials",
     "skills": "Skills",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about": "About",
+    "resume": "Resume",
+    "toggle_theme": "Toggle theme",
+    "change_language": "Change language"
   },
   "Home": {
     "available": "Available for new projects",

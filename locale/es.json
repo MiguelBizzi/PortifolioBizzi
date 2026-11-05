@@ -4,7 +4,11 @@
     "projects": "Proyectos",
     "testimonials": "Testimonios",
     "skills": "Habilidades",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "about": "Sobre mí",
+    "resume": "CV",
+    "toggle_theme": "Cambiar tema",
+    "change_language": "Cambiar idioma"
   },
   "Home": {
     "available": "Disponible para nuevos proyectos",
