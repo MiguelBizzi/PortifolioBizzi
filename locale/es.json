@@ -83,9 +83,20 @@
     }
   },
   "Skills": {
-    "stack": "Stack Tecnológico",
-    "title": "Habilidades",
-    "description": "Aquí están algunas de las tecnologías con las que trabajo."
+    "eyebrow": "Stack tecnológico",
+    "title_lead": "Herramientas con las que",
+    "title_accent": "entrego",
+    "title_tail": "",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de datos",
+      "ai": "IA y automatización",
+      "cloud": "Cloud y DevOps",
+      "testing": "Pruebas",
+      "payments": "Pagos",
+      "practice": "Forma de trabajar"
+    }
   },
   "Contact": {
     "work_together": "Trabajemos juntos",

@@ -137,3 +137,24 @@
     animation: none;
   }
 }
+
+@layer components {
+  .marquee {
+    animation: marquee 45s linear infinite;
+  }
+  .marquee-reverse {
+    animation-direction: reverse;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+  }
+}
