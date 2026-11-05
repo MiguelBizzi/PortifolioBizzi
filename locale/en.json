@@ -12,8 +12,9 @@
   },
   "Home": {
     "available": "Available for new projects",
-    "hello": "Hello, I'm Miguel Bizzi",
-    "description": "A fullstack software engineer based in Brazil. With expertise in building high-quality mobile apps and websites.",
+    "headline_lead": "Fullstack engineer building",
+    "headline_accent": "products people rely on.",
+    "description": "Senior full stack software engineer with 5+ years of experience building scalable products from scratch for global teams, across healthcare, education, SaaS and e-commerce.",
     "see_work": "See my work",
     "contact": "Contact me"
   },
@@ -92,5 +93,15 @@
       "error_message": "An error occurred while sending your message. Please try again.",
       "error_description": "If the problem persists, please contact me directly at migueloliveirabizzi@gmail.com"
     }
+  },
+  "Proof": {
+    "years_value": "5+ yrs",
+    "volume_value": "$2M+",
+    "articles_value": "500+",
+    "users_value": "1,000+",
+    "years_label": "building scalable products from scratch",
+    "volume_label": "monthly payment volume on a platform I built from the ground up",
+    "articles_label": "articles per hour through an AI pipeline I scaled",
+    "users_label": "active users on a legacy platform migration I led"
   }
 }

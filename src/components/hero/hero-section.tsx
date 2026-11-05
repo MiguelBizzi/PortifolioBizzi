@@ -2,9 +2,9 @@
 
 import memojiImage from '@/assets/memoji.png'
 import Image from 'next/image'
-import { Button } from '../ui/button'
-import { ArrowDown } from 'lucide-react'
-import { BackgroundBeams } from '../ui/background-beams'
+import { ArrowDown, Mail } from 'lucide-react'
+import { FlowLines } from './flow-lines'
+import { GradientText } from '../ui/gradient-text'
 import { useSectionInView } from '@/hooks/section-in-view'
 import { useActiveSection, type SectionName } from '@/hooks/active-section-provider'
 import ScrollToNextSectionButton from './scroll-to-next-section-button'
@@ -34,35 +34,50 @@ export default function HeroSection() {
   }
 
   return (
-    <div id="home" className="relative z-0 h-screen px-4 py-32 sm:px-0 md:py-48 lg:py-60" ref={ref}>
-      <BackgroundBeams className="-z-10" />
+    <div
+      id="home"
+      className="relative z-0 flex min-h-[760px] items-center justify-center overflow-hidden px-6 py-28 sm:min-h-screen"
+      ref={ref}
+    >
+      <FlowLines />
 
-      <div className="flex flex-col items-center">
-        <Image src={memojiImage} alt="Memoji" className="-mb-2 size-[100px]" />
+      <div className="flex flex-col items-center text-center">
+        <Image src={memojiImage} alt="Miguel's memoji" priority className="-mb-1.5 size-24" />
 
-        <div className="inline-flex items-center gap-4 rounded-lg border bg-secondary px-4 py-1.5 dark:border-gray-800 dark:bg-gray-950">
-          <div className="size-2.5 rounded-full bg-green-500" />
-          <div className="text-sm font-medium">{t('available')}</div>
+        <div className="inline-flex items-center gap-3 rounded-[10px] border border-border bg-muted px-4 py-1.5">
+          <span className="pulse-dot size-2.5 rounded-full bg-[#22A06B]" aria-hidden="true" />
+          <span className="text-sm font-medium">{t('available')}</span>
         </div>
 
-        <div className="mx-auto max-w-lg">
-          <h1 className="mt-8 text-center text-3xl font-bold tracking-wide md:text-4xl">
-            {t('hello')}
-          </h1>
-          <p className="mt-4 text-center text-gray-600 dark:text-white/60 md:text-lg">
-            {t('description')}
-          </p>
-        </div>
+        <h1 className="mt-8 max-w-[820px] text-balance font-display text-[40px] font-semibold leading-[1.04] tracking-[-0.035em] sm:text-6xl lg:text-[68px] lg:leading-[1.02]">
+          {t('headline_lead')} <GradientText>{t('headline_accent')}</GradientText>
+        </h1>
+        <p className="mt-6 max-w-[640px] text-base leading-relaxed text-muted-foreground sm:text-[19px]">
+          {t('description')}
+        </p>
 
-        <div className="z-[999] mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <Button variant="outline" onClick={handleGoToProjects}>
-            {t('see_work')} <ArrowDown className="ml-2 h-4 w-4" />
-          </Button>
-          <Button onClick={handleGoToContact}>
-            <span className="mr-2">👋</span> {t('contact')}
-          </Button>
+        <div className="relative z-10 mt-9 flex flex-wrap items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={handleGoToProjects}
+            className="inline-flex items-center gap-2 rounded-[10px] border border-border bg-card px-5 py-3 text-[15px] font-medium transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            {t('see_work')} <ArrowDown aria-hidden="true" className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={handleGoToContact}
+            className="inline-flex items-center gap-2 rounded-[10px] bg-foreground px-5 py-3 text-[15px] font-medium text-background transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            <Mail aria-hidden="true" className="h-4 w-4" /> {t('contact')}
+          </button>
         </div>
       </div>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-b from-transparent to-background"
+      />
 
       <ScrollToNextSectionButton onClick={handleGoToProjects} />
     </div>

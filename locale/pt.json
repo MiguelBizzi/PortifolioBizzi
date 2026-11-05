@@ -12,8 +12,9 @@
   },
   "Home": {
     "available": "Disponível para novos projetos",
-    "hello": "Olá, eu sou Miguel Bizzi",
-    "description": "Um engenheiro de software fullstack especializado em construir aplicativos móveis e sites de alta qualidade.",
+    "headline_lead": "Engenheiro fullstack construindo",
+    "headline_accent": "produtos em que as pessoas confiam.",
+    "description": "Engenheiro de software full stack sênior com mais de 5 anos de experiência construindo produtos escaláveis do zero para equipes globais, em saúde, educação, SaaS e e-commerce.",
     "see_work": "Veja meu trabalho",
     "contact": "Contate-me"
   },
@@ -92,5 +93,15 @@
       "error_message": "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
       "error_description": "Se o problema persistir, entre em contato diretamente comigo em migueloliveirabizzi@gmail.com"
     }
+  },
+  "Proof": {
+    "years_value": "5+ anos",
+    "volume_value": "$2M+",
+    "articles_value": "500+",
+    "users_value": "1,000+",
+    "years_label": "construindo produtos escaláveis do zero",
+    "volume_label": "de volume mensal de pagamentos em uma plataforma que construí do zero",
+    "articles_label": "artigos por hora em um pipeline de IA que escalei",
+    "users_label": "usuários ativos em uma migração de plataforma legada que liderei"
   }
 }

@@ -12,8 +12,9 @@
   },
   "Home": {
     "available": "Disponible para nuevos proyectos",
-    "hello": "Hola, soy Miguel Bizzi",
-    "description": "Un ingeniero de software fullstack radicado en Brasil. Con experiencia en la construcción de aplicaciones móviles y sitios web de alta calidad.",
+    "headline_lead": "Ingeniero fullstack creando",
+    "headline_accent": "productos en los que la gente confía.",
+    "description": "Ingeniero de software full stack sénior con más de 5 años de experiencia creando productos escalables desde cero para equipos globales, en salud, educación, SaaS y e-commerce.",
     "see_work": "Ver mi trabajo",
     "contact": "Contáctame"
   },
@@ -92,5 +93,15 @@
       "error_message": "Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
       "error_description": "Si el problema persiste, por favor contáctame directamente en migueloliveirabizzi@gmail.com"
     }
+  },
+  "Proof": {
+    "years_value": "5+ años",
+    "volume_value": "$2M+",
+    "articles_value": "500+",
+    "users_value": "1,000+",
+    "years_label": "creando productos escalables desde cero",
+    "volume_label": "de volumen mensual de pagos en una plataforma que construí desde cero",
+    "articles_label": "artículos por hora con un pipeline de IA que escalé",
+    "users_label": "usuarios activos en una migración de plataforma legada que lideré"
   }
 }
