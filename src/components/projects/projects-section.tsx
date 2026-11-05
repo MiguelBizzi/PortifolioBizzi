@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   const t = useTranslations('Projects')
   const tHeader = useTranslations('Header')
 
-  const { ref } = useSectionInView(tHeader('projects') as SectionName)
+  const { ref } = useSectionInView(tHeader('projects') as SectionName, false, 0.1)
   const projects = useProjects()
 
   return (

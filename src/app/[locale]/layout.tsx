@@ -22,8 +22,9 @@ const interTight = Inter_Tight({
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'Bizzi Portfolio',
-  description: 'Miguel Bizzi Portfolio',
+  title: 'Miguel Bizzi | Full Stack Software Engineer',
+  description:
+    'Senior full stack software engineer with 5+ years of experience building scalable products from scratch for global teams, across healthcare, education, SaaS and e-commerce.',
 }
 
 export default async function RootLayout({

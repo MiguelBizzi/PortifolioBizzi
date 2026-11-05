@@ -65,17 +65,6 @@ const config: Config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      animation: {
-        ['infinite-slider']: 'infiniteSlider 20s linear infinite',
-      },
-      keyframes: {
-        infiniteSlider: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': {
-            transform: 'translateX(calc(-250px * 5))',
-          },
-        },
-      },
     },
   },
   plugins: [require('tailwindcss-animate')],
