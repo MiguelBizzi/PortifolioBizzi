@@ -16,8 +16,8 @@ export default function Home() {
       <ProjectsSection />
       <AboutSection />
       <ResumeSection />
-      <TestimonialsSection />
       <SkillsSection />
+      <TestimonialsSection />
       <ContactSection />
     </Fragment>
   )

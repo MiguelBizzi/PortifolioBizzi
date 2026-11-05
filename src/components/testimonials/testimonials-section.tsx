@@ -1,46 +1,39 @@
 'use client'
 
-import { useSectionInView } from '@/hooks/section-in-view'
-import TestimonialCard from './testimonial-card'
 import { useTranslations } from 'next-intl'
+import { useSectionInView } from '@/hooks/section-in-view'
 import type { SectionName } from '@/hooks/active-section-provider'
 import { useTestimonials } from '@/hooks/use-testimonials'
+import { GradientText } from '@/components/ui/gradient-text'
+import TestimonialCard from './testimonial-card'
 
 export default function TestimonialsSection() {
   const tHeader = useTranslations('Header')
   const t = useTranslations('Testimonials')
-
   const testimonials = useTestimonials()
-
   const { ref } = useSectionInView(tHeader('testimonials') as SectionName)
 
   return (
-    <div id="testimonials" className="my-32 px-4" ref={ref}>
-      <div className="mx-auto max-w-lg text-center">
-        <div className="flex justify-center">
-          <p className="bg-gradient-to-r from-blue-500 to-violet-400 bg-clip-text font-semibold uppercase tracking-widest text-transparent">
-            {t('what_clients_say')}
-          </p>
+    <section
+      id="testimonials"
+      ref={ref}
+      className="mx-auto mt-24 w-full max-w-[1120px] scroll-mt-28 px-6 sm:px-8 md:mt-28"
+    >
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="eyebrow">{t('eyebrow')}</p>
+          <h2 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-[-0.025em] sm:text-[40px]">
+            {t('title_lead')} <GradientText>{t('title_accent')}</GradientText>
+          </h2>
         </div>
-        <h2 className="mt-4 text-3xl font-bold">{t('title')}</h2>
-        <p className="mt-2 dark:text-white/60">{t('description')}</p>
+        <p className="font-mono text-xs text-muted-foreground">{t('roles_label')}</p>
       </div>
 
-      <div className="mx-auto mt-16 max-w-screen-2xl space-y-8 sm:mt-20">
-        <div className="[mask-image:linear-gradient(to_right, transparent, black_10%)] -my-4 flex overflow-x-clip py-4">
-          <div className="group flex flex-none animate-infinite-slider gap-8 [animation-duration:30s] hover:[animation-play-state:paused]">
-            {[
-              new Array(2)
-                .fill(0)
-                .map(() =>
-                  testimonials.map((testimonial, index) => (
-                    <TestimonialCard key={index} data={testimonial} />
-                  ))
-                ),
-            ]}
-          </div>
-        </div>
+      <div className="mt-10 grid grid-cols-1 gap-5 min-[900px]:grid-cols-[1.15fr_1fr]">
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard key={testimonial.id} data={testimonial} featured={index === 0} />
+        ))}
       </div>
-    </div>
+    </section>
   )
 }

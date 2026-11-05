@@ -61,25 +61,35 @@
     }
   },
   "Testimonials": {
-    "what_clients_say": "What they say",
-    "title": "Testimonials",
-    "description": "Here's what my clients and co-workers have to say about working with me."
+    "eyebrow": "What they say",
+    "title_lead": "Kind words from",
+    "title_accent": "teammates",
+    "roles_label": "Tech Lead · QA · Software Engineer"
   },
   "TestimonialsItems": {
-    "testimonial_1": {
-      "name": "Rodrigo Mota",
-      "field": "Software Engineer - Faculdade Realiza",
-      "text": "Miguel Bizzi is a developer committed to code excellence and project quality. Always focused on best practices and details, our partnership is productive and friendly, making working with him a great experience."
-    },
-    "testimonial_2": {
-      "name": "Lucas Rezende",
-      "field": "Quality Analyst - Aglets Soluções",
-      "text": "I had the opportunity to work as a QA on Miguel Bizzi's team and I can say that he is an exceptional programmer! His technical skills are remarkable, but what really sets him apart is his excellent communication. Miguel knows how to explain complex concepts in an accessible way, which facilitates team collaboration."
-    },
-    "testimonial_3": {
+    "daniel": {
       "name": "Daniel Rabelo",
-      "field": "Tech Lead - Aglets Soluções",
-      "text": "Miguel is a dedicated professional focused on delivering high-quality results. He has an excellent ability to manage time and prioritize the most important tasks, ensuring that projects are always on schedule. In addition, his ability to solve complex problems with creative solutions makes all the difference."
+      "role": "Tech Lead · Aglets Soluções",
+      "pull_before": "His ability to solve complex problems with ",
+      "pull_accent": "creative solutions",
+      "pull_after": " makes all the difference.",
+      "body": "Miguel is a dedicated professional focused on delivering high-quality results. He has an excellent ability to manage time and prioritize the most important tasks, ensuring that projects are always on schedule."
+    },
+    "lucas": {
+      "name": "Lucas Rezende",
+      "role": "Quality Analyst · Aglets Soluções",
+      "pull_before": "His technical skills are remarkable, but what really sets him apart is his ",
+      "pull_accent": "excellent communication.",
+      "pull_after": "",
+      "body": "I had the opportunity to work as a QA on Miguel Bizzi's team and I can say that he is an exceptional programmer! Miguel knows how to explain complex concepts in an accessible way, which facilitates team collaboration."
+    },
+    "rodrigo": {
+      "name": "Rodrigo Mota",
+      "role": "Software Engineer · Faculdade Realiza",
+      "pull_before": "Miguel Bizzi is a developer committed to ",
+      "pull_accent": "code excellence",
+      "pull_after": " and project quality.",
+      "body": "Always focused on best practices and details, our partnership is productive and friendly, making working with him a great experience."
     }
   },
   "Skills": {

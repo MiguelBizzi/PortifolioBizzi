@@ -61,25 +61,35 @@
     }
   },
   "Testimonials": {
-    "what_clients_say": "O que dizem",
-    "title": "Depoimentos",
-    "description": "Aqui está o que meus clientes e colegas têm a dizer sobre trabalhar comigo."
+    "eyebrow": "O que dizem",
+    "title_lead": "Palavras gentis de",
+    "title_accent": "colegas",
+    "roles_label": "Tech Lead · QA · Engenheiro de software"
   },
   "TestimonialsItems": {
-    "testimonial_1": {
-      "name": "Rodrigo Mota",
-      "field": "Engenheiro de software - Faculdade Realiza",
-      "text": "Miguel Bizzi é um desenvolvedor comprometido com a excelência do código e a qualidade do projeto. Sempre focado em boas práticas e detalhes, nossa parceria é produtiva e amigável, o que torna trabalhar com ele uma ótima experiência."
-    },
-    "testimonial_2": {
-      "name": "Lucas Rezende",
-      "field": "Analista de qualidade - Aglets Soluções",
-      "text": "Tive a oportunidade de trabalhar como QA da equipe do Miguel Bizzi e posso dizer que ele é um programador excepcional! Sua habilidade técnica é notável, mas o que realmente o diferencia é sua excelente comunicação. Miguel sabe explicar conceitos complexos de maneira acessível, o que facilita a colaboração em equipe."
-    },
-    "testimonial_3": {
+    "daniel": {
       "name": "Daniel Rabelo",
-      "field": "Tech Lead - Aglets Soluções",
-      "text": "Miguel é um profissional dedicado e focado em entregar resultados de alta qualidade. Ele tem uma excelente habilidade para gerenciar o tempo e priorizar as tarefas mais importantes, garantindo que os projetos sempre estejam no prazo. Além disso, sua capacidade de resolver problemas complexos com soluções criativas faz toda a diferença."
+      "role": "Tech Lead · Aglets Soluções",
+      "pull_before": "Sua capacidade de resolver problemas complexos com ",
+      "pull_accent": "soluções criativas",
+      "pull_after": " faz toda a diferença.",
+      "body": "Miguel é um profissional dedicado e focado em entregar resultados de alta qualidade. Ele tem uma excelente habilidade para gerenciar o tempo e priorizar as tarefas mais importantes, garantindo que os projetos sempre estejam no prazo."
+    },
+    "lucas": {
+      "name": "Lucas Rezende",
+      "role": "Analista de qualidade · Aglets Soluções",
+      "pull_before": "Sua habilidade técnica é notável, mas o que realmente o diferencia é sua ",
+      "pull_accent": "excelente comunicação.",
+      "pull_after": "",
+      "body": "Tive a oportunidade de trabalhar como QA da equipe do Miguel Bizzi e posso dizer que ele é um programador excepcional! Miguel sabe explicar conceitos complexos de maneira acessível, o que facilita a colaboração em equipe."
+    },
+    "rodrigo": {
+      "name": "Rodrigo Mota",
+      "role": "Engenheiro de software · Faculdade Realiza",
+      "pull_before": "Miguel Bizzi é um desenvolvedor comprometido com a ",
+      "pull_accent": "excelência do código",
+      "pull_after": " e a qualidade do projeto.",
+      "body": "Sempre focado em boas práticas e detalhes, nossa parceria é produtiva e amigável, o que torna trabalhar com ele uma ótima experiência."
     }
   },
   "Skills": {
