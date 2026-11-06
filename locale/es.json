@@ -12,7 +12,7 @@
   },
   "Home": {
     "available": "Disponible para nuevos proyectos",
-    "headline_lead": "Ingeniero fullstack creando",
+    "headline_lead": "Ingeniero full stack creando",
     "headline_accent": "productos en los que la gente confía.",
     "description": "Ingeniero de software full stack sénior con más de 5 años de experiencia creando productos escalables desde cero para equipos globales, en salud, educación, SaaS y e-commerce.",
     "see_work": "Ver mi trabajo",
@@ -31,14 +31,14 @@
       "category": "Fintech · Salud",
       "title": "Wiggle",
       "description": "SaaS multi-tenant para grupos veterinarios: POS, planes de tratamiento, facturación, CRM y pagos en una sola plataforma, entregada como aplicación web, extensión de navegador y pago de facturas en línea.",
-      "achievement_1": "**US$ 2 millones+ procesados cada mes** en más de 15 clínicas y más de 5.000 transacciones.",
-      "achievement_2": "El único desarrollador, trabajando con el CTO, el CEO y un QA, desde el primer commit.",
+      "achievement_1": "**Más de US$ 2 millones procesados cada mes** en más de 15 clínicas y más de 5.000 transacciones.",
+      "achievement_2": "Único desarrollador, trabajando junto al CTO, el CEO y un QA, desde el primer commit.",
       "achievement_3": "Un portal de autoservicio redujo los tickets administrativos, y la ingesta de planes con IA aceleró el onboarding."
     },
     "phew": {
       "category": "IA · SaaS",
       "title": "Phew.ai",
-      "description": "Inteligencia de contenido con IA: feeds personalizados de artículos se convierten en publicaciones listas para publicar, con la voz propia de la marca.",
+      "description": "Inteligencia de contenido con IA: feeds personalizados de artículos se convierten en publicaciones listas para publicar, con la voz de la propia marca.",
       "achievement_1": "**Más de 500 artículos por hora** en el pipeline, con lotes, reintentos y fallback automático.",
       "achievement_2": "Lideré el desarrollo y definí los estándares técnicos de un equipo global.",
       "achievement_3": "Mentoré a colaboradores equilibrando rendimiento, costo y mantenibilidad."
@@ -57,12 +57,12 @@
       "description": "Un panel para entrenadores y una app para alumnos sobre un mismo backend, para que los entrenadores dediquen su tiempo a entrenar en lugar de calcular.",
       "achievement_1": "**Cerca de un 70% menos de trabajo manual** para la consultoría.",
       "achievement_2": "Cálculo automático de volumen y ajuste de carga para cada alumno.",
-      "achievement_3": "Los alumnos registran cada serie en la app, y los entrenadores planifican con base en el historial real."
+      "achievement_3": "Los alumnos registran cada serie en la app, y los entrenadores planifican a partir del historial real."
     }
   },
   "Testimonials": {
     "eyebrow": "Lo que dicen",
-    "title_lead": "Palabras amables de",
+    "title_lead": "Elogios de",
     "title_accent": "compañeros",
     "roles_label": "Tech Lead · QA · Ingeniero de software"
   },
@@ -73,7 +73,7 @@
       "pull_before": "Su capacidad para resolver problemas complejos con ",
       "pull_accent": "soluciones creativas",
       "pull_after": " marca toda la diferencia.",
-      "body": "Miguel es un profesional dedicado enfocado en entregar resultados de alta calidad. Tiene una excelente capacidad para gestionar el tiempo y priorizar las tareas más importantes, asegurando que los proyectos siempre estén en el cronograma."
+      "body": "Miguel es un profesional dedicado y centrado en entregar resultados de alta calidad. Gestiona muy bien el tiempo y prioriza las tareas más importantes, de modo que los proyectos siempre se entregan a tiempo."
     },
     "lucas": {
       "name": "Lucas Rezende",
@@ -89,7 +89,7 @@
       "pull_before": "Miguel Bizzi es un desarrollador comprometido con la ",
       "pull_accent": "excelencia del código",
       "pull_after": " y la calidad del proyecto.",
-      "body": "Siempre enfocado en las mejores prácticas y detalles, nuestra asociación es productiva y amigable, haciendo que trabajar con él sea una gran experiencia."
+      "body": "Siempre enfocado en las buenas prácticas y los detalles, nuestra colaboración es productiva y cercana, lo que hace que trabajar con él sea una gran experiencia."
     }
   },
   "Skills": {
@@ -105,42 +105,42 @@
       "cloud": "Cloud y DevOps",
       "testing": "Pruebas",
       "payments": "Pagos",
-      "practice": "Forma de trabajar"
+      "practice": "Cómo trabajo"
     }
   },
   "Contact": {
     "eyebrow": "Trabajemos juntos",
     "title_lead": "¿Tienes un producto que merece",
     "title_accent": "construirse bien?",
-    "description": "Actualmente estoy disponible para trabajar. Si tienes un proyecto en mente, me encantaría saber de ti.",
+    "description": "Ahora mismo estoy disponible para nuevos proyectos. Si tienes algo en mente, me encantaría saber de ti.",
     "form": {
       "name": "Nombre",
-      "name_required": "El nombre es requerido",
-      "email": "Email",
-      "email_required": "El email es requerido",
-      "email_invalid": "Dirección de email inválida",
-      "email_placeholder": "m@example.com",
+      "name_required": "El nombre es obligatorio",
+      "email": "Correo electrónico",
+      "email_required": "El correo electrónico es obligatorio",
+      "email_invalid": "Correo electrónico no válido",
+      "email_placeholder": "m@ejemplo.com",
       "message": "Mensaje",
-      "message_required": "El mensaje es requerido",
+      "message_required": "El mensaje es obligatorio",
       "message_placeholder": "Escribe tu mensaje aquí...",
       "send_button": "Enviar",
-      "success_message": "¡Tu mensaje ha sido enviado exitosamente!",
+      "success_message": "¡Tu mensaje se ha enviado correctamente!",
       "success_description": "Te responderé lo antes posible.",
-      "error_message": "Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
-      "error_description": "Si el problema persiste, por favor contáctame directamente en migueloliveirabizzi@gmail.com",
+      "error_message": "Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.",
+      "error_description": "Si el problema persiste, escríbeme directamente a migueloliveirabizzi@gmail.com",
       "name_placeholder": "Tu nombre"
     },
     "linkedin": "linkedin.com/in/miguelbizzi"
   },
   "Proof": {
     "years_value": "5+ años",
-    "volume_value": "$2M+",
+    "volume_value": "US$ 2 M+",
     "articles_value": "500+",
-    "users_value": "1,000+",
+    "users_value": "1.000+",
     "years_label": "creando productos escalables desde cero",
     "volume_label": "de volumen mensual de pagos en una plataforma que construí desde cero",
     "articles_label": "artículos por hora con un pipeline de IA que escalé",
-    "users_label": "usuarios activos en una migración de plataforma legada que lideré"
+    "users_label": "usuarios activos en una migración de plataforma heredada que lideré"
   },
   "About": {
     "eyebrow": "Sobre mí",

@@ -12,14 +12,14 @@
   },
   "Home": {
     "available": "Available for new projects",
-    "headline_lead": "Fullstack engineer building",
+    "headline_lead": "Full stack engineer building",
     "headline_accent": "products people rely on.",
     "description": "Senior full stack software engineer with 5+ years of experience building scalable products from scratch for global teams, across healthcare, education, SaaS and e-commerce.",
     "see_work": "See my work",
     "contact": "Contact me"
   },
   "Projects": {
-    "eyebrow": "Principal projects",
+    "eyebrow": "Main projects",
     "title_lead": "Products I've",
     "title_accent": "shipped",
     "subtitle": "The four projects I'm proudest of, and what each one achieved.",
@@ -32,7 +32,7 @@
       "title": "Wiggle",
       "description": "Multi-tenant SaaS for veterinary groups: POS, treatment plans, invoicing, CRM and payments in one platform, delivered as a web app, a browser extension and online bill pay.",
       "achievement_1": "**$2M+ processed every month** across 15+ clinics and 5,000+ transactions.",
-      "achievement_2": "The only developer, working with the CTO, CEO and a QA, from the first commit.",
+      "achievement_2": "Sole developer, working alongside the CTO, CEO and a QA, from the first commit.",
       "achievement_3": "A self-service portal reduced admin tickets, and AI-assisted plan ingestion sped up onboarding."
     },
     "phew": {
@@ -49,7 +49,7 @@
       "description": "A private desktop workspace for PostgreSQL and MySQL: browse data, design schemas and run SQL, all on your machine.",
       "achievement_1": "Created and maintain it as **open source (MIT)** for macOS, Windows and Linux.",
       "achievement_2": "Local-only by design: no account, no cloud, passwords can live in the system keychain.",
-      "achievement_3": "Reviewed changes, schema diagrams and a SQL editor with query plans in one workspace."
+      "achievement_3": "Change review, schema diagrams and a SQL editor with query plans in one workspace."
     },
     "sltreinos": {
       "category": "Web · Mobile",
@@ -93,7 +93,7 @@
     }
   },
   "Skills": {
-    "eyebrow": "Technology stack",
+    "eyebrow": "Tech stack",
     "title_lead": "Tools I",
     "title_accent": "ship",
     "title_tail": "with",
@@ -112,7 +112,7 @@
     "eyebrow": "Let's work together",
     "title_lead": "Have a product worth",
     "title_accent": "building well?",
-    "description": "I'm currently available for work. If you have a project in mind, I'd love to hear from you.",
+    "description": "I'm currently open to new work. If you have a project in mind, I'd love to hear from you.",
     "form": {
       "name": "Name",
       "name_required": "Name is required",
@@ -123,7 +123,7 @@
       "message": "Message",
       "message_required": "Message is required",
       "message_placeholder": "Write your message here...",
-      "send_button": "Submit",
+      "send_button": "Send message",
       "success_message": "Your message has been sent successfully!",
       "success_description": "I'll get back to you as soon as possible.",
       "error_message": "An error occurred while sending your message. Please try again.",

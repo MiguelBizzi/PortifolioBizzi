@@ -12,18 +12,18 @@
   },
   "Home": {
     "available": "Disponível para novos projetos",
-    "headline_lead": "Engenheiro fullstack construindo",
+    "headline_lead": "Engenheiro full stack criando",
     "headline_accent": "produtos em que as pessoas confiam.",
     "description": "Engenheiro de software full stack sênior com mais de 5 anos de experiência construindo produtos escaláveis do zero para equipes globais, em saúde, educação, SaaS e e-commerce.",
     "see_work": "Veja meu trabalho",
-    "contact": "Contate-me"
+    "contact": "Fale comigo"
   },
   "Projects": {
     "eyebrow": "Principais projetos",
     "title_lead": "Produtos que",
     "title_accent": "entreguei",
     "subtitle": "Os quatro projetos dos quais mais me orgulho e o que cada um alcançou.",
-    "achieved_label": "O que eu conquistei",
+    "achieved_label": "O que eu alcancei",
     "github_link": "Ver no GitHub"
   },
   "ProjectsItems": {
@@ -31,8 +31,8 @@
       "category": "Fintech · Saúde",
       "title": "Wiggle",
       "description": "SaaS multi-tenant para grupos veterinários: PDV, planos de tratamento, faturamento, CRM e pagamentos em uma única plataforma, entregue como aplicação web, extensão de navegador e pagamento de contas online.",
-      "achievement_1": "**US$ 2 milhões+ processados por mês** em mais de 15 clínicas e mais de 5.000 transações.",
-      "achievement_2": "Único desenvolvedor, trabalhando com o CTO, o CEO e um QA, desde o primeiro commit.",
+      "achievement_1": "**Mais de US$ 2 milhões processados por mês** em mais de 15 clínicas e mais de 5.000 transações.",
+      "achievement_2": "Único desenvolvedor, trabalhando ao lado do CTO, do CEO e de um QA, desde o primeiro commit.",
       "achievement_3": "Um portal de autoatendimento reduziu chamados administrativos, e a ingestão de planos com IA acelerou o onboarding."
     },
     "phew": {
@@ -49,12 +49,12 @@
       "description": "Um workspace desktop privado para PostgreSQL e MySQL: explore dados, desenhe esquemas e execute SQL, tudo na sua máquina.",
       "achievement_1": "Criei e mantenho como **código aberto (MIT)** para macOS, Windows e Linux.",
       "achievement_2": "Local por design: sem conta, sem nuvem, e as senhas podem ficar no chaveiro do sistema.",
-      "achievement_3": "Alterações revisadas, diagramas de esquema e um editor SQL com planos de consulta em um só workspace."
+      "achievement_3": "Revisão de alterações, diagramas de esquema e um editor SQL com planos de consulta em um só workspace."
     },
     "sltreinos": {
       "category": "Web · Mobile",
       "title": "SL Treinos",
-      "description": "Um dashboard para treinadores e um app para alunos em um único backend, para que os treinadores gastem tempo treinando em vez de calculando.",
+      "description": "Um painel para treinadores e um app para alunos no mesmo backend, para que os treinadores passem o tempo treinando em vez de fazendo contas.",
       "achievement_1": "**Cerca de 70% menos trabalho manual** para a consultoria.",
       "achievement_2": "Cálculo automático de volume e ajuste de carga para cada aluno.",
       "achievement_3": "Os alunos registram cada série no app, e os treinadores planejam com base no histórico real."
@@ -62,7 +62,7 @@
   },
   "Testimonials": {
     "eyebrow": "O que dizem",
-    "title_lead": "Palavras gentis de",
+    "title_lead": "Elogios de",
     "title_accent": "colegas",
     "roles_label": "Tech Lead · QA · Engenheiro de software"
   },
@@ -70,15 +70,15 @@
     "daniel": {
       "name": "Daniel Rabelo",
       "role": "Tech Lead · Aglets Soluções",
-      "pull_before": "Sua capacidade de resolver problemas complexos com ",
+      "pull_before": "A capacidade dele de resolver problemas complexos com ",
       "pull_accent": "soluções criativas",
       "pull_after": " faz toda a diferença.",
-      "body": "Miguel é um profissional dedicado e focado em entregar resultados de alta qualidade. Ele tem uma excelente habilidade para gerenciar o tempo e priorizar as tarefas mais importantes, garantindo que os projetos sempre estejam no prazo."
+      "body": "Miguel é um profissional dedicado e focado em entregar resultados de alta qualidade. Ele gerencia muito bem o tempo e prioriza as tarefas mais importantes, garantindo que os projetos sempre cumpram os prazos."
     },
     "lucas": {
       "name": "Lucas Rezende",
       "role": "Analista de qualidade · Aglets Soluções",
-      "pull_before": "Sua habilidade técnica é notável, mas o que realmente o diferencia é sua ",
+      "pull_before": "A habilidade técnica dele é notável, mas o que realmente o diferencia é a ",
       "pull_accent": "excelente comunicação.",
       "pull_after": "",
       "body": "Tive a oportunidade de trabalhar como QA da equipe do Miguel Bizzi e posso dizer que ele é um programador excepcional! Miguel sabe explicar conceitos complexos de maneira acessível, o que facilita a colaboração em equipe."
@@ -93,7 +93,7 @@
     }
   },
   "Skills": {
-    "eyebrow": "Stack de tecnologia",
+    "eyebrow": "Stack tecnológico",
     "title_lead": "Ferramentas que uso para",
     "title_accent": "entregar",
     "title_tail": "",
@@ -105,38 +105,38 @@
       "cloud": "Cloud e DevOps",
       "testing": "Testes",
       "payments": "Pagamentos",
-      "practice": "Formas de trabalho"
+      "practice": "Como eu trabalho"
     }
   },
   "Contact": {
     "eyebrow": "Vamos trabalhar juntos",
     "title_lead": "Tem um produto que vale a pena",
     "title_accent": "construir bem?",
-    "description": "Atualmente estou disponível para trabalhar. Se você tem um projeto em mente, adoraria ouvir de você.",
+    "description": "No momento, estou disponível para novos trabalhos. Se você tem um projeto em mente, adoraria conversar.",
     "form": {
       "name": "Nome",
-      "name_required": "Nome é obrigatório",
-      "email": "Email",
-      "email_required": "Email é obrigatório",
-      "email_invalid": "Endereço de email inválido",
+      "name_required": "O nome é obrigatório",
+      "email": "E-mail",
+      "email_required": "O e-mail é obrigatório",
+      "email_invalid": "E-mail inválido",
       "email_placeholder": "m@exemplo.com",
       "message": "Mensagem",
-      "message_required": "Mensagem é obrigatória",
+      "message_required": "A mensagem é obrigatória",
       "message_placeholder": "Escreva sua mensagem aqui...",
       "send_button": "Enviar",
       "success_message": "Sua mensagem foi enviada com sucesso!",
-      "success_description": "Entrarei em contato com você o mais rápido possível.",
+      "success_description": "Retorno o mais rápido possível.",
       "error_message": "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
-      "error_description": "Se o problema persistir, entre em contato diretamente comigo em migueloliveirabizzi@gmail.com",
+      "error_description": "Se o problema persistir, fale comigo diretamente em migueloliveirabizzi@gmail.com",
       "name_placeholder": "Seu nome"
     },
     "linkedin": "linkedin.com/in/miguelbizzi"
   },
   "Proof": {
     "years_value": "5+ anos",
-    "volume_value": "$2M+",
+    "volume_value": "US$ 2 mi+",
     "articles_value": "500+",
-    "users_value": "1,000+",
+    "users_value": "1.000+",
     "years_label": "construindo produtos escaláveis do zero",
     "volume_label": "de volume mensal de pagamentos em uma plataforma que construí do zero",
     "articles_label": "artigos por hora em um pipeline de IA que escalei",
@@ -162,7 +162,7 @@
     "eyebrow": "Currículo",
     "title_lead": "A história completa,",
     "title_accent": "em uma página.",
-    "description": "Cada cargo, projeto e resultado em um PDF limpo que você pode encaminhar para o seu time. Atualmente Engenheiro de Software Full Stack Sênior na Wiggle.",
+    "description": "Cada cargo, projeto e resultado em um PDF enxuto que você pode encaminhar para o seu time. Atualmente Engenheiro de Software Full Stack Sênior na Wiggle.",
     "download_en": "Download CV · English",
     "download_pt": "Baixar CV · Português",
     "file_note": "PDF · EN / PT",

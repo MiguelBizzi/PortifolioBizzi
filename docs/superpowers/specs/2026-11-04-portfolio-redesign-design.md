@@ -32,7 +32,7 @@ Order of sections and header links: Home, Projects, About, Resume, Skills, Testi
 | 0 | Header (floating pill) | Same behavior as today, new link order, theme toggle and language menu without borders (section 6) |
 | 1 | Hero | Memoji, availability pill, headline "Fullstack engineer building products people rely on." (gradient on the second half), CV-based subtitle, buttons "See my work" and "Contact me" (mail icon), animated flowing-lines background, fade into the page |
 | 2 | Proof strip | Four gradient numbers: 5+ yrs, $2M+ monthly payment volume, 500+ articles per hour, 1,000+ active users |
-| 3 | Projects | Eyebrow "Principal projects", title "Products I've shipped", four cards (below) |
+| 3 | Projects | Eyebrow "Main projects", title "Products I've shipped", four cards (below) |
 | 4 | About | CV summary, three soft-skill chips, education, languages, industries |
 | 5 | Resume | Card with "Download CV" in English and Portuguese, paper preview |
 | 6 | Skills | Two scrolling rows of large tech names, then eight grouped cards (one with a gradient border) |
