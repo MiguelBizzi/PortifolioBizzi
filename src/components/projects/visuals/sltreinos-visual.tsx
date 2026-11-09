@@ -22,7 +22,7 @@ export function SlTreinosVisual() {
           />
         </BrowserFrame>
       </div>
-      <div className="absolute bottom-0 right-0 w-[330px] overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white shadow-[0_26px_56px_-22px_rgba(11,16,32,0.5)]">
+      <div className="absolute bottom-0 right-0 w-[330px] overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white p-2">
         <Image
           src={appImage}
           alt="SL Treinos student app screens"

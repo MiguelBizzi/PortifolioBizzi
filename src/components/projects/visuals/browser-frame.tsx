@@ -10,7 +10,7 @@ export function BrowserFrame({
   return (
     <div
       className={cn(
-        'overflow-hidden rounded-xl border border-border bg-card shadow-[0_26px_60px_-28px_rgba(11,16,32,0.4)]',
+        'overflow-hidden rounded-xl border border-border bg-card',
         className
       )}
     >

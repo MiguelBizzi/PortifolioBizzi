@@ -15,14 +15,14 @@ export function BizziDbVisual() {
         alt="Bizzi DB data grid"
         width={560}
         sizes="560px"
-        className="absolute left-0 top-1.5 block h-auto w-[560px] [filter:drop-shadow(0_26px_40px_rgba(11,16,32,0.35))]"
+        className="absolute left-0 top-1.5 block h-auto w-[560px]"
       />
       <Image
         src={erdImage}
         alt="Bizzi DB schema diagram"
         width={330}
         sizes="330px"
-        className="absolute bottom-0 right-0 block h-auto w-[330px] [filter:drop-shadow(0_22px_34px_rgba(11,16,32,0.4))]"
+        className="absolute bottom-0 right-0 block h-auto w-[330px]"
       />
     </ScaledStage>
   )

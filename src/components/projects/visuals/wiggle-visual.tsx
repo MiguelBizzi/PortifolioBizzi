@@ -24,7 +24,7 @@ export function WiggleVisual() {
           />
         </BrowserFrame>
       </div>
-      <div className="absolute left-0 top-[84px] h-[296px] w-[186px] overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white shadow-[0_26px_56px_-22px_rgba(11,16,32,0.5)]">
+      <div className="absolute left-0 top-[84px] h-[296px] w-[186px] overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white">
         <Image
           src={extensionImage}
           alt="Wiggle browser extension sidebar over a practice-management page"
@@ -33,7 +33,7 @@ export function WiggleVisual() {
           className="ml-[-22px] mt-[-9px] block h-auto w-[740px] max-w-none"
         />
       </div>
-      <div className="absolute right-0 top-14 w-[146px] rounded-[26px] bg-[#0B1020] p-[5px] shadow-[0_26px_56px_-22px_rgba(11,16,32,0.55)]">
+      <div className="absolute right-0 top-14 w-[146px] rounded-[26px] bg-[#0B1020] p-[5px]">
         <div className="aspect-[390/844] overflow-hidden rounded-[21px] bg-white">
           <Image
             src={billPayImage}
